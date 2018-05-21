@@ -67,6 +67,9 @@
             height: 6px;
         }
         /*轮播样式--end*/
+        a, a:focus, a:hover{
+            color: #888;
+        }
     </style>
 </head>
 <body>
@@ -232,18 +235,18 @@
                     }
                 }
                 doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
-                doc_str+='<div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+                doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
                 doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
                 doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
-                doc_str+='</div>';
+                doc_str+='</a>';
                 doc_str+='<div class="col-xs-9" style="padding-left: 5px;">';
                 doc_str+='<div class="add_attention">+ 关注</div>';
                 doc_str+='<div>';
                 doc_str+='<a onclick="toFullView('+i+')" class="doc_name">'+data[i].name+'</a>';
-                doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
+                doc_str+='<a onclick="toFullView('+i+')" class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</a>';
                 doc_str+='</div>';
-                doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
-                doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
+                doc_str+='<a onclick="toFullView('+i+')" style="display: block;" class="briefly_1">'+data[i].briefly_1+'</a>';
+                doc_str+='<a onclick="toFullView('+i+')" style="display: block;" class="professional_direction">'+checkString(crt_words,l,'...')+'</a>';
                 doc_str+='</div>';
                 doc_str+='</div>';
             }
