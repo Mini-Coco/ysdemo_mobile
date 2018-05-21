@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>医生360°全景观像平台</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <style>
+        /*头部样式--start*/
+        .header .head{
+            height: 180px;
+            background-image: url('static/img/home_bg.jpg');
+            background-size: cover;
+            background-position-y: -35px;
+        }
+        .header .head .home_title{
+            margin-top: 65px;
+            margin-bottom: 30px;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        /*头部样式--end*/
+        /*最近关注&换一批样式--start*/
+        .change{
+            font-size: 1.2rem;
+            color: #888;
+        }
+        .change .search_key{
+            display: inline-block;
+            width: 95%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        /*最近关注&换一批样式--end*/
+        /*模块样式--start*/
+        .modules{
+            padding: 15px 0 10px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #666;
+        }
+        .modules a{
+            color: #666;
+        }
+        .modules .modules_img{
+            margin-bottom: 5px;
+            height: 50px;
+        }
+        /*模块样式--end*/
+        /*轮播样式--start*/
+        .swiper-container{
+            padding: 12px 0 24px;
+        }
+        .swiper-container .swiper-wrapper .swiper-slide img{
+            width: 100%;
+        }
+        .swiper-container-horizontal>.swiper-pagination-bullets{
+            bottom: 4px;
+        }
+        .swiper-container .swiper-pagination .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+        }
+        /*轮播样式--end*/
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row header text-center">
+        <div class="col-xs-12 head">
+            <div class="home_title">医生360°全景观像平台</div>
+            <a href="isearch.html" class="input-group" style="width: 100%;">
+                <img class="search_img" src="static/img/search.png" alt="">
+                <input readonly type="search" class="form-control"
+                       style="background-color: #fff;"
+                       placeholder="请输入适应症、医院名称、医生姓名等关键词" aria-describedby="basic-addon1">
+            </a>
+        </div>
+    </div>
+    <div class="row change border_b">
+        <div class="col-xs-3" style="padding: 0 0 0 10px;width: 20%;">
+            <span>最近关注：</span>
+        </div>
+        <div class="col-xs-7" style="padding: 0;width: 63%;height: 17px;">
+            <span class="search_key">叶定伟 朱耀 复旦大学附属肿瘤医院 冠心病</span>
+        </div>
+        <div class="col-xs-2" style="padding: 0;">
+            <i class="glyphicon glyphicon-refresh"></i>
+            <span>换一批</span>
+        </div>
+    </div>
+    <div class="row modules text-center">
+        <a class="col-xs-3">
+            <img class="modules_img" src="static/img/doctor_portrait.png" alt="">
+            <img class="hot" src="static/img/hot.png" alt="">
+            <div>医生画像</div>
+        </a>
+        <a href="ifocus.html" class="col-xs-3">
+            <img class="modules_img" src="static/img/my_attention.png" alt="">
+            <div>我的关注</div>
+        </a>
+        <a href="icustomize.html" class="col-xs-3">
+            <img class="modules_img" src="static/img/demand_customization.png" alt="">
+            <div>需求定制</div>
+        </a>
+        <a href="icorrect.html" class="col-xs-3">
+            <img class="modules_img" src="static/img/i_correct.png" alt="">
+            <div>我来纠正</div>
+        </a>
+    </div>
+    <div class="row hr"></div>
+    <div class="row border_b" style="padding: 0;">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/img/company_vip.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/yuqing.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/taidu.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/guanxi.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/zhineng.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/img/data_report.png" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="row content_doc">
+        <!--<div class="col-xs-12 border_b" style="padding: 12px 0;">-->
+            <!--<div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">-->
+                <!--<img style="height: 60px;" src="static/img/doc_pic.png" alt="">-->
+                <!--<div class="star">-->
+                    <!--<img src="static/img/star10.png" alt="">-->
+                    <!--<img src="static/img/star10.png" alt="">-->
+                    <!--<img src="static/img/star10.png" alt="">-->
+                    <!--<img src="static/img/star10.png" alt="">-->
+                    <!--<img src="static/img/star10.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-xs-9" style="padding-left: 5px;">-->
+                <!--<div class="add_attention">+ 关注</div>-->
+                <!--<div>-->
+                    <!--<span class="doc_name">叶****</span>-->
+                    <!--<span class="briefly_2">主任医师 教授 博士</span>-->
+                <!--</div>-->
+                <!--<div class="briefly_1">上海市肿瘤医院 泌尿外科</div>-->
+                <!--<div class="professional_direction">-->
+                    <!--前列腺、膀胱、肾脏、睾丸、肾上腺、阴茎、腹膜后等部位良恶性肿瘤的诊治；尤其擅长以手术为主；综合化疗、放疗、生物、介入、内分泌治疗等各种治疗手段-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="row hr" style="margin-bottom: 48px;"></div>
+    <div class="row footer text-center">
+        <div class="col-xs-5" style="padding-left: 5px;">
+            <a href="javascript:;" class="col-xs-6 menu active">
+                <img src="static/img/home_blue.png" alt="">
+                <div>首页</div>
+            </a>
+            <a href="inews.html" class="col-xs-6 menu">
+                <img src="static/img/news.png" alt="">
+                <div>消息</div>
+            </a>
+        </div>
+        <a href="ifocus.html" class="col-xs-2 menu">
+            <img src="static/img/my_att.png" alt="">
+            <div>我的关注</div>
+        </a>
+        <div class="col-xs-5" style="padding-right: 5px;">
+            <a href="imemo.html" class="col-xs-6 menu">
+                <img src="static/img/memo.png" alt="">
+                <div>备忘录</div>
+            </a>
+            <a href="imy.html" class="col-xs-6 menu">
+                <img src="static/img/my.png" alt="">
+                <div>我的</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/jquery-2.1.1.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/swiper.min.js"></script>
+<script src="static/js/index.js"></script>
+<script>
+    //轮播
+    var mySwiper = new Swiper ('.swiper-container', {
+//        direction: 'vertical',
+        loop: true,
+//        autoplay: true,//可选选项，自动滑动，等同于以下设置
+        autoplay: {
+            delay: 5000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true
+        },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    });
+    //获取医生关注数据
+    $.ajax({
+        url: 'lib/doctor_all.json',
+        dataType: 'json',
+        success: function (data) {
+            var doc_str='';
+            for(var i=0;i<data.length;i++){
+                //专业方向--判断文字，超出32则显示省略号
+                var crt_words=data[i].professional_direction;
+                var l=32;
+                function checkString(s,l,tag){
+                    if(s.length>l){
+                        return s.substring(0,l)+tag;
+                    }else{
+                        return s;
+                    }
+                }
+                doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
+                doc_str+='<div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+                doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
+                doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
+                doc_str+='</div>';
+                doc_str+='<div class="col-xs-9" style="padding-left: 5px;">';
+                doc_str+='<div class="add_attention">+ 关注</div>';
+                doc_str+='<div>';
+                doc_str+='<a onclick="toFullView('+i+')" class="doc_name">'+data[i].name+'</a>';
+                doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
+                doc_str+='</div>';
+                doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
+                doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
+                doc_str+='</div>';
+                doc_str+='</div>';
+            }
+            $('.content_doc').append(doc_str);
+        }
+    });
+</script>
+</body>
+</html>

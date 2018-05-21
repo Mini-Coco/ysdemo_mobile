@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>医生360°全景观像平台</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        /*分享样式*/
+        ul.share:before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: 12px;
+            border-bottom: 8px solid rgba(0,0,0,0.7);
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+        ul.share{
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            padding: 0;
+            width: 106px;
+            line-height: 36px;
+            list-style: none;
+            background: rgba(0,0,0,0.7);
+            font-size: 1.4rem;
+            text-align: left;
+        }
+        ul.share li a{
+            padding: 13px;
+        }
+        .share_p:hover ul.share{
+            display: block;
+        }
+        /*各种信息页面--start*/
+        ul.info_tab{
+            list-style: none;
+            overflow: hidden;
+            padding: 0 8px;
+            margin: 0;
+            line-height: 12px;
+        }
+        ul.info_tab li.tab_bar{
+            float: left;
+            width: 23%;
+            font-size: 1.4rem;
+            color: #555;
+        }
+        ul.info_tab li.tab_bar:nth-of-type(3){
+            width: 31%;
+        }
+        ul.info_tab li.tab_bar div{
+            padding-top: 15px;
+        }
+        ul.info_tab li.tab_bar span{
+            display: inline-block;
+            width: 3.4rem;
+            height: 2px;
+            background: transparent;
+            border-radius: 10px;
+        }
+        ul.info_tab li.tab_bar.active{
+            color: #46a0f0;
+        }
+        ul.info_tab li.tab_bar.active span{
+            background: #46a0f0;
+        }
+        /*各种信息页面--end*/
+        /*综合信息--*/
+        .border_b{
+            border-bottom: none;
+        }
+        .hr_separate{
+            margin: 0 3%;
+            width: 94%;
+            height: 1px;
+            background: #e8e8e8;
+        }
+        .part_img{
+            position: relative;
+            top: -2px;
+            height:24px;
+        }
+        .part_text{
+            font-weight: 600;
+        }
+        .show_more{
+            text-align: right;
+            color: #46a0f0;
+        }
+        .alotof_text, .alotof_text1{
+            padding-top: 5px;
+            line-height: 1.6em;
+            overflow: hidden;
+            font-size: 1.2rem;
+        }
+        .alotof_text1{
+            max-height: 63px;
+        }
+        /*标签*/
+        .btn.btn-learning,.btn.btn-society{
+            margin-top: 5px;
+            padding: 2px 8px;
+            font-size: 1.2rem;
+        }
+        .btn.btn-learning{
+            background-color: #fff;
+            border-color: #62a8ea;
+            color: #62a8ea;
+        }
+        .btn.btn-society{
+            background-color: #fff;
+            border-color: #57c7d4;
+            color: #57c7d4;
+        }
+        .popover-content{
+            padding: 0 5px 5px;
+        }
+        .learning .popover-content{
+            max-height: 350px;
+            overflow: auto;
+        }
+        .socitey .popover-content{
+            max-height: 250px;
+            overflow: auto;
+        }
+        .popover-content div{
+            margin-top: 5px;
+            display: inline-block;
+            padding:3px 6px;
+            font-size: 1.2rem;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+        .learning .popover-content div{
+            color:#62a8ea !important;
+            border-color:#62a8ea !important;
+        }
+        .socitey .popover-content div{
+            color:#57c7d4 !important;
+            border-color:#57c7d4 !important;
+        }
+        /*基础信息*/
+        .basic_info_table{
+            width: 100%;
+            font-size: 1.2rem;
+        }
+        .basic_info_table td{
+            height: 2.8rem;
+        }
+        .basic_info_table .doc_name{
+            margin-right: 0;
+            font-size: 1.2rem;
+        }
+        .basic_info_table .info_width{
+            width: 25%;
+            text-align: right;
+        }
+        .basic_info_table .input_box{
+            padding: 2px 5px;
+            height: 24px;
+            border: 1px solid #ccc;
+            min-width: 12vw;
+        }
+        /*职位学术信息*/
+        span.label{
+            display: inline-block;
+            margin: 2px 1px 5px;
+            padding: 4px 10px;
+            color: #62a8ea;
+            font-size: 1.2rem;
+            font-weight: 100;
+            background-color: transparent;
+            border: 1px solid #62a8ea;
+            border-radius: 5px;
+        }
+        .association span.label{
+            color: #57c7d4;
+            border: 1px solid #57c7d4;
+        }
+        .value_info_table td{
+            height: 2.2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="mask"></div>
+<div class="editMemo">
+    <div class="mome_head text-center">添加记录</div>
+    <div class="memo_content">
+        <textarea name="" id="memo_textarea" placeholder="例如：对某医生的重要印象"></textarea>
+    </div>
+    <div class="memo_btn text-center">
+        <button onclick="operateMemo(0)" class="btn" style="margin-right: 4%;color: #000;background-color: #eaf0fc;">取消</button>
+        <button onclick="operateMemo(1)" class="btn">确定</button>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row header text-center">
+        <a onclick="history.go(-1);" class="col-xs-2" style="padding-left: 0;">
+            <i class="fa fa-angle-left" style="font-size: 3.4rem;line-height: 46px;"></i>
+        </a>
+        <div class="col-xs-8">医生全景</div>
+        <div class="col-xs-2 share_p">
+            <i class="glyphicon glyphicon-option-horizontal" style="line-height: 48px;"></i>
+            <ul class="share">
+                <li>
+                    <a href="../icorrect.html">
+                        <i class="fa fa-search"> &nbsp;&nbsp;我来纠正</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-star"> &nbsp;&nbsp;加入关注</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-share-alt"> &nbsp;&nbsp;分享</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-calendar-plus-o" onclick="addMemo('add')"> &nbsp;&nbsp;添加记录</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row content_doc" style="margin-top: 48px;">
+        <div class="col-xs-12 border_b" style="padding: 12px 0;">
+            <div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">
+                <img style="height: 60px;" src="../static/img/doc_pic.png" alt="">
+                <div class="star">
+                    <img src="../static/img/star10.png" alt="">
+                    <img src="../static/img/star10.png" alt="">
+                    <img src="../static/img/star10.png" alt="">
+                    <img src="../static/img/star10.png" alt="">
+                    <img src="../static/img/star10.png" alt="">
+                </div>
+            </div>
+            <div class="col-xs-9" style="padding-left: 5px;">
+                <div class="add_attention">+ 关注</div>
+                <div>
+                    <span class="doc_name"></span>
+                    <span class="briefly_2"></span>
+                </div>
+                <div class="briefly_1"></div>
+                <div class="professional_dir"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row hr"></div>
+    <div class="row content_doc" style="margin-top: 0;">
+        <ul class="info_tab text-center">
+            <li class="tab_bar tab_all active" onclick="changeTab(this,'all')">
+                <div>综合信息</div><span></span>
+            </li>
+            <li class="tab_bar tab_basic" onclick="changeTab(this,'basic')">
+                <div>基础信息</div><span></span>
+            </li>
+            <li class="tab_bar tab_position" onclick="changeTab(this,'position')">
+                <div>职位学术信息</div><span></span>
+            </li>
+            <li class="tab_bar tab_value" onclick="changeTab(this,'value')">
+                <div>价值信息</div><span></span>
+            </li>
+        </ul>
+        <div class="info_content">
+            <!--综合信息-->
+            <div class="info_sum all_info">
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">医生简介</div>
+                    <div class="col-xs-12 border_b">
+                        <div class="col-xs-6">
+                            <img class="part_img" src="../static/img/career_experience.png" alt="">
+                            <span class="part_text">执业经历</span>
+                        </div>
+                        <div class="col-xs-6 show_more">
+                            <span class="show_more_text">展开</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xs-12 alotof_text introduction"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b">
+                        <div class="col-xs-6">
+                            <img class="part_img" src="../static/img/professional_direction.png" alt="">
+                            <span class="part_text">专业方向</span>
+                        </div>
+                        <div class="col-xs-6 show_more">
+                            <span class="show_more_text">展开</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xs-12 alotof_text professional_direction"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b">
+                        <div class="col-xs-6">
+                            <img class="part_img" src="../static/img/comprehensive_value.png" alt="">
+                            <span class="part_text">综合价值</span>
+                        </div>
+                        <div class="col-xs-12" style="padding: 0 25px;">
+                            <div class="col-xs-5" style="padding: 8px 0 16px;">
+                                <table class="alotof_text" style="line-height: 2.2em;">
+                                    <tr>
+                                        <td>学术水平：</td>
+                                        <td class="star">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>网络价值：</td>
+                                        <td class="star">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>关系影响：</td>
+                                        <td class="star">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>综合价值：</td>
+                                        <td class="star">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                            <img src="../static/img/star10.png" alt="">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-xs-7"
+                                 style="padding: 0;
+                                    position: absolute;
+                                    top: -24px;
+                                    right: 0">
+                                <div id="radar_chart" style="width:58vw;height:160px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">医生标签</div>
+                    <div class="col-xs-12 border_b">
+                        <div class="col-xs-6">
+                            <img class="part_img" src="../static/img/academic.png" alt="">
+                            <span class="part_text">学术行政类标签</span>
+                        </div>
+                        <div class="col-xs-12 learning"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b">
+                        <div class="col-xs-6">
+                            <img class="part_img" src="../static/img/society.png" alt="">
+                            <span class="part_text">社会类标签</span>
+                        </div>
+                        <div class="col-xs-12 socitey"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">关系网络</div>
+                    <div class="col-xs-12 border_b">
+                        <div id="relation_chart" style="width:100vw;height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+            <!--基础信息-->
+            <div class="info_sum basic_info" style="display: none;">
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">基础信息</div>
+                    <div class="col-xs-12" style="padding: 10px 20px 10px 0;">
+                        <table class="basic_info_table">
+                            <tr>
+                                <td class="info_width">医生姓名：</td>
+                                <td>
+                                    <div class="input_box doc_name"></div>
+                                </td>
+                                <td class="info_width">医生籍贯：</td>
+                                <td>
+                                    <div class="input_box hometown"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">医生性别：</td>
+                                <td>
+                                    <div class="input_box doc_sex"></div>
+                                </td>
+                                <td class="info_width">所在省份：</td>
+                                <td>
+                                    <div class="input_box province"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">年龄段：</td>
+                                <td>
+                                    <div class="input_box doc_age"></div>
+                                </td>
+                                <td class="info_width">所在城市：</td>
+                                <td>
+                                    <div class="input_box city"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">从业时间：</td>
+                                <td>
+                                    <div class="input_box working_time"></div>
+                                </td>
+                                <td class="info_width">最高学历：</td>
+                                <td>
+                                    <div class="input_box highest_education"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">所在医院：</td>
+                                <td colspan="3">
+                                    <div class="input_box hospital"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">医院等级：</td>
+                                <td>
+                                    <div class="input_box level"></div>
+                                </td>
+                                <td class="info_width">所在科室：</td>
+                                <td>
+                                    <div class="input_box keshi"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">医院职称：</td>
+                                <td>
+                                    <div class="input_box zhich"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">学业经历</div>
+                    <div class="col-xs-12 edu_experience" style="padding: 10px 15px 2px;font-size: 1.2rem;"></div>
+                </div>
+            </div>
+            <!--职位学术信息-->
+            <div class="info_sum position_info" style="display: none;">
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">主要职位学术信息</div>
+                    <div class="col-xs-12" style="padding: 10px 20px 0 0;">
+                        <table class="basic_info_table">
+                            <tr>
+                                <td class="info_width">医生职称：</td>
+                                <td>
+                                    <div class="input_box zhich"></div>
+                                </td>
+                                <td class="info_width">学术职称：</td>
+                                <td>
+                                    <div class="input_box aca_zhich"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">学术发文：</td>
+                                <td>
+                                    <div class="input_box academic_writing"></div>
+                                </td>
+                                <td class="info_width">被引次数：</td>
+                                <td>
+                                    <div class="input_box citation"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">H指数：</td>
+                                <td>
+                                    <div class="input_box h_index"></div>
+                                </td>
+                                <td class="info_width">核心期刊：</td>
+                                <td>
+                                    <div class="input_box magazine_per"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">行政职务：</td>
+                                <td colspan="3">
+                                    <div class="input_box post"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 border_b" style="font-size: 1.3rem;">
+                        <div class="col-xs-6">
+                            <span class="">学术关注点：</span>
+                        </div>
+                        <div class="col-xs-6 show_more">
+                            <span class="show_more_text">展开</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xs-12 alotof_text1 aca_focus"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b" style="font-size: 1.3rem;">
+                        <div class="col-xs-6">
+                            <span class="">所属协会：</span>
+                        </div>
+                        <div class="col-xs-6 show_more">
+                            <span class="show_more_text">展开</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xs-12 alotof_text1 association"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b" style="font-size: 1.3rem;">
+                        <div class="col-xs-6">
+                            <span class="">职位及学术成就：</span>
+                        </div>
+                        <div class="col-xs-6 show_more">
+                            <span class="show_more_text">展开</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xs-12 alotof_text1 aca_achieve"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">近期主要学术会议信息</div>
+                    <div class="col-xs-12 border_b" style="font-size: 1.3rem;">
+                        <div class="col-xs-12 show_more">
+                            <span class="show_more_text">展开</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xs-12 alotof_text1 meetings"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">学术文章发表信息</div>
+                    <div class="col-xs-12 border_b">
+                        <div class="col-xs-12 alotof_text essays"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b">
+                        <div id="year_author" style="width: 100vw;height: 180px;"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12 border_b">
+                        <div id="magazine" style="width: 100vw;height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+            <!--价值信息-->
+            <div class="info_sum value_info" style="display: none;">
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">医生价值</div>
+                    <div class="col-xs-12" style="padding: 10px 10px 10px 0;">
+                        <table class="basic_info_table">
+                            <tr>
+                                <td class="info_width">所在医院：</td>
+                                <td colspan="3">
+                                    <div class="input_box hospital"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">医院等级：</td>
+                                <td>
+                                    <div class="input_box level"></div>
+                                </td>
+                                <td class="info_width">所在科室：</td>
+                                <td>
+                                    <div class="input_box keshi"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">医院职称：</td>
+                                <td>
+                                    <div class="input_box zhich"></div>
+                                </td>
+                                <td class="info_width">学术职称：</td>
+                                <td>
+                                    <div class="input_box aca_zhich"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">医院门诊量：</td>
+                                <td>
+                                    <div class="input_box menzhen_num_hos"></div>
+                                </td>
+                                <td class="info_width">科室门诊量：</td>
+                                <td>
+                                    <div class="input_box "></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">适应证量：</td>
+                                <td>
+                                    <div class="input_box "></div>
+                                </td>
+                                <td class="info_width">医保比例(量)：</td>
+                                <td>
+                                    <div class="input_box "></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width" style="width: 30%;">医保比例(金额)：</td>
+                                <td>
+                                    <div class="input_box "></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">价值评估</div>
+                    <div class="col-xs-12" style="padding: 10px 15px;">
+                        <table class="basic_info_table value_info_table">
+                            <tr>
+                                <td class="info_width">学术水平：</td>
+                                <td class="star" style="padding-bottom: 2px;">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                </td>
+                                <td class="info_width">网络价值：</td>
+                                <td class="star" style="padding-bottom: 2px;">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">关系影响力：</td>
+                                <td class="star" style="padding-bottom: 2px;">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                </td>
+                                <td class="info_width">综合价值：</td>
+                                <td class="star" style="padding-bottom: 2px;">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding:0;">
+                    <div class="hr_title">网络综合价值</div>
+                    <div class="col-xs-12" style="padding: 10px 15px 0 0;">
+                        <table class="basic_info_table">
+                            <tr class="text-center">
+                                <td colspan="4">好大夫网络综合价值</td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">推荐热度：</td>
+                                <td>
+                                    <div class="input_box recommend"></div>
+                                </td>
+                                <td class="info_width">态度满意度：</td>
+                                <td>
+                                    <div class="input_box attitude"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">疗效满意度：</td>
+                                <td>
+                                    <div class="input_box curative_effect"></div>
+                                </td>
+                                <td class="info_width">累计帮助患者数：</td>
+                                <td>
+                                    <div class="input_box all_help"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">网络处方权：</td>
+                                <td>
+                                    <div class="input_box prescription"></div>
+                                </td>
+                                <td class="info_width" style="width: 35%;">近两周帮助患者数：</td>
+                                <td>
+                                    <div class="input_box two_help"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width" style="width: 30%;">网络综合价值：</td>
+                                <td class="star" style="padding-bottom: 2px;">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 border_b" style="padding-top: 0;">
+                        <div id="consult" style="width: 100vw;height: 180px;"></div>
+                    </div>
+                    <div class="col-xs-12 hr_separate"></div>
+                    <div class="col-xs-12" style="padding: 10px 15px 0 0;">
+                        <table class="basic_info_table">
+                            <tr class="text-center">
+                                <td colspan="4">春雨医生网络综合价值</td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">咨询次数：</td>
+                                <td>
+                                    <div class="input_box consult_time"></div>
+                                </td>
+                                <td class="info_width">好评率：</td>
+                                <td>
+                                    <div class="input_box good_rate"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width">同行认可分数：</td>
+                                <td>
+                                    <div class="input_box grade"></div>
+                                </td>
+                                <td class="info_width" style="width: 35%;">患者心意(次数)：</td>
+                                <td>
+                                    <div class="input_box sick_time"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="info_width" style="width: 30%;">网络综合价值：</td>
+                                <td class="star" style="padding-bottom: 2px;">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                    <img src="../static/img/star10.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 border_b" style="padding-top: 0;">
+                        <div id="consult1" style="width: 100vw;height: 180px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/jquery-2.1.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/echarts-all-min.js"></script>
+<script src="../static/js/index.js"></script>
+<script>
+    //判断文字，超出l则显示省略号
+    function checkString(s,l,tag){
+        if(s.length>l){
+            return s.substring(0,l)+tag;
+        }else{
+            return s;
+        }
+    }
+    //获取当前点击对象id
+    var doc_id=sessionStorage.doc_id;
+    //获取医生数据
+    $.ajax({
+        url: '../lib/doctor_all.json',
+        dataType: 'json',
+        success: function (data) {
+            $('.doc_name').text(data[doc_id].name);
+            $('.briefly_2').text(data[doc_id].briefly_2+' '+data[doc_id].briefly_3);
+            $('.briefly_1').text(data[doc_id].briefly_1);
+            //专业方向--判断文字，超出32则显示省略号
+            var crt_pro=data[doc_id].professional_direction;
+            $('.professional_dir').text(checkString(crt_pro,32,'...'));
+
+            //综合信息
+            var crt_intro=data[doc_id].introduction;
+            $('.introduction').text(checkString(crt_intro,52,'...'));
+            $('.professional_direction').text(checkString(crt_pro,52,'...'));
+            //展开&收起
+            $('.show_more').click(function () {
+                var crt_text=$(this).children('.show_more_text').text();
+                if(crt_text=='展开'){
+                    $(this).siblings('.alotof_text1').css('max-height','inherit');
+                    $(this).siblings('.introduction').text(data[doc_id].introduction);
+                    $(this).siblings('.professional_direction').text(data[doc_id].professional_direction);
+                    $(this).children('.show_more_text').text('收起');
+                    $(this).children('i').removeClass().addClass('fa fa-angle-up');
+                }else if(crt_text=='收起'){
+                    $(this).siblings('.alotof_text1').css('max-height','63px');
+                    $(this).siblings('.introduction').text(checkString(crt_intro,52,'...'));
+                    $(this).siblings('.professional_direction').text(checkString(crt_pro,52,'...'));
+                    $(this).children('.show_more_text').text('展开');
+                    $(this).children('i').removeClass().addClass('fa fa-angle-down');
+                }
+            });
+            //学术行政类标签
+            var learning_arr=[],learning_str="";
+            for(var i=0;i<data[doc_id].learning.length;i++){
+                learning_arr=data[doc_id].learning[i].learning_2.split(';');
+                var learning_str_i="";
+                for(var j=0;j<learning_arr.length;j++){
+                    learning_str_i+="<div>"+learning_arr[j]+"</div> ";
+                }
+                learning_str+="<button type='button' class='btn btn-learning' data-toggle='popover' data-content='"+learning_str_i+"'>"+data[doc_id].learning[i].learning_1+"</button> ";
+            }
+            $('.learning').append(learning_str);
+            //社会类标签
+            var society_arr=[],society_str="";
+            for(var i=0;i<data[doc_id].society.length;i++){
+                society_arr=data[doc_id].society[i].society_2.split(',');
+                var society_str_i="";
+                for(var j=0;j<society_arr.length;j++){
+                    society_str_i+="<div>"+society_arr[j]+"</div> ";
+                }
+                society_str+="<button type='button' class='btn btn-society' data-toggle='popover' data-content='"+society_str_i+"'>"+data[doc_id].society[i].society_1+"</button> "
+            }
+            $('.socitey').append(society_str);
+            //标签信息
+            $('.btn.btn-learning').popover({
+                html : true,
+                trigger : "hover",
+                title : '学术行政类二级标签',
+                placement : "bottom"
+            });
+            $('.btn.btn-society').popover({
+                html : true,
+                trigger : "hover",
+                title : '社会类二级标签',
+                placement : "bottom"
+            });
+
+            //基础信息
+            $('.hometown').text(data[doc_id].hometown);
+            $('.doc_sex').text(data[doc_id].doc_sex);
+            $('.province').text(data[doc_id].province);
+            $('.doc_age').text(data[doc_id].doc_age);
+            $('.city').text(data[doc_id].city);
+            $('.working_time').text(data[doc_id].working_time);
+            $('.highest_education').text(data[doc_id].highest_education);
+            $('.hospital').text(data[doc_id].hospital);
+            $('.level').text(data[doc_id].level);
+            $('.keshi').text(data[doc_id].keshi);
+            $('.zhich').text(data[doc_id].zhich);
+            //学业经历
+            var edu_experience_arr=[],edu_experience_str='';
+            edu_experience_arr=data[doc_id].edu_experience.split('/');
+            for(var i=0;i<edu_experience_arr.length;i++){
+                edu_experience_str+="<div class='col-xs-12 border_b_e8' style='margin-bottom: 8px;'>"+edu_experience_arr[i]+"</div> ";
+            }
+            $('.edu_experience').append(edu_experience_str);
+
+            //职位学术信息
+            $('.aca_zhich').text(data[doc_id].aca_zhich);
+            $('.academic_writing').text(data[doc_id].academic_writing);
+            $('.citation').text(data[doc_id].citation);
+            $('.h_index').text(data[doc_id].h_index);
+            $('.magazine_per').text(data[doc_id].magazine_per);
+            $('.post').text(data[doc_id].post);
+            //学术关注点
+            var aca_focus_arr=[],aca_focus_str="";
+            aca_focus_arr=data[doc_id].aca_focus.split('，');
+            for(var i=0;i<aca_focus_arr.length;i++){
+                aca_focus_str+="<span class='label'>"+aca_focus_arr[i]+"</span> ";
+            }
+            $('.aca_focus').append(aca_focus_str);
+            //所属协会
+            var association_arr=[],association_str="";
+            association_arr=data[doc_id].association.split('/');
+            for(var i=0;i<association_arr.length;i++){
+                association_str+="<span class='label'>"+association_arr[i]+"</span> ";
+            }
+            $('.association').append(association_str);
+            //职位及学术成就
+            var aca_achieve_arr=[],aca_achieve_str="";
+            aca_achieve_arr=data[doc_id].aca_achieve.split('/');
+            for(var i=0;i<aca_achieve_arr.length;i++){
+                aca_achieve_str+="<span class='label'>"+aca_achieve_arr[i]+"</span> ";
+            }
+            $('.aca_achieve').append(aca_achieve_str);
+            //近期主要学术会议信息
+            var meetings_arr=[],meetings_str="";
+            if(data[doc_id].meetings!=""){
+                meetings_arr=data[doc_id].meetings.split('/');
+                for(var i=0;i<meetings_arr.length;i++){
+                    meetings_str+="<div><img src='../static/img/meetings.png' style='height:16px;position: relative;top: -1px;'> "+meetings_arr[i]+"</div> ";
+                }
+                $('.meetings').append(meetings_str);
+            }
+
+            //学术文章发表信息
+            var essays_str="";
+            if(data[doc_id].essays.length>0){
+                for(var i=0;i<data[doc_id].essays.length;i++){
+                    essays_str+="<div style='overflow: hidden;'>";
+                    essays_str+="<div style='color: #333;'><img src='../static/img/essays.png' style='height: 16px;position: relative;top: -2px;'> "+data[doc_id].essays[i].essays_title+"</div>";
+                    essays_str+="<div style='font-size: 1rem;'>";
+                    essays_str+=data[doc_id].essays[i].essays_time+data[doc_id].essays[i].essays_journal+data[doc_id].essays[i].essays_type+" "+data[doc_id].essays[i].essays_author;
+                    essays_str+="<span style='float: right;'><i class='fa fa-share-alt' style='color: #46a0f0;'></i> 被引用："+data[doc_id].essays[i].essays_cite+"次</span>";
+                    essays_str+="</div>";
+                    essays_str+="<div class='col-xs-12 hr_separate' style='margin: 6px 0;width: 100%;'></div>";
+                    essays_str+="</div>";
+                }
+                $('.essays').append(essays_str);
+            }
+
+            //价值信息
+            $('.menzhen_num_hos').text(data[doc_id].menzhen_num_hos);
+            $('.recommend').text(data[doc_id].recommend);
+            $('.curative_effect').text(data[doc_id].curative_effect);
+            $('.prescription').text(data[doc_id].prescription);
+            $('.attitude').text(data[doc_id].attitude);
+            $('.all_help').text(data[doc_id].all_help);
+            $('.two_help').text(data[doc_id].two_help);
+            $('.consult_time').text(data[doc_id].consult_time);
+            $('.grade').text(data[doc_id].grade);
+            $('.good_rate').text(data[doc_id].good_rate);
+            $('.sick_time').text(data[doc_id].sick_time);
+        }
+    });
+    //切换显示信息页面
+    function changeTab(_this,crt_info) {
+        //文字、导航条变色
+        $('.tab_bar').removeClass('active');
+        $('.tab_'+crt_info).addClass('active');
+        //内容变化
+        $('.info_sum').hide();
+        $('.'+crt_info+'_info').show();
+    }
+    var crt_info=sessionStorage.crt_info;
+    if(crt_info=='undefined'){
+        crt_info='all';
+    }
+    changeTab(this,crt_info);
+    //雷达图
+    function radar_chart(data,data1){
+        var radar_chart=echarts.init(document.getElementById('radar_chart'));
+        var radar_chart_option = {
+            noDataLoadingOption : {
+                text : '暂无数据',
+                textStyle : {
+                    color : '#888',
+                    fontSize : 13
+                },
+                effect : 'bubble',
+                effectOption : {
+                    effect : {
+                        n : 0
+                    }
+                }
+            },
+            tooltip : {
+                trigger: 'axis',
+                textStyle: {
+                    fontSize: 10
+                }
+            },
+            legend: {
+                x : 'center',
+                data:['']
+            },
+            polar : [
+                {
+                    center:['50%','50%'], // 图的位置
+                    indicator : [
+                        {text : data[0]+'\n', max  : 5},
+                        {text : data[1], max  : 5},
+                        {text : data[2], max  : 5},
+                        {text : data[3], max  : 5},
+                        {text : data[4], max  : 5}
+                    ],
+                    radius : 60
+                }
+            ],
+            series : [
+                {
+                    name: '',
+                    type: 'radar',
+                    symbol: "emptyCircle", //设置各个图区域的边框线拐点样式
+                    itemStyle: {
+                        normal: {
+                            color : "rgba(248,172,89,0.9)",
+                            areaStyle: {
+                                type: 'default',
+                                color:'rgba(248,172,89,0.7)'
+                            },
+                            textStyle: {
+                                fontSize: '10',
+                                color: '#888'
+                            }
+                        }
+                    },
+                    data : [
+                        {
+                            value : data1,
+                            name : ''
+                        }
+                    ]
+                }
+            ]
+        };
+        radar_chart.setOption(radar_chart_option);
+    }
+    //关系图
+    function relation_chart(data_legend,data_categories,data_node,data_link) {
+        var relation_chart=echarts.init(document.getElementById('relation_chart'));
+        var relation_chart_option = {
+            noDataLoadingOption : {
+                text : '暂无数据',
+                textStyle : {
+                    color : '#888',
+                    fontSize : 13
+                },
+                effect : 'bubble',
+                effectOption : {
+                    effect : {
+                        n : 0
+                    }
+                }
+            },
+            tooltip : {
+                trigger: 'item',
+                textStyle: {
+                    fontSize: 10
+                },
+                formatter: '{a} : {b}'
+            },
+            legend: {
+                orient: 'vertical',
+                x: '15',
+                itemWidth:12,
+                textStyle: {
+                    fontSize: '10'
+                },
+                data:data_legend
+            },
+            color:['#2ec7c9','#b6a2de','#5ab1ef','rgb(91,206,162)'],
+            series : [
+                {
+                    type:'force',
+                    name : "关系",
+                    ribbonType: false,
+                    categories : data_categories,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                textStyle: {
+                                    color: '#333'
+                                }
+                            },
+                            nodeStyle : {
+                                brushType : 'both',
+                                borderColor : 'rgba(255,215,0,0.4)',
+                                borderWidth : 1
+                            },
+                            linkStyle: {
+                                type: 'curve'
+                            }
+                        },
+                        emphasis: {
+                            label: {
+                                show: false
+                                // textStyle: null      // 默认使用全局文本样式，详见TEXTSTYLE
+                            },
+                            nodeStyle : {
+                                //r: 30
+                            },
+                            linkStyle : {}
+                        }
+                    },
+                    useWorker: false,
+                    minRadius : 10,
+                    maxRadius : 15,
+                    gravity: 1.1,
+                    scaling: 1.1,
+//                    roam: 'move',
+                    nodes:data_node,
+                    links : data_link
+                }
+            ]
+        };
+        relation_chart.setOption(relation_chart_option);
+    }
+    //year_author
+    function year_author(data_x,data_year,data_author,data_time){
+        var year_author=echarts.init(document.getElementById('year_author'));
+        var year_author_option = {
+            noDataLoadingOption : {
+                text : '暂无数据',
+                textStyle : {
+                    color : '#888',
+                    fontSize : 13
+                },
+                effect : 'bubble',
+                effectOption : {
+                    effect : {
+                        n : 0
+                    }
+                }
+            },
+            title : {
+                text: '发表年份及第一作者占比',
+                x: 'center',
+                textStyle: {
+                    fontSize: 12,
+                    fontWeight: 'bolder',
+                    color: '#666'
+                }
+            },
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                },
+                textStyle: {
+                    fontSize: 10
+                },
+                formatter: function (params){
+                    return params[0].name + '<br/>'
+                        + params[1].seriesName + ' : ' + (params[1].value + params[0].value) + '<br/>'
+                        + params[0].seriesName + ' : ' + params[0].value + '<br/>'
+                        + params[2].seriesName + ' : ' + params[2].value;
+                }
+            },
+            legend: {
+                y:30,
+                selectedMode:false,
+                data:['全部发文', '第一作者发文','被引用次数'],
+                textStyle: {
+                    fontSize: 10,
+                    color: '#777'
+                }
+            },
+            grid:{
+                x:40,
+                y:50,
+                x2:30,
+                y2:30
+            },
+            xAxis : [
+                {
+                    type : 'category',
+//                    axisLabel : {
+//                        interval:0,
+//                        rotate:30
+//                    },
+                    splitLine:{
+                        show:false
+                    },
+                    data : data_x
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+//                    splitLine:{
+//                        show:false
+//                    }
+                }
+            ],
+            series : [
+                {
+                    name:'全部发文',
+                    type:'bar',
+                    stack: 'sum',
+//                        barWidth:'6',
+                    barCategoryGap: '50%',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(46,199,201)',
+                            barBorderColor: 'rgb(46,199,201)',
+                            barBorderWidth: 1,
+                            barBorderRadius:0,
+                            label : {
+                                show: false,
+                                position: 'inside',
+                                textStyle: {
+                                    color: '#777'
+                                },
+                                formatter:function(p){return p.value != 0 ? (p.value +'\n'):'';}
+                            }
+                        }
+                    },
+                    data:data_year
+                },
+                {
+                    name:'第一作者发文',
+                    type:'bar',
+                    stack: 'sum',
+//                        barWidth:'6',
+                    itemStyle: {
+                        normal: {
+//                                color: 'rgb(182,162,222)',
+                            color: '#fff',
+                            barBorderColor: 'rgb(46,199,201)',
+                            barBorderWidth: 1,
+                            barBorderRadius:0,
+                            label : {
+                                show: false,
+                                position: 'inside',
+                                textStyle: {
+                                    color: '#777'
+                                },
+                                formatter:function(p){return p.value != 0 ? (p.value +'\n'):'';}
+                            }
+                        }
+                    },
+                    data:data_author
+                },
+                {
+                    name:'被引用次数',
+                    type:'bar',
+//                        stack: 'sum',
+//                        barWidth:'6',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(90,177,239)',
+                            label : {
+                                show: false,
+                                position: 'inside',
+                                textStyle: {
+                                    color: '#777'
+                                },
+                                formatter:function(p){return p.value != 0 ? (p.value +'\n'):'';}
+                            }
+                        }
+                    },
+                    data:data_time
+                }
+            ]
+        };
+        year_author.setOption(year_author_option);
+    }
+    //magazine
+    function magazine(data_mag){
+        var magazine=echarts.init(document.getElementById('magazine'));
+        var magazine_option={
+            noDataLoadingOption : {
+                text : '暂无数据',
+                textStyle : {
+                    color : '#888',
+                    fontSize : 13
+                },
+                effect : 'bubble',
+                effectOption : {
+                    effect : {
+                        n : 0
+                    }
+                }
+            },
+            title : {
+                text: '发表学术期刊占比',
+                x: 'center',
+                textStyle: {
+                    fontSize: 12,
+                    fontWeight: 'bolder',
+                    color: '#666'
+                }
+            },
+            color:['rgb(68,172,224)','rgb(69,203,221)','rgb(91,206,162)','rgb(79,198,107)','rgb(120,120,214)','rgb(239,215,72)','rgb(224,151,63)','rgb(232,120,112)'],
+            series: [
+                {
+                    name:'',
+                    type:'pie',
+                    radius: ['0%', '15%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                formatter: '{b}:{c}\n({d}%)'
+                            },
+                            labelLine: {
+                                show: true,
+                                length:5
+                            }
+                        },
+                        emphasis: {
+                            label: {
+                                show: false,
+                                position: 'center',
+                                textStyle: {
+                                    fontSize: '10',
+                                    fontWeight: 'bold'
+                                }
+                            }
+                        }
+                    },
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: false,
+                            textStyle: {
+                                fontSize: '10',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:data_mag
+                }
+            ]
+        };
+        magazine.setOption(magazine_option);
+    }
+    //好大夫&春雨
+    function consult(id,data,data1) {
+        var consult=echarts.init(document.getElementById(id));
+        var consult_option={
+            noDataLoadingOption : {
+                text : '暂无数据',
+                textStyle : {
+                    color : '#888',
+                    fontSize : 13
+                },
+                effect : 'bubble',
+                effectOption : {
+                    effect : {
+                        n : 0
+                    }
+                }
+            },
+            title : {
+                text: '近半年每两周咨询量',
+                x:'center',
+                textStyle:{
+                    fontSize:12,
+                    fontWeight:100
+                }
+            },
+            grid: {
+                x:40,
+                y:30,
+                x2:30,
+                y2:25
+            },
+            tooltip : {
+                trigger: 'axis',
+                textStyle: {
+                    fontSize: 10
+                }
+            },
+            legend: {
+                data:['咨询量统计'],
+                x:'left',
+                show:false
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    splitLine:{
+                        show:false
+                    },
+                    data : data
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'咨询量统计',
+                    type:'line',
+                    symbol:'emptyCircle',
+                    itemStyle: {
+                        normal: {
+//                            color:'rgb(68,172,224)',
+//                            color:'#fb8e71',
+                            label : {
+                                show: true,
+                                position: 'insideTop',
+                                textStyle:{
+                                    color:'#fff'
+                                }
+                            },
+                            borderColor:'rgba(254,142,113,0.7)',
+                            lineStyle: {
+                                color:'rgba(254,142,113,0.7)'
+                            },
+                            areaStyle: {
+                                type: 'default',
+                                color:'rgba(254,142,113,0.3)'
+                            }
+                        }
+                    },
+                    data:data1
+                }
+            ]
+        };
+        consult.setOption(consult_option);
+    }
+    //设置随机数据
+    function setGraph() {
+        var data=['医院','评价','学术','职称','职务'];
+        var data1=[
+            [5,5,4,4,4],
+            [5,5,5,5,5],
+            [5,5,3,3,3],
+            [4,5,2,1,4],
+            [5,5,5,1,3],
+            [5,5,5,4,4]
+        ];
+        var data_legend=[
+            ['同事','论文合作'],
+            ['师生','同事','论文合作'],
+            ['同事','论文合作'],
+            ['同事','论文合作'],
+            ['同事','论文合作'],
+            ['同事','论文合作']
+        ];
+        var data_categories=[
+            [
+                {name: '人物'},
+                {name: '同事'},
+                {name:'论文合作'}
+            ],[
+                {name: '人物'},
+                {name: '师生'},
+                {name: '同事'},
+                {name:'论文合作'}
+            ],[
+                {name: '人物'},
+                {name: '同事'},
+                {name:'论文合作'}
+            ],[
+                {name: '人物'},
+                {name: '同事'},
+                {name:'论文合作'}
+            ],[
+                {name: '人物'},
+                {name: '同事'},
+                {name:'论文合作'}
+            ],[
+                {name: '人物'},
+                {name: '同事'},
+                {name:'论文合作'}
+            ]
+        ];
+        var data_node=[
+            [
+                {category:0, name: '董****', value : 10, label: '董****'},
+                {category:1, name: '张****',value : 7},
+                {category:1, name: '李****',value : 8},
+                {category:1, name: '石****',value : 8},
+                {category:1, name: '范****',value : 8},
+                {category:1, name: '荣**',value : 9},
+                {category:2, name: '李***',value : 8},
+                {category:2, name: '严****',value : 8},
+                {category:2, name: '张***',value : 8},
+                {category:2, name: '纪****',value : 8},
+                {category:2, name: '徐****',value : 8}
+            ],[
+                {category:0, name: '叶****', value : 10, label: '叶****'},
+                {category:1, name: '马****',value : 7},
+                {category:1, name: '郑****',value : 7},
+                {category:2, name: '朱**',value : 8},
+                {category:2, name: '万****',value : 8},
+                {category:2, name: '张****',value : 8},
+                {category:2, name: '施****',value : 8},
+                {category:2, name: '曹****',value : 8},
+                {category:3, name: '张****',value : 8},
+                {category:3, name: '戴**',value : 8},
+                {category:3, name: '张**',value : 8},
+                {category:3, name: '朱***',value : 8},
+                {category:3, name: '张***',value : 8},
+                {category:3, name: '施***',value : 8}
+            ],[
+                {category:0, name: '蔡****', value : 10, label: '蔡****'},
+                {category:1, name: '吴****',value : 7},
+                {category:1, name: '姜****',value : 8},
+                {category:1, name: '张**',value : 8},
+                {category:1, name: '朱****',value : 8},
+                {category:1, name: '温****',value : 8},
+                {category:2, name: '牛****',value : 9},
+                {category:2, name: '李**',value : 8},
+                {category:2, name: '权****',value : 7},
+                {category:2, name: '王****',value : 8},
+                {category:2, name: '胡**',value : 8}
+            ],[
+                {category:0, name: '马**', value : 10, label: '马**'},
+                {category:1, name: '严****',value : 7},
+                {category:1, name: '吴****',value : 8},
+                {category:1, name: '周**',value : 7},
+                {category:1, name: '张****',value : 8},
+                {category:1, name: '殷****',value : 7},
+                {category:2, name: '程**',value : 8},
+                {category:2, name: '马***',value : 7},
+                {category:2, name: '苏****',value : 7},
+                {category:2, name: '吴***',value : 7},
+                {category:2, name: '苏**',value : 7}
+            ],[
+                {category:0, name: '陈**', value : 10, label: '陈**'},
+                {category:1, name: '何****',value : 8},
+                {category:1, name: '陈****',value : 8},
+                {category:1, name: '宋**',value : 9},
+                {category:1, name: '刘****',value : 8},
+                {category:2, name: '郭****',value : 7},
+                {category:2, name: '刘***',value : 8},
+                {category:2, name: '朱**',value : 8},
+                {category:2, name: '马**',value : 7},
+                {category:2, name: '郭***',value : 8}
+            ],[
+                {category:0, name: '朱**', value : 10, label: '朱**'},
+                {category:1, name: '叶****',value : 8},
+                {category:1, name: '万****',value : 8},
+                {category:1, name: '张****',value : 8},
+                {category:1, name: '施****',value : 8},
+                {category:1, name: '曹****',value : 8},
+                {category:2, name: '叶***',value : 8},
+                {category:2, name: '戴**',value : 8},
+                {category:2, name: '张***',value : 8},
+                {category:2, name: '姚****',value : 8},
+                {category:2, name: '张**',value : 8}
+            ]
+        ];
+        var data_link=[
+            [
+                {source : '张****', target : '董****', weight : 3, name:'同事'},
+                {source : '李****', target : '董****', weight : 7, name:'同事'},
+                {source : '石****', target : '董****', weight : 1, name:'同事'},
+                {source : '范****', target : '董****', weight : 1, name:'同事'},
+                {source : '荣**', target : '董****', weight : 1, name:'同事'},
+                {source : '李***', target : '董****', weight : 3, name:'论文合作17篇'},
+                {source : '严****', target : '董****', weight : 3, name:'论文合作9篇'},
+                {source : '张***', target : '董****', weight : 2, name:'论文合作7篇'},
+                {source : '纪****', target : '董****', weight : 4, name:'论文合作5篇'},
+                {source : '徐****', target : '董****', weight : 2, name:'论文合作3篇'},
+                {source : '张****', target : '李****', weight : 3, name:'同事'},
+                {source : '张****', target : '石****', weight : 3, name:'同事'},
+                {source : '张****', target : '范****', weight : 3, name:'同事'},
+                {source : '张****', target : '荣**', weight : 3, name:'同事'},
+                {source : '李****', target : '石****', weight : 2, name:'同事'},
+                {source : '李****', target : '范****', weight : 2, name:'同事'},
+                {source : '李****', target : '荣**', weight : 2, name:'同事'},
+                {source : '石****', target : '范****', weight : 1, name:'同事'},
+                {source : '石****', target : '荣**', weight : 1, name:'同事'},
+                {source : '范****', target : '荣**', weight : 1, name:'同事'}
+            ],[
+                {source : '马****', target : '叶****', weight : 2, name:'师生'},
+                {source : '郑****', target : '叶****', weight : 3, name:'师生'},
+                {source : '朱**', target : '叶****', weight : 6, name:'同事'},
+                {source : '万****', target : '叶****', weight : 2, name:'同事'},
+                {source : '张****', target : '叶****', weight : 1, name:'同事'},
+                {source : '施****', target : '叶****', weight : 1, name:'同事'},
+                {source : '曹****', target : '叶****', weight : 2, name:'同事'},
+                {source : '戴**', target : '叶****', weight : 4, name:'论文合作114篇'},
+                {source : '张**', target : '叶****', weight : 4, name:'论文合作105篇'},
+                {source : '朱***', target : '叶****', weight : 6, name:'论文合作103篇'},
+                {source : '张***', target : '叶****', weight : 5, name:'论文合作83篇'},
+                {source : '施***', target : '叶****', weight : 3, name:'论文合作46篇'},
+                {source : '张****', target : '叶****', weight : 3, name:'同事'},
+                {source : '万****', target : '张****', weight : 2, name:'同事'},
+                {source : '万****', target : '施****', weight : 2, name:'同事'},
+                {source : '万****', target : '曹****', weight : 2, name:'同事'},
+                {source : '万****', target : '朱**', weight : 2, name:'同事'},
+                {source : '张****', target : '施****', weight : 3, name:'同事'},
+                {source : '张****', target : '曹****', weight : 3, name:'同事'},
+                {source : '张****', target : '朱**', weight : 3, name:'同事'},
+                {source : '施****', target : '曹****', weight : 1, name:'同事'},
+                {source : '施****', target : '朱**', weight : 1, name:'同事'},
+                {source : '曹****', target : '朱**', weight : 2, name:'同事'}
+            ],[
+                {source : '吴****', target : '蔡****', weight : 3, name:'同事'},
+                {source : '姜****', target : '蔡****', weight : 2, name:'同事'},
+                {source : '张**', target : '蔡****', weight : 7, name:'同事'},
+                {source : '朱****', target : '蔡****', weight : 1, name:'同事'},
+                {source : '温****', target : '蔡****', weight : 1, name:'同事'},
+                {source : '牛****', target : '蔡****', weight : 3, name:'论文合作13篇'},
+                {source : '李**', target : '蔡****', weight : 4, name:'论文合作11篇'},
+                {source : '权****', target : '蔡****', weight : 2, name:'论文合作10篇'},
+                {source : '王****', target : '蔡****', weight : 4, name:'论文合作5篇'},
+                {source : '胡**', target : '蔡****', weight : 4, name:'论文合作4篇'},
+                {source : '吴****', target : '姜****', weight : 3, name:'同事'},
+                {source : '吴****', target : '张**', weight : 3, name:'同事'},
+                {source : '吴****', target : '朱****', weight : 3, name:'同事'},
+                {source : '吴****', target : '温****', weight : 3, name:'同事'},
+                {source : '姜****', target : '张**', weight : 2, name:'同事'},
+                {source : '姜****', target : '朱****', weight : 2, name:'同事'},
+                {source : '姜****', target : '温****', weight : 2, name:'同事'},
+                {source : '张**', target : '朱****', weight : 2, name:'同事'},
+                {source : '张**', target : '温****', weight : 2, name:'同事'},
+                {source : '朱****', target : '温****', weight : 1, name:'同事'}
+            ],[
+                {source : '严****', target : '马**', weight : 3, name:'同事'},
+                {source : '吴****', target : '马**', weight : 2, name:'同事'},
+                {source : '周**', target : '马**', weight : 3, name:'同事'},
+                {source : '张****', target : '马**', weight : 2, name:'同事'},
+                {source : '殷****', target : '马**', weight : 3, name:'同事'},
+                {source : '程**', target : '马**', weight : 2, name:'论文合作1篇'},
+                {source : '马***', target : '马**', weight : 2, name:'论文合作1篇'},
+                {source : '苏****', target : '马**', weight : 2, name:'论文合作1篇'},
+                {source : '吴***', target : '马**', weight : 2, name:'论文合作1篇'},
+                {source : '苏**', target : '马**', weight : 2, name:'论文合作1篇'},
+                {source : '严****', target : '吴****', weight : 1, name:'同事'},
+                {source : '严****', target : '周**', weight : 1, name:'同事'},
+                {source : '严****', target : '张****', weight : 1, name:'同事'},
+                {source : '严****', target : '殷****', weight : 1, name:'同事'},
+                {source : '吴****', target : '周**', weight : 2, name:'同事'},
+                {source : '吴****', target : '张****', weight : 2, name:'同事'},
+                {source : '吴****', target : '殷****', weight : 2, name:'同事'},
+                {source : '周**', target : '张****', weight : 1, name:'同事'},
+                {source : '周**', target : '殷****', weight : 1, name:'同事'},
+                {source : '张****', target : '殷****', weight : 2, name:'同事'}
+            ],[
+                {source : '何****', target : '陈**', weight : 2, name:'同事'},
+                {source : '何****', target : '陈**', weight : 1, name:'同事'},
+                {source : '陈****', target : '陈**', weight : 1, name:'同事'},
+                {source : '宋**', target : '陈**', weight : 1, name:'同事'},
+                {source : '刘****', target : '陈**', weight : 7, name:'同事'},
+                {source : '郭****', target : '陈**', weight : 3, name:'论文合作54篇'},
+                {source : '刘***', target : '陈**', weight : 7, name:'论文合作28篇'},
+                {source : '朱**', target : '陈**', weight : 3, name:'论文合作20篇'},
+                {source : '马**', target : '陈**', weight : 7, name:'论文合作11篇'},
+                {source : '郭***', target : '陈**', weight : 7, name:'论文合作9篇'},
+                {source : '何****', target : '陈****', weight : 1, name:'同事'},
+                {source : '何****', target : '宋**', weight : 1, name:'同事'},
+                {source : '何****', target : '刘****', weight : 1, name:'同事'},
+                {source : '陈****', target : '宋**', weight : 1, name:'同事'},
+                {source : '陈****', target : '刘****', weight : 1, name:'同事'},
+                {source : '宋**', target : '刘****', weight : 1, name:'同事'}
+            ],[
+                {source : '叶****', target : '朱**', weight : 3, name:'同事'},
+                {source : '万****', target : '朱**', weight : 2, name:'同事'},
+                {source : '张****', target : '朱**', weight : 7, name:'同事'},
+                {source : '施****', target : '朱**', weight : 1, name:'同事'},
+                {source : '曹****', target : '朱**', weight : 1, name:'同事'},
+                {source : '叶***', target : '朱**', weight : 7, name:'论文合作103篇'},
+                {source : '戴**', target : '朱**', weight : 5, name:'论文合作94篇'},
+                {source : '张***', target : '朱**', weight : 7, name:'论文合作92篇'},
+                {source : '姚****', target : '朱**', weight : 3, name:'论文合作83篇'},
+                {source : '张**', target : '朱**', weight : 3, name:'论文合作79篇'},
+                {source : '万****', target : '张****', weight : 2, name:'同事'},
+                {source : '万****', target : '施****', weight : 2, name:'同事'},
+                {source : '万****', target : '曹****', weight : 2, name:'同事'},
+                {source : '万****', target : '叶****', weight : 2, name:'同事'},
+                {source : '张****', target : '施****', weight : 2, name:'同事'},
+                {source : '张****', target : '曹****', weight : 2, name:'同事'},
+                {source : '张****', target : '叶****', weight : 2, name:'同事'},
+                {source : '施****', target : '曹****', weight : 1, name:'同事'},
+                {source : '施****', target : '叶****', weight : 1, name:'同事'},
+                {source : '曹****', target : '叶****', weight : 1, name:'同事'}
+            ]
+        ];
+        radar_chart(data,data1[doc_id]);
+        relation_chart(data_legend[doc_id],data_categories[doc_id],data_node[doc_id],data_link[doc_id]);
+        var data_x=[],data_year=[],data_author=[],data_time=[],data_mag=[];
+        data_x=[
+            ['2016年度','2015年度','2014年度','2013年度','2012年度','2011年度','2010年度','2009年度'],
+            ["2017年度","2016年度","2015年度","2014年度","2013年度","2012年度","2011年度","2010年度","2009年度","2008年度","2007年度","2006年度","2005年度","2004年度","2003年度","2002年度"],
+            ["2017年度","2016年度","2015年度","2014年度","2013年度","2012年度","2011年度"],
+            ["2016年度","2015年度","2014年度","2013年度","2012年度"],
+            ["2017年度","2016年度","2015年度","2014年度","2013年度","2012年度","2011年度","2010年度","2009年度","2008年度","2007年度","2006年度","2005年度","2004年度","2003年度","2002年度"],
+            ["2017年度","2016年度","2015年度","2014年度","2013年度","2012年度","2011年度","2010年度","2009年度","2008年度","2007年度","2006年度","2005年度"]
+        ];
+        data_year=[
+            [1, 3, 0, 1, 0, 1, 2, 0],
+            [4,7,11,20,17,14,19,16,15,11,12,8,8,6,2,0],
+            [1,2,2,5,6,6,1],
+            [0,0,0,2,2],
+            [3,1,12,13,4,2,5,7,4,7,5,4,2,2,3,1],
+            [3,9,10,15,5,12,10,11,12,6,6,5,0]
+        ];
+        data_author=[
+            [0, 3, 5, 6, 1, 2, 2, 2],
+            [1,2,3,2,2,3,5,4,1,3,7,5,2,2,1,1],
+            [1,0,0,0,2,1,4],
+            [2,2,0,0,0],
+            [0,0,2,4,1,1,1,2,2,2,1,1,0,1,2,1],
+            [0,2,1,1,9,0,9,2,0,0,1,3,1]
+        ];
+        data_time=[
+            [0,20,22,12,1,2,2,0],
+            [0,0,104,149,135,103,102,67,58,38,28,13,3,1,0,0],
+            [0,0,6,5,1,0,0],
+            [0,3,13,1,0],
+            [0,0,68,79,93,69,38,49,30,15,15,7,3,8,1,0],
+            [0,0,52,82,61,47,34,15,8,4,3,1,0]
+        ];
+        data_mag=[
+            [
+                {value:3, name:'协和医学杂志'},
+                {value:3, name:'基础医学与临床'},
+                {value:2, name:'临床泌尿外科杂志'},
+                {value:11, name:'中华泌尿外科杂志'},
+                {value:1, name:'中华医学杂志'},
+                {value:1, name:'中华外科杂志'},
+                {value:1, name:'护士进修杂志'},
+                {value:1, name:'中华医学科学院学报'}
+            ],[
+                {value:26, name:'中国癌症杂志'},
+                {value:22, name:'现代泌尿外科杂志'},
+                {value:16, name:'中华外科杂志'},
+                {value:15, name:'国际泌尿系统杂志'},
+                {value:12, name:'中华医学杂志'},
+                {value:10, name:'临床泌尿外科杂志'},
+                {value:46, name:'中华泌尿外科杂志'},
+                {value:9, name:'现代泌尿生殖肿瘤杂志'},
+                {value:5, name:'中国男科学杂志'},
+                {value:4, name:'中华实验外科杂志'}
+            ],[
+                {value:3, name:'国际泌尿系统杂志'},
+                {value:2, name:'现代泌尿外科杂志'},
+                {value:2, name:'中外健康文摘'},
+                {value:2, name:'临床泌尿外科杂志'},
+                {value:1, name:'腹腔镜外科杂志'},
+                {value:1, name:'中国综合临床'},
+                {value:10, name:'中华泌尿外科杂志'},
+                {value:1, name:'临床外科杂志'},
+                {value:1, name:'中华肿瘤防治杂志'},
+                {value:1, name:'现代泌尿生殖肿瘤杂志'}
+            ],[
+                {value:1, name:'中华泌尿外科杂志'},
+                {value:1, name:'中华实验外科杂志'},
+                {value:1, name:'中华临床医师杂志'},
+                {value:1, name:'临床泌尿外科杂志'},
+                {value:1, name:'中国医师杂志'}
+            ],[
+                {value:7, name:'药物不良反应杂志'},
+                {value:5, name:'中国药师'},
+                {value:5, name:'中国药物警戒'},
+                {value:4, name:'中国脊柱脊髓杂志'},
+                {value:4, name:'世界中西医结合杂志'},
+                {value:3, name:'中国药房'},
+                {value:32, name:'中国药物应用与监测'},
+                {value:3, name:'中华医院感染学杂志'},
+                {value:2, name:'中国医院药学杂志'},
+                {value:2, name:'中国药业'}
+            ],[
+                {value:19, name:'中国癌症杂志'},
+                {value:15, name:'中华外科杂志'},
+                {value:14, name:'现代泌尿外科杂志'},
+                {value:8, name:'中华医学杂志'},
+                {value:7, name:'现代泌尿生殖肿瘤杂志'},
+                {value:7, name:'临床泌尿外科杂志'},
+                {value:4, name:'中国男科学杂志'},
+                {value:33, name:'中华泌尿外科杂志'},
+                {value:3, name:'中国肿瘤外科杂志'},
+                {value:2, name:'临床肿瘤学杂志'}
+            ]
+        ];
+        year_author(data_x[doc_id],data_year[doc_id],data_author[doc_id],data_time[doc_id]);
+        magazine(data_mag[doc_id]);
+        var data_=[],data1_=[],data2_=[];
+        for(var i=1;i<14;i++){
+            var data_i=i*2+"周";
+            data_.push(data_i);
+        }
+        data1_=[
+            [22,19,18,18,20,22,23,24,24,28,33,25,26],
+            [44,48,50,53,58,60,55,48,45,49,52,48,51],
+            [21,20,18,22,25,28,34,30,26,25,23,22,25],
+            [13,12,11,15,17,20,24,19,14,15,12,16,18],
+            [],
+            [206,128,86,80,60,91,45,53,44,57,52,60,52]
+        ];
+        data2_=[
+            [10,8,7,9,11,14,15,13,11,9,6,4,5],
+            [],
+            [],
+            [],
+            [223,220,110,240,253,243,229,222,224,221,215,223,214],
+            []
+        ];
+        consult("consult",data_,data1_[doc_id]);
+        consult("consult1",data_,data2_[doc_id]);
+    }
+    setGraph();
+</script>
+</body>
+</html>

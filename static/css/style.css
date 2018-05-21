@@ -1,0 +1,101 @@
+/*头部样式--start*/
+.header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 2.0rem;
+    color: #fff;
+    background-color: #45a0f1;
+}
+.header i{
+    color: #fff;
+}
+/*头部样式--end*/
+/*搜索框样式*/
+.content_search{
+    z-index: 100;
+    position: fixed;
+    top: 48px;
+    width: 100%;
+}
+.content_search .input-group input.form-control {
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+/*内容样式*/
+.content_doc{
+    margin-top: 98px;
+}
+/*遮罩层mask样式*/
+.mask{
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+/*需求定制/我来纠正textarea样式*/
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1.4rem;
+    color: #888;
+    overflow-y: auto;
+    resize:none;
+}
+/*添加备忘录弹出框*/
+.editMemo{
+    z-index: 205;
+    position: fixed;
+    top: 10vh;
+    left: 8vw;
+    width: 84vw;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+.editMemo .mome_head{
+    line-height: 48px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #ededed;
+}
+.editMemo .memo_content,
+.editMemo .memo_btn{
+    padding: 20px 15px 0;
+}
+.editMemo .memo_content textarea{
+    padding: 8px;
+    height: 100px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+.editMemo .memo_btn button{
+    padding: 10px;
+    width: 47%;
+    color: #fff;
+    background-color: #46a0f0;
+}
+/**/
+.enter_info{
+    padding: 10px 0;
+    background-color: #fff;
+    font-size: 1.6rem;
+}
+.enter_info .enter_info_title{
+    padding-right: 0;
+}
+.enter_info input{
+    width: 100%;
+    border: none;
+}

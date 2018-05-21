@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>医生360°全景观像平台</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg_color">
+<div class="mask"></div>
+<div class="editMemo">
+    <div class="mome_head text-center">添加记录</div>
+    <div class="memo_content">
+        <textarea name="" id="memo_textarea" placeholder="例如：对某医生的重要印象"></textarea>
+    </div>
+    <div class="memo_btn text-center">
+        <button onclick="operateMemo(0)" class="btn" style="margin-right: 4%;color: #000;background-color: #eaf0fc;">取消</button>
+        <button onclick="operateMemo(1)" class="btn">确定</button>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row header text-center" style="background-color: #fff;color: #333;">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">备忘录</div>
+        <div class="col-xs-2" onclick="addMemo('add')"
+             style="padding: 0;font-size: 1.6rem;">添加</div>
+    </div>
+    <div class="row content_search" style="background-color: #edf1f4;">
+        <div class="col-xs-12" style="padding: 10px 15px;">
+            <div class="input-group input-group-sm" style="width: 100%;">
+                <img class="search_img" src="static/img/search.png" alt="">
+                <input id="search_select" type="search" class="form-control" placeholder="在备忘录列表中搜索" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+    <div class="row content_doc">
+        <div class="col-xs-12 bg_color" style="padding-bottom: 8px;">
+            备忘录列表 (<span class="text_num">0</span>)
+        </div>
+        <div class="col-xs-12 memo_box" style="padding: 0;">
+            <div class="col-xs-12 border_b" style="padding: 12px 15px;">
+                <div class="search_key memo_text" onclick="addMemo('edit',this)">测试笔记功能</div>
+                <div style="margin-top: 8px;">
+                    <span style="font-size: 1.2rem">2018年5月18日 10:11</span>
+                    <i class="fa fa-trash-o" style="float: right;" onclick="removeMemo(this)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer text-center">
+        <div class="col-xs-5" style="padding-left: 5px;">
+            <a href="index.html" class="col-xs-6 menu">
+                <img src="static/img/home.png" alt="">
+                <div>首页</div>
+            </a>
+            <a href="inews.html" class="col-xs-6 menu">
+                <img src="static/img/news.png" alt="">
+                <div>消息</div>
+            </a>
+        </div>
+        <a href="ifocus.html" class="col-xs-2 menu">
+            <img src="static/img/my_att.png" alt="">
+            <div>我的关注</div>
+        </a>
+        <div class="col-xs-5" style="padding-right: 5px;">
+            <a href="javascript:;" class="col-xs-6 menu active">
+                <img src="static/img/memo_blue.png" alt="">
+                <div>备忘录</div>
+            </a>
+            <a href="imy.html" class="col-xs-6 menu">
+                <img src="static/img/my.png" alt="">
+                <div>我的</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/jquery-2.1.1.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/swiper.min.js"></script>
+<script src="static/js/index.js"></script>
+<script></script>
+</body>
+</html>

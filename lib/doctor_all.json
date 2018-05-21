@@ -1,0 +1,922 @@
+[
+    {
+    	"id":0,
+        "img":"<img height='140' src='../img/doc_pic.jpg'>",
+        "name":"董****",
+        "briefly_1":"北京协和医院 泌尿外科",
+        "briefly_2":"副主任医师",
+        "briefly_3_":"医学博士 副教授",
+        "briefly_3":"博士 副教授",
+        "introduction1":"医学博士，毕业于北京协和医学院，2015年获得副主任医师资格。研究方向为肾脏外科、泌尿系统肿瘤和腔镜微创手术。(1)肾脏外科:肾肿瘤、肾积水、肾结核、肾结石、肾囊肿等，专长为肾肿瘤的综合诊治，诊断方面，对蛋白组学在肾癌的诊断价值进行深入研究；治疗方面，提倡保留肾单位的腹腔镜肾部分切除术；基础研究，首次在国际提出肾素瘤的分型和诊治流程。(2)肾上腺肿瘤的综合诊治，对肾上腺常见肿瘤、肾上腺皮质癌、肾上腺自体移植、妊娠期肾上腺肿瘤等有深入研究。(3)泌尿系统肿瘤的微创手术，擅长肾癌、前列腺癌和膀胱癌的腹腔镜手术。",
+        "introduction":"医学博士，副主任医师，副教授，毕业于北京协和医学院。研究方向为肾脏外科、泌尿系统肿瘤和腔镜微创手术。(1)肾脏外科：肾肿瘤、肾积水、肾盂输尿管交界处狭窄、肾囊肿等，擅长肾肿瘤的综合诊治：诊断方面，对蛋白组学在肾癌的诊断价值进行深入研究；治疗方面，提倡保留肾单位的腹腔镜肾部分切除术；基础研究，首次在国际提出肾素瘤的分型和诊治流程。(2)泌尿系统肿瘤和腔镜微创手术，擅长腹腔镜微创手术治疗肾上腺肿瘤、肾肿瘤、前列腺癌、膀胱癌、肾盂癌、输尿管癌、肾积水等；经尿道微创手术治疗膀胱癌、前列腺增生和泌尿系结石等。",
+        "page_addr":"doctor_all/doctor_basic.html",
+        "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>医学博士</div>'>博士</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>副教授</div>'>副教授</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>山东大学2005年度将军集团奖学金</div>'>奖学金</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>北京医学奖励基金会泌尿外科<br>专家委员会委员</div>'>学术专家</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>泌尿外科杂志（电子版）编委</div>'>杂志编委</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>好大夫网络处方权</div>'>网络处方权</button> ",
+        "learning":[
+            {
+                "learning_1":"博士",
+                "learning_2":"博士"
+            },{
+                "learning_1":"论文活跃者",
+                "learning_2":"论文数量29篇"
+            }
+        ],
+        "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>山东青岛人</div>'>山东青岛人</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>邢静</div>'>已婚</button> ",
+        "society":[
+            {
+                "society_1":"山东青岛人",
+                "society_2":"山东青岛人"
+            },{
+                "society_1":"男",
+                "society_2":"男"
+            },{
+                "society_1":"曾就职单位",
+                "society_2":"山东大学齐鲁医院"
+            }
+        ],
+        "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'>",
+        "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star5.png'>",
+        "professional_direction1":"<span class='label'>肾脏外科</span><span class='label'>泌尿系统肿瘤</span><span class='label'>腔镜微创手术</span>",
+        "professional_direction":"肾脏外科（肾肿瘤、肾积水、肾结核、肾囊肿等）；泌尿系肿瘤和腔镜微创手术（肾上腺肿瘤、肾肿瘤、肾盂癌、输尿管癌、膀胱癌、前列腺癌和前列腺增生等）",
+        "radar_data":"5,4.5,4,4,4",
+        "province":"北京市",
+        "hospital":"北京协和医院",
+        "doc_sex":"男",
+        "city":"北京市",
+        "level":"三级甲等",
+        "doc_age":"30-40",
+        "education":"博士",
+        "highest_education":"博士",
+        "keshi":"泌尿外科",
+        "hometown":"山东青岛",
+        "marry":"已婚",
+        "working_time":"10-20年",
+        "zhich":"副主任医师",
+        "phone_num":"139****0627",
+        "tel_num":"",
+        "doc_net":"http://dongd******.*.*****.cn",
+        "doc_email":"139****0627@126.com",
+        "doc_wechat":"",
+        "doc_qq":"",
+        "hos_web":"http://www.pumch.cn/",
+        "other_way":"",
+        "edu_1":"2004年7月 山东大学医学院 临床医学 学士",
+        "edu_2":"2007年7月 山东大学医学院 泌尿外科 硕士",
+        "edu_3":"2010年7月 中国医学科学院 北京协和医院 泌尿外科 博士",
+        "edu_experience":"2004年7月 山东大学医学院 临床医学 学士/2007年7月 山东大学医学院 泌尿外科 硕士/2010年7月 中国医学科学院 北京协和医院 泌尿外科 博士",
+        "post":"无",
+        "aca_zhich":"副教授",
+        "academic_writing":"19",
+        "citation":"129",
+        "h_index":"4",
+        "magazine_per":"17/19",
+        "aca_dire":"肾脏外科，泌尿系肿瘤和腔镜微创手术",
+        "aca_focus":"蛋白质，组学肾肿瘤，Kidney neoplasms，血清，磁珠，诊断，肾上腺，肾切除术，Nephrectomy，肾球旁细胞器瘤，肾素，分类，保留肾单位，Juxtaglomerular cell tumor，Renin，Classification，Nephron-sparing，肾上腺皮质癌，外科手术，预后",
+        "association1":"<span class='label'></span> ",
+        "association":"",
+        "aca_achieve1":"<span class='label'>泌尿外科杂志（电子版）编委</span> <span class='label'>北京医学奖励基金会泌尿外科专家委员会委员</span>",
+        "aca_achieve":"泌尿外科杂志（电子版）编委/北京医学奖励基金会泌尿外科专家委员会委员",
+        "meeting":"<div class='col-xs-4'><div class='text_underline'>第二十四届全国泌尿外科学术会议（CUA2017）</div></div><div class='col-xs-4'><div class='text_underline'>2016年11月4日 第二十三届全国泌尿外科学术会议</div><br></div><div class='col-xs-4'><div class='text_underline'>2015年9月3日 第二十二届全国泌尿外科学术会议</div><br></div><div class='col-xs-4'><div class='text_underline'>2014年10月18日 第二十一届全国泌尿外科学术会议</div><br></div><div class='col-xs-4'><div class='text_underline'>2013年12月19日 第二十届全国泌尿外科学术会议</div></div><div class='col-xs-4'><div class='text_underline'>2012年11月15日 第十九届全国泌尿外科学术会议</div></div>",
+        "essay":"<tr><td>2016年</td><td>保留器官的综合治疗-膀胱癌治疗的新模式（附107例报告）</td><td>期刊论文</td><td></td><td>《中华泌尿外科杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>术前怀疑恶性的复杂肾囊肿临床诊治分析</td><td>期刊论文</td><td>2</td><td>《中华医学杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>前列腺癌热点研究与前景展望</td><td>期刊论文</td><td>14</td><td>《中华外科杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>妊娠合并肾上腺腺瘤导致库欣综合征的临床诊治</td><td>期刊论文</td><td>3</td><td>《临床泌尿外科杂志》</td><td>第一作者</td></tr><tr><td>2015年</td><td>SHA．LIN 评分系统的建立及其在预测经皮肾镜取石术结石清除率中的价值</td><td>期刊论文</td><td>1</td><td>《中华泌尿外科杂志》</td><td>参与发表</td></tr>",
+        "meetings":"第二十四届全国泌尿外科学术会议（CUA2017）/2016年11月4日 第二十三届全国泌尿外科学术会议/2015年9月3日 第二十二届全国泌尿外科学术会议/2014年10月18日 第二十一届全国泌尿外科学术会议/2013年12月19日 第二十届全国泌尿外科学术会议/2012年11月15日 第十九届全国泌尿外科学术会议",
+        "essays":[
+            {
+                "essays_title":"保留器官的综合治疗-膀胱癌治疗的新模式（附107例报告）",
+                "essays_time":"2016年",
+                "essays_journal":"《中华泌尿外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"术前怀疑恶性的复杂肾囊肿临床诊治分析",
+                "essays_time":"2015年",
+                "essays_journal":"《中华医学杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"2"
+            },{
+                "essays_title":"前列腺癌热点研究与前景展望",
+                "essays_time":"2015年",
+                "essays_journal":"《中华外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"14"
+            },
+            {
+                "essays_title": "妊娠合并肾上腺腺瘤导致库欣综合征的临床诊治",
+                "essays_time": "2015年",
+                "essays_journal": "《临床泌尿外科杂志》",
+                "essays_type": "期刊论文",
+                "essays_author": "第一作者",
+                "essays_cite": "3"
+            },{
+                "essays_title":"SHA．LIN 评分系统的建立及其在预测经皮肾镜取石术结石清除率中的价值",
+                "essays_time":"2015年",
+                "essays_journal":"《中华泌尿外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"1"
+            }
+        ],
+        "prescription":"有",
+        "menzhen_num_hos":4000,
+        "intelligent_advice1":"已处于企业内部医生序列，级别为U，在好大夫和春雨医生网络平台中，均具有较高的影响力，<span class='advice_highlight'>建议提高关注度</span>。",
+        "intelligent_advice":"企业内部级别为U，网络综合价值评估为4.5，<span class='advice_highlight'>建议提高关注</span>",
+        "recommend":"4.1",
+        "curative_effect":"97%",
+        "attitude":"97%",
+        "all_help":"1254",
+        "two_help":"89",
+        "evaluate_haodf":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star5.png'>",
+        "evaluate_cy":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star5.png'> <img src='static/img/star0.png'>",
+        "consult_time":"234",
+        "grade":"99",
+        "good_rate":"95.2%",
+        "sick_time":"99",
+        "consult_data_haodf":"22,19,18,18,20,22,23,24,24,28,33,25,26",
+        "consult_data_cy":"10,8,7,9,11,14,15,13,11,9,6,4,5",
+        "":""
+    },
+    {
+        "id":1,
+        "img":"<img height='140' src='../img/doc_pic.jpg'>",
+        "name":"叶****",
+        "briefly_1":"复旦大学附属肿瘤医院 泌尿外科",
+        "briefly_2":"主任医师",
+        "briefly_3_":"博士生导师 教授",
+        "briefly_3":"博士 教授",
+        "introduction1":"叶****教授从事医教研25年，具有丰富的泌尿系统肿瘤综合治疗经验。擅长泌尿男生殖系统肿瘤早期诊断、根治手术和综合治疗，尤其擅长前列腺癌、膀胱癌和肾癌的根治性手术。1996.9 至1998.12在美国MD Anderson癌症中心学习，系统掌握泌尿男性生殖系统肿瘤国际规范的手术和提高肿瘤生存率的综合治疗方法。两次入选中华医学会泌尿外科学会“将才工程”计划赴美国学习，享受国务院特殊政府津贴。担任复旦大学附属肿瘤医院副院长、泌尿外科主任，泌尿男生殖系统肿瘤多学科协作诊治中心首席专家，复旦大学泌尿外科研究所副所长，复旦大学前列腺肿瘤诊治研究中心主任，上海市泌尿外科学会副主任委员上海市抗癌协会理事长，中国抗癌协会泌尿肿瘤专业委员会候任主任委员。",
+        "introduction":"叶****，男，主任医师，教授，1963年出生，复旦大学附属肿瘤医院副院长，泌尿外科主任，泌尿男生殖系统肿瘤多学科协作诊治中心首席专家，复旦大学泌尿外科研究所副所长，复旦大学前列腺肿瘤诊治研究中心主任，上海市抗癌协会前列腺肿瘤诊治中心主任，上海市泌尿外科学会副主任委员，上海市领军人才，上海市医学领军人才，上海市优秀学科带头人，中国抗癌协会泌尿男生殖系肿瘤专业委员会候任主任委员，国家自然科学基金终审专家，亚太前列腺协会（APPS）执行委员，亚洲冷冻治疗协会（ACS）副主席，中国临床肿瘤学会(CSCO)免疫治疗专家委员会副主任委员，医学博士，教授，主任医师，博士研究生导师。    长期从事泌尿外科的医教研工作，具备深厚的专业理论基础和丰富的临床实践经验，擅长泌尿男性生殖系统肿瘤早期诊断、根治手术和综合治疗，尤其擅长前列腺癌、膀胱癌和肾癌的诊治。曾在美国连续8年排名第一的MD Anderson 肿瘤中心泌尿外科学习2年3月，在美期间揣摩每一个手术细节，系统掌握泌尿男性生殖系统肿瘤特别是前列腺癌、膀胱癌和肾癌国际最规范的手术和综合治疗方法。回国后建立和美国MD Anderson 肿瘤中心接轨的手术和综合治疗规范，并积极开展新技术，比如对常规的前列腺癌根治术进行改良，摸索出适合东方人解剖特点的前列腺癌根治术，在提高患者无瘤生存率的同时，保留患者的性功能，并使尿失禁发生率降至最低点。    先后荣获吴阶平泌尿外科医学奖，恩德思医学科学技术奖，上海市科技进步一等奖，教育部科技进步一等奖，中华医学科技奖二等奖等省部级二等奖以上奖项6项，获得复旦大学上海医学院院长奖金奖和优秀团队银奖。近年来，以第一申请人承担国家自然科学基金、教育部科研基金、卫生部科研基金、上海市科委基金，复旦大学985工程肿瘤研究项目和其他国内外联合研究基金20余项，以第一作者和通讯作者先后在国际和国内权威专业刊物上发表论文298篇，其中国际SCI收录期刊发表论文106篇，主编《前列腺癌》、《前列腺癌诊疗学》、《浸润性膀胱癌》、《常见恶性肿瘤的多学科综合诊断和治疗》、《阴茎癌》、《前列腺癌家庭防治手册》》等专著10余本。在美国临床肿瘤学会（ASCO）、国际泌尿疾病咨询委员会（ICUD）、国际泌尿外科学会（SIU）协作咨询委员会、中华泌尿外科学分会肿瘤学组、中国抗癌协会临床肿瘤学协作专业委员会、中国抗癌协会泌尿男生殖系肿瘤专业委员会、NCCN肾癌诊断和治疗指南中国版编委会、中国前列腺癌诊治指南编委会、中国老年肿瘤专业委员会、上海市泌尿外科学会、上海市抗癌协会等多个专业学会任职并担任《European Urology》、《Journal of Cellular and Molecular Medicine》、《Cancer Investigation》、《British Journal of Dermatology》、《中华外科杂志》、《中华泌尿外科杂志》、《中华医学杂志》、《中国癌症杂志》、《临床肿瘤学杂志》、《现代泌尿外科杂志》、《现代泌尿生殖肿瘤杂志》、《中华腔镜泌尿外科杂志》等多本国内外杂志编委和特约审稿专家。",
+        "page_addr":"doctor_all/doctor_basic.html",
+        "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>上海市泌尿外科学会副主任委员</div> <div>中国抗癌协会泌尿男生殖系肿瘤专业委员会候任主任委员</div> <div>中国临床肿瘤学会肾癌专家委员会副主任委员</div> <div>中国临床肿瘤学会(CSCO)免疫治疗专家委员会副主任委员</div> <div>中国抗癌协会肿瘤分期专业委员会秘书长</div> <div>中华医学会泌尿外科学会肿瘤专业委员会委员</div> <div>中国老年肿瘤专业委员会常委</div> <div>中国抗癌协会临床肿瘤协作专业委员会常委</div> <div>泌尿疾病国际咨询委员会（ICUD) 委员</div> <div>国际泌尿外科学会（SIU）协作咨询委员会委员</div> <div>国家自然科学基金终审专家</div> <div>中华医学科技奖评委</div> <div>NCCN肾癌诊治指南中国版编写组副组长</div> <div>NCCN前列腺癌及膀胱癌亚太诊治共识委员会委员</div> <div>世界内镜医师协会中国协会泌尿科内镜与微创专业委员会理事</div> <div>亚太前列腺癌学会（APPS）执行委员</div> <div>亚洲冷冻治疗协会副主席</div> <div>上海市领军人才</div> <div>上海市医学领军人才</div> <div>上海市优秀学科带头人</div> <div>复旦大学附属肿瘤医院副院长，泌尿外科主任</div>'>学术领导人</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>1996. 9 至1998 . 12在美国MD Anderson癌症中心学习</div>'>海外留学</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>万方医学网202篇论文发表</div>'>论文达人</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>国务院特殊政府津贴</div>'>政府津贴</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>2013年度好大夫</div>'>好大夫网红</button> ",
+        "learning":[
+            {
+                "learning_1":"获奖达人",
+                "learning_2":"先后荣获吴阶平泌尿外科医学奖;恩德思医学科学技术奖;上海市科技进步一等奖;教育部科技进步一等奖;中华医学科技奖二等奖等省部级二等奖以上奖项6项;获得复旦大学上海医学院院长奖金奖和优秀团队银奖;上海市泌尿外科学会副主任委员;中国抗癌协会泌尿男生殖系肿瘤专业委员会候任主任委员;中国临床肿瘤学会(CSCO)免疫治疗专家委员会副主任委员"
+            },{
+                "learning_1":"学术领导人",
+                "learning_2":"上海市泌尿外科学会副主任委员;中国抗癌协会泌尿男生殖系肿瘤专业委员会候任主任委员;亚洲冷冻治疗协会（ACS）副主席;中国临床肿瘤学会(CSCO)免疫治疗专家委员会副主任委员"
+            },{
+                "learning_1":"杂志编委",
+                "learning_2":"主编《前列腺癌》、《前列腺癌诊疗学》、《浸润性膀胱癌》、《常见恶性肿瘤的多学科综合诊断和治疗》、《阴茎癌》、《前列腺癌家庭防治手册》等专著10余本;在美国临床肿瘤学会（ASCO）、国际泌尿疾病咨询委员会（ICUD）、国际泌尿外科学会（SIU）协作咨询委员会、中华泌尿外科学分会肿瘤学组、中国抗癌协会临床肿瘤学协作专业委员会、中国抗癌协会泌尿男生殖系肿瘤专业委员会、NCCN肾癌诊断和治疗指南中国版编委会、中国前列腺癌诊治指南编委会、中国老年肿瘤专业委员会、上海市泌尿外科学会、上海市抗癌协会等多个专业学会任职并担任《European Urology》、《Journal of Cellular and Molecular Medicine》、《Cancer Investigation》、《British Journal of Dermatology》、《中华外科杂志》、《中华泌尿外科杂志》、《中华医学杂志》、《中国癌症杂志》、《临床肿瘤学杂志》、《现代泌尿外科杂志》、《现代泌尿生殖肿瘤杂志》、《中华腔镜泌尿外科杂志》等多本国内外杂志编委和特约审稿专家"
+            },{
+                "learning_1":"博士研究生导师",
+                "learning_2":"博士研究生导师"
+            },{
+                "learning_1":"论文达人",
+                "learning_2":"论文数量218篇"
+            },{
+                "learning_1":"好大夫网红",
+                "learning_2":"2013年度好大夫"
+            }
+        ],
+        "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>1963年</div>'>60后</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>3月12日</div>'>双鱼座</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>中超24小时</div> <div>微博NBA</div> <div>中国曲棍球队粉丝俱乐部</div> <div>中国乒乓球队粉丝俱乐部</div> <div>DFB_Team</div> <div>LuolDeng</div> <div>举重匠人</div> <div>NBA</div> <div>于嘉</div> <div>朱挺</div> <div>长春亚泰官方微博</div> <div>击剑李娜</div>'>体育迷</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>陶晶莹</div> <div>蔡康永</div> <div>李冰冰</div>'>文艺娱乐爱好者</button>",
+        "society":[
+            {
+                "society_1":"60后",
+                "society_2":"1963年"
+            },{
+                "society_1":"男",
+                "society_2":"男"
+            },{
+                "society_1":"双鱼座",
+                "society_2":"3月12日"
+            },{
+                "society_1":"上海人",
+                "society_2":"上海人"
+            },{
+                "society_1":"体育发烧友",
+                "society_2":"乓乒乒乓乒,中超24小时,微博NBA,中国曲棍球队粉丝俱乐部,里约瓦遛VALEU,中国乒乓球队粉丝俱乐部,DFB_Team,LuolDeng,举重匠人,NBA,于嘉,长春亚泰官方微博,朱挺,击剑李娜"
+            },{
+                "society_1":"娱乐发烧友",
+                "society_2":"微博戏剧,李栋旭,方文山,陶晶莹,蔡康永,孟京辉,李冰冰,杨巍-文艺频道"
+            },{
+                "society_1":"教育爱好者",
+                "society_2":"新浪爱问医生,汪国真,哈尔滨王波,好大夫"
+            },{
+                "society_1":"时尚关注者",
+                "society_2":"朱伟,莊淑芬Shenan"
+            },{
+                "society_1":"时政爱好者",
+                "society_2":"商山清泉,承德发布,公安部打四黑除四害,新疆赵德忠,杭州市公安消防局"
+            },{
+                "society_1":"财经爱好者",
+                "society_2":"fang_fang_hk"
+            },{
+                "society_1":"企业法人",
+                "society_2":"《中国癌症杂志》杂志社"
+            }
+        ],
+        "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "professional_direction1":"<span class='label'>泌尿男生殖系统肿瘤早期诊断</span><span class='label'>前列腺癌</span><span class='label'>膀胱癌</span><span class='label'>肾癌根治手术和综合治疗</span>",
+        "professional_direction":"前列腺、膀胱、肾脏、睾丸、肾上腺、阴茎、腹膜后等部位良恶性肿瘤的诊治；尤其擅长以手术为主；综合化疗、放疗、生物、介入、内分泌治疗等各种治疗手段",
+        "radar_data":"5,5,5,5,5",
+        "province":"上海市",
+        "hospital":"复旦大学附属肿瘤医院",
+        "doc_sex":"男",
+        "city":"上海市",
+        "level":"三级甲等",
+        "doc_age":"50-60",
+        "education":"博士，教授，博士生导师",
+        "highest_education":"博士",
+        "keshi":"泌尿外科",
+        "hometown1":"上海市杨浦区",
+        "hometown":"上海市",
+        "marry":"未知",
+        "working_time":"20-30年",
+        "zhich":"主任医师",
+        "phone_num":"137****3571",
+        "tel_num":"",
+        "doc_net":"http://www.shca.org.cn/dazhong/professorContent/***",
+        "doc_email":"dwy***@yahoo.com.cn",
+        "doc_wechat":"",
+        "doc_qq":"",
+        "hos_web":"http://www.shca.org.cn/",
+        "other_way":"微博：叶****好大夫",
+        "edu_1":"1986年 第二军医大学",
+        "edu_2":"1998年12月 美国MD Anderson癌症中心 博士",
+        "edu_3":"<br>",
+        "edu_experience":"1986年 第二军医大学/1998年12月 美国MD Anderson癌症中心 博士",
+        "post":"副院长",
+        "aca_zhich":"教授",
+        "academic_writing":"171",
+        "citation":"1309",
+        "h_index":"14",
+        "magazine_per":"154/171",
+        "aca_dire":"前列腺癌、膀胱癌和肾癌的早期诊断，发病机理和综合治疗",
+        "aca_focus":"前列腺肿瘤，预后，阴茎肿瘤，Prostatic neoplasms，前列腺癌，肾肿瘤，Prognosis，膀胱肿瘤，肿瘤转移，癌，Carcinoma，Kidney neoplasms，癌 肾细胞，Carcinoma,renal cell，prognosis，诊断，化疗，并发症，肾细胞癌，索拉非尼",
+        "association1":"<span class='label'>上海市泌尿外科协会</span> ",
+        "association":"上海市泌尿外科学会/中国抗癌协会泌尿男生殖系肿瘤专业委员会/中国临床肿瘤学会/国际泌尿疾病咨询委员会/国际泌尿外科学会/中国抗癌协会临床肿瘤学协作专业委员会/中国抗癌协会泌尿男生殖系肿瘤专业委员会/NCCN肾癌诊断和治疗指南中国版编委会/中国前列腺癌诊治指南编委会/中国老年肿瘤专业委员会/上海市抗癌协会",
+        "aca_achieve1":"<span class='label'>享受国务院特殊政府津贴</span> <span class='label'>上海市泌尿外科学会副主任委员</span> <span class='label'>中国抗癌协会泌尿男生殖系肿瘤专业委员会候任主任委员</span> <span class='label'>中国临床肿瘤学会肾癌专家委员会副主任委员</span> <span class='label'>中国临床肿瘤学会(CSCO)免疫治疗专家委员会副主任委员</span> <span class='label'>中国抗癌协会肿瘤分期专业委员会秘书长</span> <span class='label'>中华医学会泌尿外科学会肿瘤专业委员会委员</span> <span class='label'>中国老年肿瘤专业委员会常委</span> <span class='label'>中国抗癌协会临床肿瘤协作专业委员会常委</span> <span class='label'>泌尿疾病国际咨询委员会（ICUD) 委员</span> <span class='label'>国际泌尿外科学会（SIU）协作咨询委员会委员</span> <span class='label'>国家自然科学基金终审专家</span> <span class='label'>中华医学科技奖评委</span> <span class='label'>NCCN肾癌诊治指南中国版编写组副组长</span> <span class='label'>NCCN前列腺癌及膀胱癌亚太诊治共识委员会委员</span> <span class='label'>世界内镜医师协会中国协会泌尿科内镜与微创专业委员会理事</span> <span class='label'>亚太前列腺癌学会（APPS）执行委员</span> <span class='label'>亚洲冷冻治疗协会副主席</span> <span class='label'>上海市领军人才</span> <span class='label'>上海市医学领军人才</span> <span class='label'>上海市优秀学科带头人</span>",
+        "aca_achieve":"享受国务院特殊政府津贴/上海市泌尿外科学会副主任委员/中国抗癌协会泌尿男生殖系肿瘤专业委员会候任主任委员/中国临床肿瘤学会肾癌专家委员会副主任委员/中国临床肿瘤学会(CSCO)免疫治疗专家委员会副主任委员/中国抗癌协会肿瘤分期专业委员会秘书长/中华医学会泌尿外科学会肿瘤专业委员会委员/中国老年肿瘤专业委员会常委/中国抗癌协会临床肿瘤协作专业委员会常委/泌尿疾病国际咨询委员会（ICUD) 委员/国际泌尿外科学会（SIU）协作咨询委员会委员/国家自然科学基金终审专家/中华医学科技奖评委/NCCN肾癌诊治指南中国版编写组副组长/NCCN前列腺癌及膀胱癌亚太诊治共识委员会委员/世界内镜医师协会中国协会泌尿科内镜与微创专业委员会理事/亚太前列腺癌学会（APPS）执行委员/亚洲冷冻治疗协会副主席/上海市领军人才/上海市医学领军人才/上海市优秀学科带头人",
+        "meeting":"<div class='col-xs-6'><div class='text_underline'>2017年9月26日 第二十届全国临床肿瘤学大会暨 2017年CSCO学术年会</div><br></div><div class='col-xs-6'><div class='text_underline'>2017年6月1日 上海市医师协会泌尿外科医师分会第四届年会</div><br></div><div class='col-xs-6'><div class='text_underline'>2016年11月4日 第二十三届全国泌尿外科学术会议(CUA2016)</div><br></div><div class='col-xs-6'><div class='text_underline'>2016年7月31日 第十届国际前列腺疾病论坛</div><br></div><div class='col-xs-6'><div class='text_underline'>2016年7月7日 第十届中国肿瘤内科大会</div></div><div class='col-xs-6'><div class='text_underline'><br></div></div>",
+        "essay":"<tr><td>2017年</td><td>液态活检miR-509-5p/miR-124比值诊断膀胱癌的临床应用</td><td>期刊论文</td><td></td><td>《中国癌症杂志》</td><td>参与发表</td></tr><tr><td>2017年</td><td>寡转移性前列腺癌根治术的临床初步疗效观察及围手术期并发症分析</td><td>期刊论文</td><td></td><td>《中国癌症杂志》</td><td>参与发表</td></tr><tr><td>2017年</td><td>前列腺癌多学科病案讨论:前列腺癌根治术后复发行挽救性盆腔淋巴结清扫的病例</td><td>期刊论文</td><td></td><td>《现代泌尿外科杂志》</td><td>参与发表</td></tr><tr><td>2017年</td><td>寡转移性前列腺癌的外科治疗进展</td><td>期刊论文</td><td></td><td>《现代泌尿外科杂志》</td><td>第一作者</td></tr><tr><td>2017年</td><td>预测去势抵抗性前列腺癌患者总生存期Halabi风险列线图的验证研究</td><td>期刊论文</td><td></td><td>《临床肿瘤学杂志》</td><td>参与发表</td></tr>",
+        "meetings":"2017年9月26日 第二十届全国临床肿瘤学大会暨 2017年CSCO学术年会/2017年6月1日 上海市医师协会泌尿外科医师分会第四届年会/2016年11月4日 第二十三届全国泌尿外科学术会议(CUA2016)/2016年7月31日 第十届国际前列腺疾病论坛/2016年7月7日 第十届中国肿瘤内科大会",
+        "essays":[
+            {
+                "essays_title":"液态活检miR-509-5p/miR-124比值诊断膀胱癌的临床应用",
+                "essays_time":"2017年",
+                "essays_journal":"《中国癌症杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"寡转移性前列腺癌根治术的临床初步疗效观察及围手术期并发症分析",
+                "essays_time":"2017年",
+                "essays_journal":"《中国癌症杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"前列腺癌多学科病案讨论:前列腺癌根治术后复发行挽救性盆腔淋巴结清扫的病例",
+                "essays_time":"2017年",
+                "essays_journal":"《现代泌尿外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },
+            {
+                "essays_title": "寡转移性前列腺癌的外科治疗进展",
+                "essays_time": "2017年",
+                "essays_journal": "《现代泌尿外科杂志》",
+                "essays_type": "期刊论文",
+                "essays_author": "第一作者",
+                "essays_cite": "0"
+            },{
+                "essays_title":"预测去势抵抗性前列腺癌患者总生存期Halabi风险列线图的验证研究",
+                "essays_time":"2017年",
+                "essays_journal":"《临床肿瘤学杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            }
+        ],
+        "prescription":"无",
+        "menzhen_num_hos":5000,
+        "intelligent_advice1":"已处于企业内部医生序列，级别为A1，在好大夫网络平台中具有极高的影响力，<span class='advice_highlight'>建议予以持续关注</span>。",
+        "intelligent_advice":"企业内部级别为A1，网络综合价值为5，<span class='advice_highlight'>建议重点关注</span>",
+        "recommend":"4.9",
+        "curative_effect":"99%",
+        "attitude":"98%",
+        "all_help":"11268",
+        "two_help":"298",
+        "evaluate_haodf":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "evaluate_cy":"<img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "consult_time":"",
+        "grade":"",
+        "good_rate":"",
+        "sick_time":"",
+        "consult_data_haodf":"44,48,50,53,58,60,55,48,45,49,52,48,51",
+        "consult_data_cy":"",
+        "":""
+    },
+    {
+        "id":2,
+        "img":"<img height='140' src='../img/doc_pic.jpg'>",
+        "name":"蔡****",
+        "briefly_1":"天津医科大学第二医院 泌尿外科",
+        "briefly_2":"主治医师",
+        "briefly_3":"博士 讲师",
+        "introduction1":"医学博士，毕业于天津医科大学临床医学，天津医科大学第二医院主治医师，讲师。天津市“131”创新型人才，兼任：中国医促会泌尿生殖委员会天津分会委员，中华医学会泌尿外科分会天津分会微创学组委员，中华医学会中西医结合泌尿外科天津分会青年委员，《亚洲泌尿外科杂志（英文）》 Asian Journal of Urology 青年编委，《天津医药》杂志特约审稿专家，同时为PLOS ONE, Molecular Biology Report, Tumor Biology, Gene, Journal of Assisted Reproduction and Genetics, Clinical Genitourinary Cancer, Current Bioinformatics, CMAJ等30余个SCI杂志审稿专家。作为主要参与人填补天津市新技术空白项目两项。",
+        "introduction":"1. 腹腔镜全膀胱切除术及各种尿流改道术，腹腔镜前列腺癌根治性切除术，腹腔镜保留肾单位的肾部分切除术，腹腔镜肾癌根治性切除术，腹腔镜肾上腺肿瘤切除术，腹腔镜肾囊肿去顶减压术等腹腔镜微创治疗;2. 肾结石，输尿管结石，膀胱结石等泌尿系结石的诊治;3. 前列腺增生的微创手术治疗即经尿道前列腺电切或剜除术；4. 早期膀胱癌的经尿道膀胱肿瘤电切术；5. 包皮过长的“美容式”切除术。6. 泌尿系肿瘤的个体化治疗。",
+        "page_addr":"doctor_all/doctor_basic.html",
+        "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>医学博士</div>'>博士</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>天津市“131”创新型人才</div>'>创新型人才</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>2010年考入天津医科大学，选拔为硕博连读，2015年获博士学位</div> <div>2013年荣获“研究生国家奖学金”</div> <div>2014年1月荣获国家教育部主办《中国研究生杂志》封面人物提名，个人事迹于2014年第3期《中国研究生杂志》刊载，是天津医科大学研究生第一次获得此项荣誉</div> <div>2013年12月荣获“天津市大学生创新奖学金特等奖”，是天津医科大学建校以来第三位获此殊荣的研究生</div> <div>2014年11月获“天津医科大学研究生突出贡献奖”，是天津医科大学建校以来第一位获此项殊荣的研究生</div> <div>2013年获“天津医科大学优秀研究生”</div> <div>2013年获“天津市泌尿外科优秀研究生”</div> <div>2015年获“天津医科大学优秀博士毕业生”</div>'>奖学金达人</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>中国医促会泌尿生殖委员会天津分会委员</div> <div>中华医学会泌尿外科分会天津分会微创学组委员</div> <div>中华医学会中西医结合泌尿外科天津分会青年委员</div>'>年轻有为</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>《亚洲泌尿外科杂志（英文）》 Asian Journal of Urology 青年编委</div> <div>《天津医药》杂志特约审稿专家</div> <div>30余个SCI杂志审稿专家</div>'>杂志编委</button> ",
+        "learning":[
+            {
+                "learning_1":"获奖达人",
+                "learning_2":"2015年获博士学位;2013年荣获“研究生国家奖学金”;2014年1月荣获国家教育部主办《中国研究生杂志》封面人物提名,是天津医科大学研究生第一次获得此项荣誉;2013年12月荣获“天津市大学生创新奖学金特等奖”,是天津医科大学建校以来第三位获此殊荣的研究生;2014年11月获“天津医科大学研究生突出贡献奖”"
+            },{
+                "learning_1":"青年才俊",
+                "learning_2":"中华医学会中西医结合泌尿外科天津分会青年委员2015年获博士学位;2013年荣获“研究生国家奖学金”;2014年1月荣获国家教育部主办《中国研究生杂志》封面人物提名,是天津医科大学研究生第一次获得此项荣誉;2013年12月荣获“天津市大学生创新奖学金特等奖”,是天津医科大学建校以来第三位获此殊荣的研究生;2014年11月获“天津医科大学研究生突出贡献奖”;兼任：中国医促会泌尿生殖委员会天津分会委员中华医学会泌尿外科分会天津分会微创学组委员中华医学会中西医结合泌尿外科天津分会青年委"
+            },{
+                "learning_1":"学术先锋",
+                "learning_2":"兼任：中国医促会泌尿生殖委员会天津分会委员,中华医学会泌尿外科分会天津分会微创学组委员,中华医学会中西医结合泌尿外科天津分会青年委员"
+            },{
+                "learning_1":"杂志编委",
+                "learning_2":"《亚洲泌尿外科杂志（英文）》 Asian Journal of Urology 青年编委;《天津医药》杂志特约审稿专家,同时为PLOS ONE, Molecular Biology Report, Tumor Biology, Gene, Journal of Assisted Reproduction and Genetics, Clinical Genitourinary Cancer, Current Bioinformatics, CMAJ等30余个SCI杂志审稿专家"
+            },{
+                "learning_1":"博士",
+                "learning_2":"博士"
+            },{
+                "learning_1":"论文达人",
+                "learning_2":"论文数量33篇"
+            }
+        ],
+        "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>1月25日</div>'>水瓶座</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>1984年</div>'>80后</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>山东青岛人</div>'>山东青岛人</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>中共党员</div>'>中共党员</button>",
+        "society":[
+            {
+                "society_1":"水瓶座",
+                "society_2":"1月25日"
+            },{
+                "society_1":"80后",
+                "society_2":"1984年"
+            },{
+                "society_1":"男",
+                "society_2":"男"
+            },{
+                "society_1":"山东青岛人",
+                "society_2":"山东青岛人"
+            },{
+                "society_1":"中共党员",
+                "society_2":"中共党员"
+            }
+        ],
+        "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'>",
+        "professional_direction1":"<span class='label'>腹腔镜</span><span class='label'>泌尿结石</span><span class='label'>前列腺</span><span class='label'>膀胱癌</span><span class='label'>泌尿系肿瘤</span>",
+        "professional_direction":"1. 腹腔镜全膀胱切除术及各种尿流改道术，腹腔镜前列腺癌根治性切除术，腹腔镜保留肾单位的肾部分切除术，腹腔镜肾癌根治性切除术，腹腔镜肾上腺肿瘤切除术，腹腔镜肾囊肿去顶减压术等腹腔镜微创治疗；2. 肾结石，输尿管结石，膀胱结石等泌尿系结石的诊治；3. 前列腺增生的微创手术治疗即经尿道前列腺电切或剜除术；4. 早期膀胱癌的经尿道膀胱肿瘤电切术；5. 包皮过长的“美容式”切除术；6. 泌尿系肿瘤的个体化治疗",
+        "radar_data":"5,4,3.5,3,3",
+        "province":"天津市",
+        "hospital":"天津医科大学第二医院",
+        "doc_sex":"男",
+        "city":"天津市",
+        "level":"三级甲等",
+        "doc_age":"30-40",
+        "education":"博士",
+        "highest_education":"博士",
+        "keshi":"泌尿外科",
+        "hometown":"山东青岛 黄岛区",
+        "marry":"未知",
+        "working_time":"5-10年",
+        "zhich":"主治医师",
+        "phone_num":"",
+        "tel_num":"022-2833****",
+        "doc_net":"http://caiqi********.*****.com/",
+        "doc_email":"",
+        "doc_wechat":"",
+        "doc_qq":"",
+        "hos_web":"http://www.yd2y.com.cn/",
+        "other_way":"",
+        "edu_1":"2010年 山东省潍坊医学院 学士",
+        "edu_2":"2015年 天津医科大学 博士",
+        "edu_3":"<br>",
+        "edu_experience":"2010年 山东省潍坊医学院 学士/2015年 天津医科大学 博士",
+        "post":"无",
+        "aca_zhich":"讲师",
+        "academic_writing":"19",
+        "citation":"25",
+        "h_index":"3",
+        "magazine_per":"17/19",
+        "aca_dire":"腹腔镜，泌尿结石，前列腺，膀胱癌泌尿系肿瘤的手术及诊疗",
+        "aca_focus":"腹腔镜，膀胱肿瘤，诊断，治疗，单孔，shRNA，Urinary bladder neoplasms，腹膜后肿瘤，恶性蝾螈瘤，临床特点，病理学，前列腺肿瘤，前列腺，尿道，综合征，前列腺泡沫状腺癌，前列腺小细胞癌，鉴别诊断，肾上腺肿瘤，节细胞神经",
+        "association":"中华医学会",
+        "aca_achieve1":"<span class='label'>天津市“131”创新型人才</span> <span class='label'>中国医促会泌尿生殖委员会天津分会委员</span> <span class='label'>中华医学会泌尿外科分会天津分会微创学组委员</span> <span class='label'>30余个SCI杂志审稿专家</span> <span class='label'>《天津医药》杂志特约审稿专家</span> <span class='label'>中华医学会中西医结合泌尿外科天津分会青年委员</span> <span class='label'>《亚洲泌尿外科杂志（英文）》 Asian Journal of Urology 青年编委</span>",
+        "aca_achieve":"天津市“131”创新型人才/中国医促会泌尿生殖委员会天津分会委员/中华医学会泌尿外科分会天津分会微创学组委员/30余个SCI杂志审稿专家/《天津医药》杂志特约审稿专家/中华医学会中西医结合泌尿外科天津分会青年委员/《亚洲泌尿外科杂志（英文）》 Asian Journal of Urology 青年编委",
+        "meeting":"<div class='col-xs-6'><div class='text_underline'>2014年11月1日 第八届中国肿瘤学术大会暨第十三届海峡两岸肿瘤学术大会</div></div><div class='col-xs-6'><div class='text_underline'><br></div></div>",
+        "essay":"<tr><td>2017年</td><td>后腹腔镜下保留肾单位手术治疗完全内生性肾肿瘤的初步经验</td><td>期刊论文</td><td></td><td>《中华泌尿外科杂志》</td><td>第一作者</td></tr><tr><td>2017年</td><td>去势抵抗性前列腺癌的病因学分型研究和临床精准医疗实践探索</td><td>期刊论文</td><td></td><td>《临床外科杂志》</td><td>参与发表</td></tr><tr><td>2016年</td><td>肾炎性肌纤维母细胞瘤一例报告</td><td>期刊论文</td><td></td><td>《中华泌尿外科杂志》</td><td>参与发表</td></tr><tr><td>2016年</td><td>精索恶性纤维组织细胞瘤1例报告并文献复习</td><td>期刊论文</td><td></td><td>《现代泌尿生殖肿瘤杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>肾癌伴下腔静脉瘤栓患者临床诊治及预后分析</td><td>期刊论文</td><td>1</td><td>《中国综合临床》</td><td>参与发表</td></tr>",
+        "meetings":"2014年11月1日 第八届中国肿瘤学术大会暨第十三届海峡两岸肿瘤学术大会",
+        "essays":[
+            {
+                "essays_title":"后腹腔镜下保留肾单位手术治疗完全内生性肾肿瘤的初步经验",
+                "essays_time":"2017年",
+                "essays_journal":"《中华泌尿外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"第一作者",
+                "essays_cite":"0"
+            },{
+                "essays_title":"去势抵抗性前列腺癌的病因学分型研究和临床精准医疗实践探索",
+                "essays_time":"2017年",
+                "essays_journal":"《临床外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"肾炎性肌纤维母细胞瘤一例报告",
+                "essays_time":"2016年",
+                "essays_journal":"《中华泌尿外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },
+            {
+                "essays_title": "精索恶性纤维组织细胞瘤1例报告并文献复习",
+                "essays_time": "2016年",
+                "essays_journal": "《现代泌尿生殖肿瘤杂志》",
+                "essays_type": "期刊论文",
+                "essays_author": "参与发表",
+                "essays_cite": "0"
+            },{
+                "essays_title":"肾癌伴下腔静脉瘤栓患者临床诊治及预后分析",
+                "essays_time":"2015年",
+                "essays_journal":"《中国综合临床》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            }
+        ],
+        "prescription":"无",
+        "menzhen_num_hos":1500,
+        "intelligent_advice1":"不处于企业内部医生序列，在好大夫网络平台中具有较高的影响力，<span class='advice_highlight'>建议予以关注</span>。",
+        "intelligent_advice":"企业内部级别为空，网络综合价值评估为4，<span class='advice_highlight'>建议予以关注</span>",
+        "recommend":"4.0",
+        "curative_effect":"100%",
+        "attitude":"100%",
+        "all_help":"324",
+        "two_help":"28",
+        "evaluate_haodf":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'>",
+        "evaluate_cy":"<img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "consult_time":"",
+        "grade":"",
+        "good_rate":"",
+        "sick_time":"",
+        "consult_data_haodf":"21,20,18,22,25,28,34,30,26,25,23,22,25",
+        "consult_data_cy":"",
+        "":""
+    },
+    {
+        "id":3,
+        "img":"<img height='140' src='../img/doc_pic.jpg'>",
+        "name":"马**",
+        "briefly_1":"宁波市第一医院 泌尿外科",
+        "briefly_2":"副主任医师",
+        "briefly_3":"医学博士 博士后",
+        "introduction":"宁波市第一医院副主任医生，主要从事泌尿系肿瘤综合诊治与慢病管理。致力于推进泌尿肿瘤综合诊治规范化，疾病管理全程化，病友关怀人文化等工作开展。",
+        "page_addr":"doctor_all/doctor_basic.html",
+        "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>医学博士</div> <div>肿瘤学博士后</div>'>博士后</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>美国德州留学</div>'>海外留学</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>好大夫网络处方权</div>'>网络处方权</button> ",
+        "learning":[
+            {
+                "learning_1":"论文活跃者",
+                "learning_2":"论文数量10篇"
+            }
+        ],
+        "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>1974年</div>'>70后</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>读书语录</div>'>读书爱好者</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>彭于晏</div> <div>刘若英</div>'>文艺娱乐爱好者</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>阿森纳足球俱乐部</div>'>足球迷</button>",
+        "society":[
+            {
+                "society_1":"70后",
+                "society_2":"1974年"
+            },{
+                "society_1":"男",
+                "society_2":"男"
+            },{
+                "society_1":"体育关注者",
+                "society_2":"阿森纳足球俱乐部"
+            },{
+                "society_1":"娱乐爱好者",
+                "society_2":"爆料帝_,彭于晏,刘若英"
+            },{
+                "society_1":"教育关注者",
+                "society_2":"读书语录,温儒敏"
+            },{
+                "society_1":"时政关注者",
+                "society_2":"辽沈晚报"
+            },{
+                "society_1":"财经关注者",
+                "society_2":"张泉灵"
+            }
+        ],
+        "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'>",
+        "professional_direction1":"<span class='label'>前列腺癌</span><span class='label'>膀胱癌</span><span class='label'>肾盂输尿管癌</span><span class='label'>阴茎癌</span><span class='label'>睾丸癌</span><span class='label'>泌尿肿瘤</span>",
+        "professional_direction":"前列腺癌；膀胱癌；肾盂输尿管癌；阴茎癌；睾丸癌等泌尿肿瘤的药物治疗与慢病管理",
+        "radar_data":"5,3.5,2,4,3",
+        "province":"浙江省",
+        "hospital":"宁波市第一医院",
+        "doc_sex":"男",
+        "city":"宁波市",
+        "level":"三级乙等",
+        "doc_age":"40-50",
+        "education":"博士，博士后",
+        "highest_education":"博士后",
+        "keshi":"泌尿外科",
+        "hometown1":"浙江宁波",
+        "hometown":"浙江省",
+        "marry":"未知",
+        "working_time":"10-20年",
+        "zhich":"副主任医师",
+        "phone_num":"180****5351",
+        "tel_num":"",
+        "doc_net":"http://drmaq*.*****.com/",
+        "doc_email":"maq****@hotmail.com",
+        "doc_wechat":"",
+        "doc_qq":"",
+        "hos_web":"http://www.nbdyyy.com/hospital/index.aspx",
+        "other_way":"微博：宁波市第一医院马**",
+        "edu_1":"2006年 浙江大学医学院 博士",
+        "edu_2":"2010年 美国德州理工大学 肿瘤学博士后",
+        "edu_3":"<br>",
+        "edu_experience":"2006年 浙江大学医学院 博士/2010年 美国德州理工大学 肿瘤学博士后",
+        "post":"无",
+        "aca_zhich":"无",
+        "academic_writing":"1",
+        "citation":"24",
+        "h_index":"1",
+        "magazine_per":"1/1",
+        "aca_dire":"前列腺癌，膀胱癌，肾盂输尿管癌，阴茎癌，睾丸癌等泌尿肿瘤的治疗",
+        "aca_focus":"包皮环切术男性，中国商环，并发症",
+        "association":"",
+        "aca_achieve":"",
+        "meeting":"<div class='col-xs-4'><div class='text_underline'>2017年6月10日 2017求是·县学高峰论坛</div></div><div class='col-xs-4'><div class='text_underline' style='padding-left:10px;'>2017年4月23日 【讲座】听马**博士讲讲“如何看医生” </div></div><div class='col-xs-4'><div class='text_underline'><br></div></div>",
+        "essay":"<tr><td>2016年</td><td>酪氨酸激酶受体RON表达下调对膀胱癌5637细胞增殖、迁移和侵袭的影响</td><td>期刊论文</td><td></td><td>《中华实验外科杂志》</td><td>第一作者</td></tr><tr><td>2016年</td><td>人前列腺特异性同源框基因NKX3.1真核表达载体的构建及其对PC3细胞周期与凋亡的影响</td><td>期刊论文</td><td></td><td>《中国现代医生》</td><td>参与发表</td></tr><tr><td>2015年</td><td>鼠源性HSP70、GM-CSF双修饰前列腺癌全细胞疫苗的建立与鉴定</td><td>期刊论文</td><td></td><td>《中国现代医生》</td><td>第一作者</td></tr><tr><td>2015年</td><td>去势抵抗性前列腺癌免疫治疗的研究进展</td><td>期刊论文</td><td></td><td>《中华泌尿外科杂志》</td><td>第一作者</td></tr><tr><td>2013年</td><td>超声造影评价高强度聚焦超声治疗局限性前列腺癌早期疗效的临床研究</td><td>期刊论文</td><td>1</td><td>《现代泌尿生殖肿瘤杂志》</td><td>参与发表</td></tr>",
+        "meetings":"2017年6月10日 2017求是·县学高峰论坛/2017年4月23日 【讲座】听马**博士讲讲“如何看医生”",
+        "essays":[
+            {
+                "essays_title":"酪氨酸激酶受体RON表达下调对膀胱癌5637细胞增殖、迁移和侵袭的影响",
+                "essays_time":"2016年",
+                "essays_journal":"《中华实验外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"第一作者",
+                "essays_cite":"0"
+            },{
+                "essays_title":"人前列腺特异性同源框基因NKX3.1真核表达载体的构建及其对PC3细胞周期与凋亡的影响",
+                "essays_time":"2016年",
+                "essays_journal":"《中国现代医生》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"鼠源性HSP70、GM-CSF双修饰前列腺癌全细胞疫苗的建立与鉴定",
+                "essays_time":"2015年",
+                "essays_journal":"《中国现代医生》",
+                "essays_type":"期刊论文",
+                "essays_author":"第一作者",
+                "essays_cite":"0"
+            },
+            {
+                "essays_title": "去势抵抗性前列腺癌免疫治疗的研究进展",
+                "essays_time": "2015年",
+                "essays_journal": "《中华泌尿外科杂志》",
+                "essays_type": "期刊论文",
+                "essays_author": "第一作者",
+                "essays_cite": "0"
+            },{
+                "essays_title":"超声造影评价高强度聚焦超声治疗局限性前列腺癌早期疗效的临床研究",
+                "essays_time":"2013年",
+                "essays_journal":"《现代泌尿生殖肿瘤杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"1"
+            }
+        ],
+        "prescription":"有",
+        "menzhen_num_hos":2191,
+        "intelligent_advice1":"已处于企业内部医生序列，级别为C1，在好大夫网络平台中的影响力一般。",
+        "intelligent_advice":"企业内部级别为C1，网络综合价值评估为4，<span class='advice_highlight'>建议提高关注</span>",
+        "recommend":"3.9",
+        "curative_effect":"98%",
+        "attitude":"100%",
+        "all_help":"402",
+        "two_help":"8",
+        "evaluate_haodf":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'>",
+        "evaluate_cy":"<img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "consult_time":"",
+        "grade":"",
+        "good_rate":"",
+        "sick_time":"",
+        "consult_data_haodf":"13,12,11,15,17,20,24,19,14,15,12,16,18",
+        "consult_data_cy":"",
+        "":""
+    },
+    {
+        "id":4,
+        "img":"<img height='140' src='../img/doc_pic.jpg'>",
+        "name":"陈**",
+        "briefly_1":"中国人民解放军总医院（三0一医院） 泌尿外科",
+        "briefly_2":"主治医师",
+        "briefly_3":"硕士",
+        "introduction1":"中国人民解放军总医院（三0一医院）泌尿外科主治医师，2015年从军队转入，从业10年以上，具备专业的泌尿相关治疗经验。",
+        "introduction":"中国人民解放军总医院（三0一医院）泌尿外科主治医师，硕士，擅长泌尿结石、前列腺、男科。",
+        "page_addr":"doctor_all/doctor_basic.html",
+        "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>泌尿外科硕士</div>'>硕士</button> ",
+        "learning":[
+            {
+                "learning_1":"硕士",
+                "learning_2":"硕士"
+            },{
+                "learning_1":"论文达人",
+                "learning_2":"论文数量95篇"
+            }
+        ],
+        "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>军队转入</div>'>军队转入</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>万方医学网85篇论文发表</div>'>论文达人</button> ",
+        "society":[
+            {
+                "society_1":"军队转入",
+                "society_2":"军队转入"
+            },{
+                "society_1":"男",
+                "society_2":"男"
+            }
+        ],
+        "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "professional_direction1":"<span class='label'>泌尿结石</span><span class='label'>前列腺</span><span class='label'>男科</span>",
+        "professional_direction":"泌尿结石；前列腺；男科",
+        "radar_data":"5,5,3,3,2.5",
+        "province":"北京市",
+        "hospital":"中国人民解放军总医院（三0一医院）",
+        "doc_sex":"男",
+        "city":"北京市",
+        "level":"三级甲等",
+        "doc_age":"未知",
+        "education":"硕士",
+        "highest_education":"硕士",
+        "keshi":"泌尿外科",
+        "hometown":"未知",
+        "marry":"未知",
+        "working_time":"10-20年",
+        "zhich":"主治医师",
+        "phone_num":"",
+        "tel_num":"",
+        "doc_net":"https://www.chunyuyisheng.com/pc/doctor/clinic_web_60157***********/",
+        "doc_email":"",
+        "doc_wechat":"",
+        "doc_qq":"",
+        "hos_web":"http://www.301hospital.com.cn/",
+        "other_way":"",
+        "edu_1":"<br>",
+        "edu_2":"<br>",
+        "edu_3":"<br>",
+        "edu_experience":"",
+        "post":"无",
+        "aca_zhich":"无",
+        "academic_writing":"82",
+        "citation":"717",
+        "h_index":"15",
+        "magazine_per":"81/82",
+        "aca_dire":"泌尿结石，前列腺，男科",
+        "aca_focus":"药品不良反应，主动监测，不良反应，药物不良反应，利奈唑胺，Active surveillance，扶正散结方，万古霉素，疗效，血小板减少症，药品不良事件，Adverse drug events，合理用药，临床药师，加替沙星，高血糖，医院药学，药物利用，信号，重组人血小板生成素",
+        "association":"",
+        "aca_achieve":"",
+        "meeting":"<div class='col-xs-4'><div class='text_underline'><br></div></div><div class='col-xs-4'><div class='text_underline'><br></div></div><div class='col-xs-4'><div class='text_underline'><br></div></div>",
+        "essay":"<tr><td>2015年</td><td>军队医院22605例抗感染药物药品不良反应/事件报告分析</td><td>中文期刊</td><td>12</td><td>《中国药物应用与监测》</td><td>参与发表</td></tr><tr><td>2013年</td><td>住院患者药品不良事件主动监测与评估警示系统的研发</td><td>中文期刊</td><td>28</td><td>《中国药物警戒》</td><td>第一作者</td></tr><tr><td>2012年</td><td>住院患者使用利奈唑胺致相关性血小板减少症的危险因素分析</td><td>中文期刊</td><td>23</td><td>《中国药物警戒》</td><td>第一作者</td></tr><tr><td>2011年</td><td>410例住院患者的利奈唑胺用药评估及影响因素分析</td><td>中文期刊</td><td>27</td><td>《中国药物应用与监测》</td><td>参与发表</td></tr><tr><td>2010年</td><td>阿莫西林与阿莫西林-克拉维酸钾不良反应的对比研究</td><td>中文期刊</td><td>37</td><td>《药物不良反应杂志》</td><td>参与发表</td></tr>",
+        "meetings":"",
+        "essays":[
+            {
+                "essays_title":"军队医院22605例抗感染药物药品不良反应/事件报告分析",
+                "essays_time":"2015年",
+                "essays_journal":"《中国药物应用与监测》",
+                "essays_type":"中文期刊",
+                "essays_author":"参与发表",
+                "essays_cite":"12"
+            },{
+                "essays_title":"住院患者药品不良事件主动监测与评估警示系统的研发",
+                "essays_time":"2013年",
+                "essays_journal":"《中国药物警戒》",
+                "essays_type":"中文期刊",
+                "essays_author":"第一作者",
+                "essays_cite":"28"
+            },{
+                "essays_title":"住院患者使用利奈唑胺致相关性血小板减少症的危险因素分析",
+                "essays_time":"2012年",
+                "essays_journal":"《中国药物警戒》",
+                "essays_type":"中文期刊",
+                "essays_author":"第一作者",
+                "essays_cite":"23"
+            },
+            {
+                "essays_title": "410例住院患者的利奈唑胺用药评估及影响因素分析",
+                "essays_time": "2011年",
+                "essays_journal": "《中国药物应用与监测》",
+                "essays_type": "中文期刊",
+                "essays_author": "参与发表",
+                "essays_cite": "27"
+            },{
+                "essays_title":"阿莫西林与阿莫西林-克拉维酸钾不良反应的对比研究",
+                "essays_time":"2010年",
+                "essays_journal":"《药物不良反应杂志》",
+                "essays_type":"中文期刊",
+                "essays_author":"参与发表",
+                "essays_cite":"37"
+            }
+        ],
+        "prescription":"无",
+        "menzhen_num_hos":2740,
+        "intelligent_advice1":"不处于企业内部医生序列，在春雨医生网络平台中具有极高的影响力，<span class='advice_highlight'>强烈建议予以关注</span>。",
+        "intelligent_advice":"企业内部级别为空，网络综合价值评估为5，<span class='advice_highlight'>建议予以关注</span>",
+        "recommend":"",
+        "curative_effect":"",
+        "attitude":"",
+        "all_help":"",
+        "two_help":"",
+        "evaluate_haodf":"<img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "evaluate_cy":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "consult_time":"5765",
+        "grade":"100",
+        "good_rate":"98.9%",
+        "sick_time":"413",
+        "consult_data_haodf":"20,17,15,15,18,19,20,25,21,20,17,16,16",
+        "consult_data_cy":"223,220,110,240,253,243,229,222,224,221,215,223,214",
+        "":""
+    },
+    {
+        "id":5,
+        "img":"<img height='140' src='../img/doc_pic.jpg'>",
+        "name":"朱**",
+        "briefly_1":"复旦大学附属肿瘤医院 泌尿外科",
+        "briefly_2":"副主任医师",
+        "briefly_3_":"医学博士 副教授",
+        "briefly_3":"博士 副教授",
+        "introduction1":"男，副主任医师，肿瘤外科学博士。入选第七届复旦大学十大医务青年，入选第三批复旦大学卓学人才计划，获得2015第一三共制药奖教金，获得唐仲英奖学金资助。2006年毕业于复旦大学上海医学院获七年制临床医学硕士，2013年毕业于复旦大学研究生院获肿瘤外科学博士。自2006年起在复旦大学附属肿瘤医院泌尿外科工作，2014年晋升为副主任医师。2011至2012年期间曾在美国排名第一的肿瘤中心MD Anderson和欧洲顶尖医疗中心Erasmus MC交流学习临床技能和转化研究。",
+        "introduction":"男，副主任医师，肿瘤外科学博士。 入选第七届复旦大学十大医务青年，入选第三批复旦大学卓学人才计划，获得2015第一三共制药奖教金，获得唐仲英奖学金资助。2006年毕业于复旦大学上海医学院获七年制临床医学硕士，2013年毕业于复旦大学研究生院获肿瘤外科学博士。自2006年起在复旦大学附属肿瘤医院泌尿外科工作，2014年晋升为副主任医师。2011至2012年期间曾在美国排名第一的肿瘤中心MD Anderson和欧洲顶尖医疗中心Erasmus MC交流学习临床技能和转化研究。长期从事泌尿男生殖系统肿瘤的临床诊治工作，主攻前列腺癌的微创根治术和综合治疗。年完成手术量超过500台，其中前列腺癌根治术超过100台。近年来在国际一流学术刊物上以第一作者和通讯作者发表论文40余篇，其中15篇发表于美国泌尿外科学会官方杂志Journal of Urology和英国泌尿外科学会的官方杂志BJU International，研究成果被纳入欧美泌尿外科诊治指南和经典教科书。作为课题负责人承担国家自然科学基金两项，作为主编助理参编学术专著1本，作为第一申请人获批实用新型专利1项。受邀在美国MD Anderson癌症中心和日本金泽大学做专题学术报告，多次在欧美泌尿外科年会做会场发言交流。2012年作为项目第二完成人获得上海市科技进步奖一等奖、上海市医学科技奖一等奖和教育部高等学校科技进步奖二等奖。2010年以来连续三次获得复旦大学附属肿瘤医院“十佳员工”称号。",
+        "page_addr":"doctor_all/doctor_basic.html",
+        "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>2012年作为项目第二完成人获得上海市科技进步奖一等奖、上海市医学科技奖一等奖和教育部高等学校科技进步奖二等奖。</div> <div>2010年以来连续三次获得复旦大学附属肿瘤医院“十佳员工”称号，并入选第七届复旦大学十大医务青年，入选第三批复旦大学卓学人才计划，获得2015第一三共制药奖教金，2016年唐仲英奖学金资助。</div>'>年轻有为</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>2011至2012年期间曾在美国排名第一的肿瘤中心MD Anderson和欧洲顶尖医疗中心Erasmus MC交流学习临床技能和转化研究。</div>'>海外留学</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>万方医学网129篇论文发表</div>'>论文达人</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>美国泌尿外科官方杂志《Journal of Urology》和英国泌尿外科官方杂志《BJU International》特约审稿人</div>'>杂志编委</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>2016年度好大夫</div>'>好大夫网红</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>好大夫网络处方权</div>'>网络处方权</button> ",
+        "learning":[
+            {
+                "learning_1":"获奖达人",
+                "learning_2":"获得2015第一三共制药奖教金;获得唐仲英奖学金资助;2012年作为项目第二完成人获得上海市科技进步奖一等奖、上海市医学科技奖一等奖和教育部高等学校科技进步奖二等奖"
+            },{
+                "learning_1":"青年才俊",
+                "learning_2":"获得2015第一三共制药奖教金;获得唐仲英奖学金资助;2012年作为项目第二完成人获得上海市科技进步奖一等奖、上海市医学科技奖一等奖和教育部高等学校科技进步奖二等奖"
+            },{
+                "learning_1":"学术先锋",
+                "learning_2":"作为课题负责人承担国家自然科学基金两项"
+            },{
+                "learning_1":"杂志编委",
+                "learning_2":"作为主编助理参编学术专著1本"
+            },{
+                "learning_1":"博士",
+                "learning_2":"博士"
+            },{
+                "learning_1":"论文达人",
+                "learning_2":"论文数量134篇"
+            },{
+                "learning_1":"好大夫网红",
+                "learning_2":"2016年度好大夫"
+            }
+        ],
+        "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>1981年</div>'>80后</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>10月21日</div>'>天枰座</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>HUAWEI P10</div> <div>华为终端官方微博</div>'>华为手机</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>科罗廖夫</div> <div>电波震长空xiangyuanye</div> <div>Much-Ado-About-Nothing</div> <div>俄罗斯卫星网</div>'>军事迷</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>上证指数 sh000001</div> <div>今日华尔街</div> <div>财经网</div>'>财经关注者</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>已婚</div>'>已婚</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>女儿</div>'>女儿</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>SupStat</div> <div>SPSS又平又宽</div> <div>谷子歌-统技思维</div>'>数据挖掘</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>中共党员</div>'>中共党员</button> ",
+        "society":[
+            {
+                "society_1":"80后",
+                "society_2":"1981年"
+            },{
+                "society_1":"男",
+                "society_2":"男"
+            },{
+                "society_1":"天枰座",
+                "society_2":"10月21日"
+            },{
+                "society_1":"华为手机",
+                "society_2":"HUAWEI P10,华为终端官方微博"
+            },{
+                "society_1":"中共党员",
+                "society_2":"中共党员"
+            },{
+                "society_1":"体育关注者",
+                "society_2":"微博运动"
+            },{
+                "society_1":"娱乐发烧友",
+                "society_2":"陈戈大叔,SCIband科学索引乐队,微博自媒体,谷大白话,OwlCity-7,猴子图解,宋小宝纯行货,电影贩,独立鱼,大聖的小广播"
+            },{
+                "society_1":"家居发烧友",
+                "society_2":"我的家居小达人,围脖上的别墅装修,设计狮吼,诺宝中心,失落的田园,来邦网"
+            },{
+                "society_1":"教育发烧友",
+                "society_2":"胰腺外科鹿语医生,微博整形,韩锋凛冽,每天聪明一点点,英语口语控,FT商学院,好大夫,仲说纷莹盘仲莹,叁零七医院高冷病研究室王教授,每天11公里,晨光us,DakeZhang,秋枫暮霞惋青曲,体外反搏联盟,哈特瑞姆,金陵铁柱,纪妹妇科微创,爱问医生助理小沐,nyouyou,复旦大学,龙江-柳叶刀上的金手指,瑞金李鹤成医生,北大医院刘兆平,连锋医生,毛志国-肾科医生,SPSS又平又宽,William的医学,秦超_菠萝大哥,子陵在听歌,源正细胞yzcell,joe周向军,17丿24恺,阿桑麻吉,日本龟田综合医院,肿瘤印像,谷子歌的2018,上海教育,医学美图,统计之都,中国统计网,丁香园,健康上海12320,复旦大学附属肿瘤医院"
+            },{
+                "society_1":"时尚发烧友",
+                "society_2":"jetfight2000,微博安全中心,爱8卦的frog,Spike李纽约录影,动感超人2013,粉丝服务平台,北京城市实验室BCL"
+            },{
+                "society_1":"时政发烧友",
+                "society_2":"科罗廖夫,电波震长空xiangyuanye,Much-Ado-About-Nothing,徐轶青,小迪警官,#微博时评团#,微博时评,上海,玲_能改名了吗,上海消防,共青团复旦大学委员会,澎湃新闻,俄罗斯卫星通讯社,苏州吴江发布,健康闵行,徐汇卫生计生,上海卫生计生监督所,上海发布,微博职场"
+            },{
+                "society_1":"科技发烧友",
+                "society_2":"我的印象笔记,华为终端官方微博,荣耀智慧生活,谢益辉,科普君XueShu,微博数据助手,NASA爱好者,微软帮助和支持,微软中国,中科院之声,微博打赏,SupStat,上海新园雅致绿洲运动中心,微博雷达,Nature期刊中文摘要,苦命的生物信息学,逻捷-张磊,外科手术机器人,测序中国,爱可可-爱生活,GeoQ,袁晓辉THU,海山Shawn"
+            },{
+                "society_1":"财经发烧友",
+                "society_2":"上证指数 sh000001,今日华尔街,财经网,猪头肉肉肉肉肉肉,FT中文网,华尔街见闻APP"
+            }
+        ],
+        "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "professional_direction1":"<span class='label'>前列腺癌</span><span class='label'>阴茎和睾丸肿瘤</span><span class='label'>泌尿男生殖系统肿瘤</span>",
+        "professional_direction":"高危前列腺癌扩大根治和淋巴结清扫手术；保留性神经的前列腺癌微创根治术；复发性前列腺癌的挽救性手术；前列腺癌多学科综合治疗；阴茎和睾丸肿瘤的微创根治术和综合治疗；泌尿男生殖系统肿瘤的诊断、治疗及预防",
+        "radar_data":"5,5,4.5,4,4",
+        "province":"上海市",
+        "hospital":"复旦大学附属肿瘤医院",
+        "doc_sex":"男",
+        "city":"上海市",
+        "level":"三级甲等",
+        "doc_age":"30-40",
+        "education":"博士",
+        "highest_education":"博士",
+        "keshi":"泌尿外科",
+        "hometown1":"江苏吴江",
+        "hometown":"上海市",
+        "marry":"已婚",
+        "working_time":"10-20年",
+        "zhich":"副主任医师",
+        "phone_num":"138****1347",
+        "tel_num":"",
+        "doc_net":"http://www.shca.org.cn/dazhong/professorContent/***",
+        "doc_email":"mai*******@163.com",
+        "doc_wechat":"",
+        "doc_qq":"",
+        "hos_web":"http://www.shca.org.cn/",
+        "other_way":"微博：朱**-FUSCC",
+        "edu_1":"2006年 复旦大学上海医学院 临床医学硕士",
+        "edu_2":"2013年 复旦大学研究生院 肿瘤外科学博士",
+        "edu_3":"<br>",
+        "edu_experience":"2006年 复旦大学上海医学院 临床医学硕士/2013年 复旦大学研究生院 肿瘤外科学博士",
+        "post":"无",
+        "aca_zhich":"无",
+        "academic_writing":"112",
+        "citation":"564",
+        "h_index":"11",
+        "magazine_per":"103/112",
+        "aca_dire":"前列腺癌，阴茎和睾丸肿瘤，泌尿男生殖系统的手术和综合治疗",
+        "aca_focus":"预后，阴茎肿瘤，前列腺肿瘤，Prostatic neoplasms，Prognosis，肾肿癌，肿瘤转移，前列腺癌，Carcinoma，膀胱肿瘤，癌,肾细胞，Carcinoma,renal cell，Kidney neoplasms，淋巴结转移，Penile neoplasms，prognosis，Neoplasm metastasis，并发症，索拉非尼",
+        "association":"上海泌尿外科学会/中国临床肿瘤学会",
+        "aca_achieve1":"<span class='label'>美国泌尿外科官方杂志《Journal of Urology》和英国泌尿外科官方杂志《BJU International》特约审稿人</span> <span class='label'>2016年度好大夫</span> <span class='label'>2016年度好大夫</span> <span class='label'>2016年度好大夫</span> <span class='label'>2012年作为项目第二完成人获得上海市科技进步奖一等奖</span> <span class='label'>上海市医学科技奖一等奖</span> <span class='label'>教育部高等学校科技进步奖二等奖</span> <span class='label'>连续三次获得复旦大学附属肿瘤医院“十佳员工”称号</span> <span class='label'>第七届复旦大学十大医务青年</span> <span class='label'>第三批复旦大学卓学人才计划</span>",
+        "aca_achieve":"美国泌尿外科官方杂志《Journal of Urology》和英国泌尿外科官方杂志《BJU International》特约审稿人/2016年度好大夫/2016年度好大夫/2016年度好大夫/2012年作为项目第二完成人获得上海市科技进步奖一等奖/上海市医学科技奖一等奖/教育部高等学校科技进步奖二等奖/连续三次获得复旦大学附属肿瘤医院“十佳员工”称号/第七届复旦大学十大医务青年/第三批复旦大学卓学人才计划",
+        "meeting":"<div class='col-xs-6'><div class='text_underline'>2017年3月24日 第三十二届欧洲泌尿外科学会</div><br></div><div class='col-xs-6'><div class='text_underline'>2016年9月21日 第十九届全国临床肿瘤学大会（CSCO）</div><br></div><div class='col-xs-6'><div class='text_underline'>2015年9月17日 第十八届全国临床肿瘤学大会（CSCO）</div><br></div><div class='col-xs-6'><div class='text_underline'>2013年12月19日 第二十届全国泌尿外科学术会议</div><br></div><div class='col-xs-6'><div class='text_underline'>2012年11月15日 第十九届全国泌尿外科学术会议</div></div><div class='col-xs-6'><div class='text_underline'><br></div></div>",
+        "essay":"<tr><td>2017年</td><td>寡转移性前列腺癌根治术的临床初步疗效观察及围手术期并发症分析</td><td>期刊论文</td><td></td><td>《中国癌症杂志》</td><td>参与发表</td></tr><tr><td>2017年</td><td>寡转移性前列腺癌的外科治疗进展</td><td>期刊论文</td><td></td><td>《现代泌尿外科杂志》</td><td>参与发表</td></tr><tr><td>2017年</td><td>预测去势抵抗性前列腺癌患者总生存期Halabi风险列线图的验证研究</td><td>期刊论文</td><td></td><td>《临床肿瘤学杂志》</td><td>参与发表</td></tr><tr><td>2016年</td><td>外周血循环肿瘤细胞计数对去势抵抗性前列腺癌患者预后的预测作用</td><td>期刊论文</td><td></td><td>《中华泌尿外科杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>Vav3基因位点多态性与中国汉族人群前列腺癌发病风险的关联性</td><td>期刊论文</td><td></td><td>《中华病理学杂志》</td><td>参与发表</td></tr>",
+        "meetings":"2017年3月24日 第三十二届欧洲泌尿外科学会/2016年9月21日 第十九届全国临床肿瘤学大会（CSCO）/2015年9月17日 第十八届全国临床肿瘤学大会（CSCO）/2013年12月19日 第二十届全国泌尿外科学术会议/2012年11月15日 第十九届全国泌尿外科学术会议",
+        "essays":[
+            {
+                "essays_title":"寡转移性前列腺癌根治术的临床初步疗效观察及围手术期并发症分析",
+                "essays_time":"2017年",
+                "essays_journal":"《中国癌症杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"寡转移性前列腺癌的外科治疗进展",
+                "essays_time":"2017年",
+                "essays_journal":"《现代泌尿外科杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },{
+                "essays_title":"预测去势抵抗性前列腺癌患者总生存期Halabi风险列线图的验证研究",
+                "essays_time":"2017年",
+                "essays_journal":"《临床肿瘤学杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            },
+            {
+                "essays_title": "外周血循环肿瘤细胞计数对去势抵抗性前列腺癌患者预后的预测作用",
+                "essays_time": "2016年",
+                "essays_journal": "《中华泌尿外科杂志》",
+                "essays_type": "期刊论文",
+                "essays_author": "参与发表",
+                "essays_cite": "0"
+            },{
+                "essays_title":"Vav3基因位点多态性与中国汉族人群前列腺癌发病风险的关联性",
+                "essays_time":"2015年",
+                "essays_journal":"《中华病理学杂志》",
+                "essays_type":"期刊论文",
+                "essays_author":"参与发表",
+                "essays_cite":"0"
+            }
+        ],
+        "prescription":"有",
+        "menzhen_num_hos":5000,
+        "intelligent_advice1":"已处于企业内部医生序列，级别为A1，在好大夫网络平台中具有极高的影响力，<span class='advice_highlight'>建议予以持续关注</span>。",
+        "intelligent_advice":"企业内部级别为A1，网络综合价值评估为5，<span class='advice_highlight'>建议重点关注</span>",
+        "recommend":"4.6",
+        "curative_effect":"100%",
+        "attitude":"100%",
+        "all_help":"2820",
+        "two_help":"206",
+        "evaluate_haodf":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'>",
+        "evaluate_cy":"<img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'> <img src='static/img/star0.png'>",
+        "consult_time":"",
+        "grade":"",
+        "good_rate":"",
+        "sick_time":"",
+        "consult_data_haodf":"206,128,86,80,60,91,45,53,44,57,52,60,52",
+        "consult_data_cy":"",
+        "":""
+    }
+]

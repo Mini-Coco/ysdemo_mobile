@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>医生360°全景观像平台</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .content_doc .doc_name{
+            font-size: 1.4rem;
+        }
+        .content_doc .border_b{
+            font-size: 1.3rem;
+        }
+        a, a:focus, a:hover{
+            color: #46a0f0;
+        }
+    </style>
+</head>
+<body class="bg_color">
+<div class="container-fluid">
+    <div class="row header text-center">
+        <div class="col-xs-12">消息</div>
+    </div>
+    <div class="row content_search" style="background-color: #edf1f4;">
+        <div class="col-xs-12" style="padding: 10px 15px;">
+            <div class="input-group input-group-sm" style="width: 100%;">
+                <img class="search_img" src="static/img/search.png" alt="">
+                <input id="search_select" type="search" class="form-control" placeholder="在消息列表中搜索" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+    <div class="row content_doc">
+        <div class="col-xs-12 bg_color" style="padding-bottom: 8px;">
+            消息列表 (<span class="text_num">0</span>)
+        </div>
+        <div class="col-xs-12 border_b" style="padding-bottom: 0;border: none;">
+            <div class="col-xs-3 text-center" style="">
+                <img style="width: 120%;" src="static/img/new_label.png" alt="">
+            </div>
+            <div class="col-xs-9 search_key">
+                <div>
+                    您关注的医生
+                    <span class="doc_name">叶****</span>
+                    有最近<span class="">更新的标签信息</span>
+                </div>
+                <div class="">2018-05-20</div>
+                <div class="" style="margin-top: 10px;">
+                    <a onclick="toFullView(1,'all')">点击查看详情</a>
+                </div>
+            </div>
+            <div class="col-xs-12 hr" style="margin-top: 12px;"></div>
+        </div>
+        <div class="col-xs-12 border_b" style="padding-bottom: 0;border: none;">
+            <div class="col-xs-3 text-center" style="">
+                <img style="width: 120%;" src="static/img/new_meeting.png" alt="">
+            </div>
+            <div class="col-xs-9 search_key">
+                <div>
+                    您关注的医生
+                    <span class="doc_name">叶****</span>
+                    有最近<span class="">参加的学术会议</span>
+                </div>
+                <div class="">2018-05-20</div>
+                <div class="" style="margin-top: 10px;">
+                    <a onclick="toFullView(1,'position')">点击查看详情</a>
+                </div>
+            </div>
+            <div class="col-xs-12 hr" style="margin-top: 12px;"></div>
+        </div>
+        <div class="col-xs-12 border_b" style="padding-bottom: 0;border: none;">
+            <div class="col-xs-3 text-center" style="">
+                <img style="width: 120%;" src="static/img/new_essay.png" alt="">
+            </div>
+            <div class="col-xs-9 search_key">
+                <div>
+                    您关注的医生
+                    <span class="doc_name">叶****</span>
+                    有最近<span class="">发表的学术文章</span>
+                </div>
+                <div class="">2018-05-20</div>
+                <div class="" style="margin-top: 10px;">
+                    <a onclick="toFullView(1,'position')">点击查看详情</a>
+                </div>
+            </div>
+            <div class="col-xs-12 hr" style="margin-top: 12px;"></div>
+        </div>
+    </div>
+    <div class="row footer text-center">
+        <div class="col-xs-5" style="padding-left: 5px;">
+            <a href="index.html" class="col-xs-6 menu">
+                <img src="static/img/home.png" alt="">
+                <div>首页</div>
+            </a>
+            <a href="javascript:;" class="col-xs-6 menu active">
+                <img src="static/img/news_blue.png" alt="">
+                <div>消息</div>
+            </a>
+        </div>
+        <a href="ifocus.html" class="col-xs-2 menu">
+            <img src="static/img/my_att.png" alt="">
+            <div>我的关注</div>
+        </a>
+        <div class="col-xs-5" style="padding-right: 5px;">
+            <a href="imemo.html" class="col-xs-6 menu">
+                <img src="static/img/memo.png" alt="">
+                <div>备忘录</div>
+            </a>
+            <a href="imy.html" class="col-xs-6 menu">
+                <img src="static/img/my.png" alt="">
+                <div>我的</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/jquery-2.1.1.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/swiper.min.js"></script>
+<script src="static/js/index.js"></script>
+<script></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>医生360°全景观像平台</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <style>
+        .header{
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+        /*搜索框start*/
+        .header .input-group input.form-control {
+            background-color: #f1f1f1;
+            border: none;
+            font-size: 1.2rem;
+        }
+        /*搜索框end*/
+        /*筛选框start*/
+        .select_box{
+            display: none;
+            z-index: 100;
+            position: fixed;
+            top:41px;
+            width: 100%;
+            height: 38px;
+            line-height: 38px;
+            background-color: #fff;
+            font-size: 1.4rem;
+        }
+        /*筛选框end*/
+        .text_red{
+            color: #f00;
+        }
+        .select_result{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row header border_b_e8">
+        <a onclick="history.go(-1);" class="col-xs-1 text-center" style="padding: 0;">
+            <i class="fa fa-angle-left" style="line-height: 38px;font-size: 3.2rem;color: #888;"></i>
+        </a>
+        <div class="col-xs-11" style="padding: 5px 7px 5px 3px;">
+            <div class="input-group input-group-sm" style="width: 100%;">
+                <img class="search_img" src="static/img/search.png" alt="">
+                <input id="search_box" type="search" class="form-control" placeholder="请输入适应症、医院名称、医生姓名等关键词" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+    <div class="row border_b_e8 select_box text-center">
+        <div class="col-xs-12" style="padding: 0;">
+            <div class="col-xs-4">全国</div>
+            <div class="col-xs-4">全部医院</div>
+            <div class="col-xs-4">全部适应症</div>
+        </div>
+    </div>
+    <div class="row select_result content_doc" style="margin-top: 79px;">
+        <div class="col-xs-12 bg_color" style="padding: 10px 15px;font-size: 1.4rem;">
+            搜索到 <span class="text_red">0</span> 个医生
+        </div>
+    </div>
+</div>
+
+<script src="static/js/jquery-2.1.1.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/swiper.min.js"></script>
+<script src="static/js/index.js"></script>
+<script>
+    $('#search_box').trigger("click").focus();
+    //搜索框键盘弹起事件，查询
+    $('#search_box').keyup(function(){
+        if($('#search_box').val()!=''){
+            $('.select_box').show();
+            if($('#search_box').val()=='前列腺癌'){
+                $('.select_result').show();
+            }
+        }else{
+            $('.select_box').hide();
+            $('.select_result').hide();
+        }
+    });
+    //获取医生关注数据
+    $.ajax({
+        url: 'lib/doctor_all.json',
+        dataType: 'json',
+        success: function (data) {
+            $('.text_red').text(data.length);
+            var doc_str='';
+            for(var i=0;i<data.length;i++){
+                //专业方向--判断文字，超出32则显示省略号
+                var crt_words=data[i].professional_direction;
+                var l=32;
+                function checkString(s,l,tag){
+                    if(s.length>l){
+                        return s.substring(0,l)+tag;
+                    }else{
+                        return s;
+                    }
+                }
+                doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
+                doc_str+='<div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+                doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
+                doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
+                doc_str+='</div>';
+                doc_str+='<div class="col-xs-9" style="padding-left: 5px;">';
+                doc_str+='<div class="add_attention">+ 关注</div>';
+                doc_str+='<div>';
+                doc_str+='<a onclick="toFullView('+i+')" class="doc_name">'+data[i].name+'</a>';
+                doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
+                doc_str+='</div>';
+                doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
+                doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
+                doc_str+='</div>';
+                doc_str+='</div>';
+                doc_str+='<div class="col-xs-12 hr"></div>';
+            }
+            $('.content_doc').append(doc_str);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body{
+    font-size: 62.5%;
+}
+a, a:focus, a:hover{
+    text-decoration: none;
+}
+.bg_color{
+    background-color: #edf1f4;
+}
+.hr{
+    height: 8px;
+    background: #edf1f4;
+}
+.hr_title{
+    padding-left: 5%;
+    height: 36px;
+    line-height: 36px;
+    background: #f4f4f4;
+    font-size: 1.3rem;
+    color: #888;
+}
+.hot{
+    position: absolute;
+    top: -0.4rem;
+    right: 0.6rem;
+    height: 15px;
+}
+.border_b{
+    padding: 12px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.border_b_e8{
+    border-bottom: 1px solid #e8e8e8;
+}
+.star img{
+    height: 10px;
+}
+.add_attention{
+    float: right;
+    font-size: 1.6rem;
+    color: #46a0f0;
+}
+/*搜索框样式--start*/
+.header img.search_img,
+img.search_img{
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    height: 16px;
+    z-index: 10;
+}
+.header .input-group input.form-control,
+.input-group input.form-control{
+    padding-left: 34px;
+    padding-right: 5px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+/*搜索框样式--end*/
+/*医生关注样式--start*/
+.content_doc,.content_doc .border_b{
+    font-size: 1.4rem;
+    color: #888;
+    background-color: #fff;
+}
+.content_doc .doc_name{
+    margin-right: 6px;
+    font-size: 1.8rem;
+    color: #666;
+}
+/*医生关注样式--end*/
+/*底部导航样式--start*/
+.footer{
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    padding: 3px 0;
+    width: 100%;
+    height: 48px;
+    font-size: 1.2rem;
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+}
+.footer .menu{
+    padding: 0;
+    color: #646464;
+}
+.footer .menu.active{
+    color: #46a0f0;
+}
+.footer .menu img{
+    height: 26px;
+}
+/*底部导航样式--end*/
