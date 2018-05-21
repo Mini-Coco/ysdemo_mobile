@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>医生360°全景观像平台</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .setSex{
+            padding: 10px 5px;
+        }
+        .setSex input[type='radio']{
+            display: none;
+        }
+        .setSex label{
+            margin-bottom: 0;
+            width: 100%;
+            font-weight: 100;
+        }
+        .isChecked{
+            background-color: rgba(69,160,241,0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row header text-center">
+        <a onclick="history.go(-1);" class="col-xs-2" style="padding-left: 0;">
+            <i class="fa fa-angle-left" style="font-size: 3.4rem;line-height: 46px;"></i>
+        </a>
+        <div class="col-xs-8">设置性别</div>
+        <div class="col-xs-2"></div>
+    </div>
+    <div class="row" style="margin-top: 48px;">
+        <div class="col-xs-12"
+            style="padding: 20px 15px 2px;
+            font-size: 2.0rem;">
+            性别</div>
+        <div class="col-xs-12"
+            style="font-size: 1.4rem;color: #888;">
+            请选择你的性别</div>
+        <div class="col-xs-12" style="margin: 20px 0;font-size: 1.6rem;">
+            <div class="setSex border_b_e8" onclick="isChecked(this)">
+                <input id="man" name="sex" class="keyInfo" type="radio">
+                <label for="man">男</label>
+            </div>
+            <div class="setSex" onclick="isChecked(this)">
+                <input id="woman" name="sex" class="keyInfo" type="radio">
+                <label for="woman">女</label>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <button class="btn" disabled
+                style="width: 100%;
+                color: #fff;
+                background-color: #45a0f1;
+                font-size: 1.8rem;">
+                保存</button>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/jquery-2.1.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/swiper.min.js"></script>
+<script src="../static/js/index.js"></script>
+<script>
+    //检测是否选中
+    function isChecked(_this) {
+        $('.setSex').removeClass('isChecked');
+        $(_this).addClass('isChecked');
+        if($(_this).children('input').val()!=''){
+            $('button').removeAttr('disabled');
+        }else{
+            $('button').attr('disabled','disabled');
+        }
+    }
+</script>
+</body>
+</html>

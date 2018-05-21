@@ -47,7 +47,7 @@
                  class="img-circle"
                  style="height: 80px;" alt="">
         </div>
-        <div class="col-xs-8" style="padding-left: 0;">
+        <div class="col-xs-8 nickname" style="padding-left: 0;">
             用户名
         </div>
     </div>
@@ -125,5 +125,11 @@
 <script src="static/js/jquery-2.1.1.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/swiper.min.js"></script>
+<script>
+    var keyInfo=sessionStorage.keyInfo;
+    if(keyInfo!='undefined'){
+        $('.nickname').text(keyInfo);
+    }
+</script>
 </body>
 </html>
