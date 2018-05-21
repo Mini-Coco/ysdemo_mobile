@@ -22,7 +22,7 @@ a, a:focus, a:hover{
 .hot{
     position: absolute;
     top: -0.4rem;
-    right: 0.6rem;
+    left: 60%;
     height: 15px;
 }
 .border_b{

@@ -86,7 +86,7 @@ textarea{
     color: #fff;
     background-color: #46a0f0;
 }
-/**/
+/*输入框样式*/
 .enter_info{
     padding: 10px 0;
     background-color: #fff;
@@ -98,4 +98,19 @@ textarea{
 .enter_info input{
     width: 100%;
     border: none;
+}
+/*我的样式*/
+.bg_white{
+    display: block;
+    padding: 10px 0;
+    font-size: 1.8rem;
+    background-color: #fff;
+    color: #333;
+}
+.bg_white i{
+    position: absolute;
+    right: 15px;
+    top: -3px;
+    font-size: 2.8rem;
+    color: #aaa;
 }
