@@ -90,13 +90,16 @@
             background-color: #f4f4f4;
             border-left: none;
         }
-        .select_two li:active,
+        .select_two li.active,
         .select_two li:hover{
             background-color: #f4f4f4;
         }
-        .select_three li:active,
+        .select_three li.active,
         .select_three li:hover{
             background-color: #ededed;
+        }
+        .select_two li.active i.fa-check{
+            display: block;
         }
         /*.select_two li:hover i.fa-check,*/
         /*.select_three li:hover i.fa-check{*/
@@ -143,14 +146,26 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
                 <ul class="text-left select_two">
-                    <li>全国</li>
-                    <li>北京市</li>
+                    <li onclick="select_t(this)" class="active">全国</li>
+                    <li onclick="select_t(this)">北京市</li>
                 </ul>
                 <ul class="text-left select_two select_three">
-                    <li onclick="select_this(this)">
+                    <li onclick="select_this(this)" class="active">
                         <span>全国</span>
                         <i class="fa fa-check"></i>
                     </li>
+                    <!--<li onclick="select_this(this)">-->
+                        <!--<span>北京市全市</span>-->
+                        <!--<i class="fa fa-check"></i>-->
+                    <!--</li>-->
+                    <!--<li onclick="select_this(this)">-->
+                        <!--<span>海淀区</span>-->
+                        <!--<i class="fa fa-check"></i>-->
+                    <!--</li>-->
+                    <!--<li onclick="select_this(this)">-->
+                        <!--<span>朝阳区</span>-->
+                        <!--<i class="fa fa-check"></i>-->
+                    <!--</li>-->
                 </ul>
             </div>
             <div class="col-xs-4 select_one">
@@ -159,6 +174,10 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
                 <ul class="text-left select_two">
+                    <li onclick="select_this(this)" class="active">
+                        <span>全部医院</span>
+                        <i class="fa fa-check"></i>
+                    </li>
                     <li onclick="select_this(this)">
                         <span>解放军总医院</span>
                         <i class="fa fa-check"></i>
@@ -175,6 +194,10 @@
                     <i class="fa fa-caret-down"></i>
                 </div>
                 <ul class="text-left select_two">
+                    <li onclick="select_this(this)" class="active">
+                        <span>全部适应症</span>
+                        <i class="fa fa-check"></i>
+                    </li>
                     <li onclick="select_this(this)">
                         <span>前列腺癌</span>
                         <i class="fa fa-check"></i>
@@ -232,19 +255,19 @@
                     }
                 }
                 doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
-                doc_str+='<div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+                doc_str+='<div class="add_attention">+ 关注</div>';
+                doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
                 doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
                 doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
-                doc_str+='</div>';
-                doc_str+='<div class="col-xs-9" style="padding-left: 5px;">';
-                doc_str+='<div class="add_attention">+ 关注</div>';
+                doc_str+='</a>';
+                doc_str+='<a onclick="toFullView('+i+')" class="col-xs-9" style="padding-left: 5px;">';
                 doc_str+='<div>';
-                doc_str+='<a onclick="toFullView('+i+')" class="doc_name">'+data[i].name+'</a>';
+                doc_str+='<span class="doc_name">'+data[i].name+'</span>';
                 doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
                 doc_str+='</div>';
                 doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
                 doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
-                doc_str+='</div>';
+                doc_str+='</a>';
                 doc_str+='</div>';
                 doc_str+='<div class="col-xs-12 hr"></div>';
             }
@@ -273,12 +296,22 @@
         //其他文字按钮变成向下的
         $('.select_one div i').removeClass('fa-caret-up').addClass('fa-caret-down');
     }
-    //选择筛选条件
+    //选择一级筛选条件
+    function select_t(_this) {
+        $(_this).addClass('active');
+        $(_this).siblings('li').removeClass('active');
+    }
+    //选择最终筛选条件
     function select_this(_this) {
         del_class();
         $('.mask').hide();
+        //被选择的显示对勾
+        $(_this).addClass('active');
         $(_this).children('i').show();
+        //其他删除对勾
+        $(_this).siblings('li').removeClass('active');
         $(_this).siblings('li').children('i').hide();
+        //获取当前点击的文本，并赋值给上方选择框
         var select_txt=$(_this).children('span').text();
         $(_this).parent().siblings('div').children('span').text(select_txt);
     }
