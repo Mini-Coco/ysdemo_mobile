@@ -37,7 +37,7 @@ a, a:focus, a:hover{
     height: 10px;
 }
 .add_attention{
-    z-index: 100;
+    z-index: 50;
     position: absolute;
     right: 15px;
     font-size: 1.6rem;
