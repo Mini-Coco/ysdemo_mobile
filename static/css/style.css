@@ -97,6 +97,7 @@ textarea{
 }
 .enter_info input{
     width: 100%;
+    font-size: 1.4rem;
     border: none;
 }
 /*我的样式*/
