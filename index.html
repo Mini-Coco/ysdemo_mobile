@@ -74,7 +74,7 @@
     <div class="row header text-center">
         <div class="col-xs-12 head">
             <div class="home_title">医生360°全景观像平台</div>
-            <a href="isearch.html" class="input-group" style="width: 100%;">
+            <a href="isearch.html" id="search_fixed" class="input-group" style="width: 100%;">
                 <img class="search_img" src="static/img/search.png" alt="">
                 <input readonly type="search" class="form-control"
                        style="background-color: #fff;"
@@ -249,6 +249,32 @@
             }
             $('.content_doc').append(doc_str);
         }
+    });
+
+    /*
+     * 菜单移动到顶部后定位在顶部
+     * message[菜单的id名或者class类名]
+     * height[菜单距离顶部的距离]
+     */
+    function navChangeArea(message, height) {
+        var liveDiv = $("#" + message).length ? $("#" + message) : $("." + message);
+        if(/android/i.test(navigator.userAgent)){
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrollTop < height) {
+                liveDiv.css("position", "relative");
+            } else {
+                liveDiv.css("position", "fixed");
+            }
+        }
+        if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+            liveDiv.addClass("sticky");
+        }
+    }
+    $(window).bind("scroll", function() {
+        navChangeArea("search_fixed", 10);
+    });
+    $(window).bind("touchmove", function() {
+        navChangeArea("search_fixed", 10);
     });
 </script>
 </body>
