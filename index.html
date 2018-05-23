@@ -18,7 +18,7 @@
         }
         .header .head .home_title{
             margin-top: 65px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             font-size: 2.4rem;
             font-weight: 600;
             color: #fff;
@@ -74,13 +74,20 @@
     <div class="row header text-center">
         <div class="col-xs-12 head">
             <div class="home_title">医生360°全景观像平台</div>
-            <a href="isearch.html" id="search_fixed" class="input-group"
-               style="z-index: 100;width: 100%;background-color: #fff;border-radius: 5px;">
-                <img class="search_img" src="static/img/search.png" alt="">
-                <input readonly type="search" class="form-control"
-                       style="background-color: #fff;"
-                       placeholder="请输入适应症、医院名称、医生姓名等关键词" aria-describedby="basic-addon1">
-            </a>
+            <div id="search_fixed"
+                style="z-index: 100;
+                margin: 0 -15px;
+                padding: 5px 15px;
+                width: 100vw;">
+                <a href="isearch.html" class="input-group"
+                   style="width: 100%;background-color: #fff;border-radius: 5px;">
+                    <img class="search_img" src="static/img/search.png" alt="">
+                    <input readonly type="search" class="form-control"
+                           style="background-color: #fff;"
+                           placeholder="请输入适应症、医院名称、医生姓名等关键词" aria-describedby="basic-addon1">
+                </a>
+            </div>
+
         </div>
     </div>
     <div class="row change border_b">
@@ -259,12 +266,26 @@
      */
     function navChangeArea(message, height) {
         var liveDiv = $("#" + message).length ? $("#" + message) : $("." + message);
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop < height) {
+            liveDiv.css("position", "relative");
+            liveDiv.css("top", "0");
+            liveDiv.css("background-color", "transparent");
+        } else {
+            liveDiv.css("position", "fixed");
+            liveDiv.css("top", "0");
+            liveDiv.css("background-color", "#46a0f0");
+        }
         if(/android/i.test(navigator.userAgent)){
             var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             if (scrollTop < height) {
                 liveDiv.css("position", "relative");
+                liveDiv.css("top", "0");
+                liveDiv.css("background-color", "transparent");
             } else {
                 liveDiv.css("position", "fixed");
+                liveDiv.css("top", "0");
+                liveDiv.css("background-color", "#46a0f0");
             }
         }
         if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
@@ -272,10 +293,10 @@
         }
     }
     $(window).bind("scroll", function() {
-        navChangeArea("search_fixed", 10);
+        navChangeArea("search_fixed", 130);
     });
     $(window).bind("touchmove", function() {
-        navChangeArea("search_fixed", 10);
+        navChangeArea("search_fixed", 130);
     });
 </script>
 </body>
