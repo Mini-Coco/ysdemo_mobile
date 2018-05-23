@@ -227,15 +227,15 @@
 <script>
     $('#search_box').trigger("click").focus();
     //搜索框键盘弹起事件，查询
-    $('#search_box').keyup(function(){
-        if($('#search_box').val()!=''){
+    $('#search_box').bind('input propertychange', function() {
+        if($('#search_box').val()==''){
+            $('.select_box').hide();
+            $('.select_result').hide();
+        }else if($('#search_box').val()!=' '){
             $('.select_box').show();
             if($('#search_box').val()=='前列腺癌'){
                 $('.select_result').show();
             }
-        }else{
-            $('.select_box').hide();
-            $('.select_result').hide();
         }
     });
     //获取医生关注数据

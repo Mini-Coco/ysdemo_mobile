@@ -16,15 +16,15 @@ function crt_num(){
 }
 crt_num();
 //搜索
-$('#search_select').keyup(function () {
-    if($('#search_select').val()!=''){
+$('#search_select').bind('input propertychange', function() {
+    if($('#search_select').val()==''){
+        $('.content_doc div').show();
+        $('.text_num').text($('.content_doc .border_b').length);
+    }else if($('#search_select').val()!=' '){
         var searchContent=$('#search_select').val();
         $('.content_doc div.border_b').hide();
         $('.search_key:contains('+searchContent+')').parent().show();
         crt_num();
-    }else{
-        $('.content_doc div').show();
-        $('.text_num').text($('.content_doc .border_b').length);
     }
 });
 
