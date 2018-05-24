@@ -159,14 +159,17 @@
             font-size: 1.2rem;
         }
         .basic_info_table .info_width{
-            width: 25%;
+            display: inline-block;
+            /*width: 25%;*/
+            color: #333;
             text-align: right;
         }
         .basic_info_table .input_box{
-            padding: 2px 5px;
-            height: 24px;
-            border: 1px solid #ccc;
-            min-width: 12vw;
+            display: inline-block;
+            /*padding: 2px 5px;*/
+            /*height: 24px;*/
+            /*border: 1px solid #ccc;*/
+            /*min-width: 12vw;*/
         }
         /*职位学术信息*/
         span.label{
@@ -186,6 +189,11 @@
         }
         .value_info_table td{
             height: 2.2rem;
+        }
+        .star{
+            display: inline-block;
+            position: relative;
+            top: -1px;
         }
     </style>
 </head>
@@ -390,67 +398,67 @@
             <div class="info_sum basic_info" style="display: none;">
                 <div class="col-xs-12" style="padding:0;">
                     <div class="hr_title">基础信息</div>
-                    <div class="col-xs-12" style="padding: 10px 20px 10px 0;">
+                    <div class="col-xs-12" style="padding: 10px 20px">
                         <table class="basic_info_table">
                             <tr>
-                                <td class="info_width">医生姓名：</td>
                                 <td>
+                                    <div class="info_width">医生姓名：</div>
                                     <div class="input_box doc_name"></div>
                                 </td>
-                                <td class="info_width">医生籍贯：</td>
                                 <td>
+                                    <div class="info_width">医生籍贯：</div>
                                     <div class="input_box hometown"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">医生性别：</td>
                                 <td>
+                                    <div class="info_width">医生性别：</div>
                                     <div class="input_box doc_sex"></div>
                                 </td>
-                                <td class="info_width">所在省份：</td>
                                 <td>
+                                    <div class="info_width"></div>所在省份：
                                     <div class="input_box province"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">年龄段：</td>
                                 <td>
+                                    <div class="info_width">年龄段：</div>
                                     <div class="input_box doc_age"></div>
                                 </td>
-                                <td class="info_width">所在城市：</td>
                                 <td>
+                                    <div class="info_width">所在城市：</div>
                                     <div class="input_box city"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">从业时间：</td>
                                 <td>
+                                    <div class="info_width">从业时间：</div>
                                     <div class="input_box working_time"></div>
                                 </td>
-                                <td class="info_width">最高学历：</td>
                                 <td>
+                                    <div class="info_width">最高学历：</div>
                                     <div class="input_box highest_education"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">所在医院：</td>
-                                <td colspan="3">
+                                <td colspan="2">
+                                    <div class="info_width">所在医院：</div>
                                     <div class="input_box hospital"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">医院等级：</td>
                                 <td>
+                                    <div class="info_width">医院等级：</div>
                                     <div class="input_box level"></div>
                                 </td>
-                                <td class="info_width">所在科室：</td>
                                 <td>
+                                    <div class="info_width">所在科室：</div>
                                     <div class="input_box keshi"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">医院职称：</td>
                                 <td>
+                                    <div class="info_width">医院职称：</div>
                                     <div class="input_box zhich"></div>
                                 </td>
                             </tr>
@@ -466,41 +474,41 @@
             <div class="info_sum position_info" style="display: none;">
                 <div class="col-xs-12" style="padding:0;">
                     <div class="hr_title">主要职位学术信息</div>
-                    <div class="col-xs-12" style="padding: 10px 20px 0 0;">
+                    <div class="col-xs-12" style="padding: 10px 20px 0;">
                         <table class="basic_info_table">
                             <tr>
-                                <td class="info_width">医生职称：</td>
                                 <td>
+                                    <div class="info_width">医生职称：</div>
                                     <div class="input_box zhich"></div>
                                 </td>
-                                <td class="info_width">学术职称：</td>
                                 <td>
+                                    <div class="info_width">学术职称：</div>
                                     <div class="input_box aca_zhich"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">学术发文：</td>
                                 <td>
+                                    <div class="info_width">学术发文：</div>
                                     <div class="input_box academic_writing"></div>
                                 </td>
-                                <td class="info_width">被引次数：</td>
                                 <td>
+                                    <div class="info_width">被引次数：</div>
                                     <div class="input_box citation"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">H指数：</td>
                                 <td>
+                                    <div class="info_width">H指数：</div>
                                     <div class="input_box h_index"></div>
                                 </td>
-                                <td class="info_width">核心期刊：</td>
                                 <td>
+                                    <div class="info_width">核心期刊：</div>
                                     <div class="input_box magazine_per"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">行政职务：</td>
-                                <td colspan="3">
+                                <td colspan="2">
+                                    <div class="info_width">行政职务：</div>
                                     <div class="input_box post"></div>
                                 </td>
                             </tr>
@@ -568,58 +576,58 @@
             <div class="info_sum value_info" style="display: none;">
                 <div class="col-xs-12" style="padding:0;">
                     <div class="hr_title">医生价值</div>
-                    <div class="col-xs-12" style="padding: 10px 10px 10px 0;">
+                    <div class="col-xs-12" style="padding: 10px 20px;">
                         <table class="basic_info_table">
                             <tr>
-                                <td class="info_width">所在医院：</td>
-                                <td colspan="3">
+                                <td colspan="2">
+                                    <div class="info_width">所在医院：</div>
                                     <div class="input_box hospital"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">医院等级：</td>
                                 <td>
+                                    <div class="info_width">医院等级：</div>
                                     <div class="input_box level"></div>
                                 </td>
-                                <td class="info_width">所在科室：</td>
                                 <td>
+                                    <div class="info_width">所在科室：</div>
                                     <div class="input_box keshi"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">医院职称：</td>
                                 <td>
+                                    <div class="info_width">医院职称：</div>
                                     <div class="input_box zhich"></div>
                                 </td>
-                                <td class="info_width">学术职称：</td>
                                 <td>
+                                    <div class="info_width">学术职称：</div>
                                     <div class="input_box aca_zhich"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">医院门诊量：</td>
                                 <td>
+                                    <div class="info_width">医院门诊量：</div>
                                     <div class="input_box menzhen_num_hos"></div>
                                 </td>
-                                <td class="info_width">科室门诊量：</td>
                                 <td>
-                                    <div class="input_box "></div>
+                                    <div class="info_width">科室门诊量：</div>
+                                    <div class="input_box menzhen_num_keshi"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">适应证量：</td>
                                 <td>
-                                    <div class="input_box "></div>
+                                    <div class="info_width">适应证量：</div>
+                                    <div class="input_box indication_num"></div>
                                 </td>
-                                <td class="info_width">医保比例(量)：</td>
                                 <td>
-                                    <div class="input_box "></div>
+                                    <div class="info_width">医保比例(量)：</div>
+                                    <div class="input_box yibao_num"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width" style="width: 30%;">医保比例(金额)：</td>
                                 <td>
-                                    <div class="input_box "></div>
+                                    <div class="info_width">医保比例(金额)：</div>
+                                    <div class="input_box yibao_money"></div>
                                 </td>
                             </tr>
                         </table>
@@ -630,39 +638,48 @@
                     <div class="col-xs-12" style="padding: 10px 15px;">
                         <table class="basic_info_table value_info_table">
                             <tr>
-                                <td class="info_width">学术水平：</td>
-                                <td class="star" style="padding-bottom: 2px;">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
+                                <td>
+                                    <div class="info_width">学术水平：</div>
+                                    <div class="star">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                    </div>
+
                                 </td>
-                                <td class="info_width">网络价值：</td>
-                                <td class="star" style="padding-bottom: 2px;">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
+                                <td>
+                                    <div class="info_width">网络价值：</div>
+                                    <div class="star">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">关系影响力：</td>
-                                <td class="star" style="padding-bottom: 2px;">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
+                                <td>
+                                    <div class="info_width">关系影响力：</div>
+                                    <div class="star">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                    </div>
                                 </td>
-                                <td class="info_width">综合价值：</td>
-                                <td class="star" style="padding-bottom: 2px;">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
+                                <td>
+                                    <div class="info_width">综合价值：</div>
+                                    <div class="star">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -670,49 +687,51 @@
                 </div>
                 <div class="col-xs-12" style="padding:0;">
                     <div class="hr_title">网络综合价值</div>
-                    <div class="col-xs-12" style="padding: 10px 15px 0 0;">
+                    <div class="col-xs-12" style="padding: 10px 20px 0;">
                         <table class="basic_info_table">
                             <tr class="text-center">
-                                <td colspan="4">好大夫网络综合价值</td>
+                                <td colspan="4" style="color: #333;">好大夫网络综合价值</td>
                             </tr>
                             <tr>
-                                <td class="info_width">推荐热度：</td>
                                 <td>
+                                    <div class="info_width">推荐热度：</div>
                                     <div class="input_box recommend"></div>
                                 </td>
-                                <td class="info_width">态度满意度：</td>
                                 <td>
+                                    <div class="info_width">态度满意度：</div>
                                     <div class="input_box attitude"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">疗效满意度：</td>
                                 <td>
+                                    <div class="info_width">疗效满意度：</div>
                                     <div class="input_box curative_effect"></div>
                                 </td>
-                                <td class="info_width">累计帮助患者数：</td>
                                 <td>
+                                    <div class="info_width">累计帮助患者数：</div>
                                     <div class="input_box all_help"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">网络处方权：</td>
                                 <td>
+                                    <div class="info_width">网络处方权：</div>
                                     <div class="input_box prescription"></div>
                                 </td>
-                                <td class="info_width" style="width: 35%;">近两周帮助患者数：</td>
                                 <td>
+                                    <div class="info_width">近两周帮助患者数：</div>
                                     <div class="input_box two_help"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width" style="width: 30%;">网络综合价值：</td>
-                                <td class="star" style="padding-bottom: 2px;">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
+                                <td>
+                                    <div class="info_width">网络综合价值：</div>
+                                    <div class="star">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -721,39 +740,41 @@
                         <div id="consult" style="width: 100vw;height: 180px;"></div>
                     </div>
                     <div class="col-xs-12 hr_separate"></div>
-                    <div class="col-xs-12" style="padding: 10px 15px 0 0;">
+                    <div class="col-xs-12" style="padding: 10px 20px 0;">
                         <table class="basic_info_table">
                             <tr class="text-center">
-                                <td colspan="4">春雨医生网络综合价值</td>
+                                <td colspan="4" style="color: #333;">春雨医生网络综合价值</td>
                             </tr>
                             <tr>
-                                <td class="info_width">咨询次数：</td>
                                 <td>
+                                    <div class="info_width">咨询次数：</div>
                                     <div class="input_box consult_time"></div>
                                 </td>
-                                <td class="info_width">好评率：</td>
                                 <td>
+                                    <div class="info_width">好评率：</div>
                                     <div class="input_box good_rate"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width">同行认可分数：</td>
                                 <td>
+                                    <div class="info_width">同行认可分数：</div>
                                     <div class="input_box grade"></div>
                                 </td>
-                                <td class="info_width" style="width: 35%;">患者心意(次数)：</td>
                                 <td>
+                                    <div class="info_width">患者心意(次数)：</div>
                                     <div class="input_box sick_time"></div>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="info_width" style="width: 30%;">网络综合价值：</td>
-                                <td class="star" style="padding-bottom: 2px;">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
-                                    <img src="../static/img/star10.png" alt="">
+                                <td>
+                                    <div class="info_width">网络综合价值：</div>
+                                    <div class="star">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                        <img src="../static/img/star10.png" alt="">
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -927,6 +948,10 @@
 
             //价值信息
             $('.menzhen_num_hos').text(data[doc_id].menzhen_num_hos);
+            $('.menzhen_num_keshi').text(data[doc_id].menzhen_num_keshi);
+            $('.indication_num').text(data[doc_id].indication_num);
+            $('.yibao_num').text(data[doc_id].yibao_num);
+            $('.yibao_money').text(data[doc_id].yibao_money);
             $('.recommend').text(data[doc_id].recommend);
             $('.curative_effect').text(data[doc_id].curative_effect);
             $('.prescription').text(data[doc_id].prescription);
