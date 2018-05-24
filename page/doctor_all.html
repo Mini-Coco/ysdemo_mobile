@@ -1122,6 +1122,34 @@
             ]
         };
         relation_chart.setOption(relation_chart_option);
+        //点击事件
+        var ecConfig = echarts.config;
+        function eConsole(param) {
+            if (typeof param.seriesIndex != 'undefined') {
+                switch (param.name) {
+                    case '叶****':
+                        sessionStorage.doc_id=1;
+                        location.reload();
+                        break;
+                    case '叶***':
+                        sessionStorage.doc_id=1;
+                        location.reload();
+                        break;
+                    case '朱**':
+                        sessionStorage.doc_id=5;
+                        location.reload();
+                        break;
+                    case '朱***':
+                        sessionStorage.doc_id=5;
+                        location.reload();
+                        break;
+                    default:
+                        console.log('none');
+                        break;
+                }
+            }
+        }
+        relation_chart.on(ecConfig.EVENT.CLICK, eConsole);
     }
     //year_author
     function year_author(data_x,data_year,data_author,data_time){
