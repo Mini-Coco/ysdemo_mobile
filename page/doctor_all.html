@@ -416,7 +416,7 @@
                                     <div class="input_box doc_sex"></div>
                                 </td>
                                 <td>
-                                    <div class="info_width"></div>所在省份：
+                                    <div class="info_width">所在省份：</div>
                                     <div class="input_box province"></div>
                                 </td>
                             </tr>
@@ -940,7 +940,7 @@
                     essays_str+=data[doc_id].essays[i].essays_time+data[doc_id].essays[i].essays_journal+data[doc_id].essays[i].essays_type+" "+data[doc_id].essays[i].essays_author;
                     essays_str+="<span style='float: right;'><i class='fa fa-share-alt' style='color: #46a0f0;'></i> 被引用："+data[doc_id].essays[i].essays_cite+"次</span>";
                     essays_str+="</div>";
-                    essays_str+="<div class='col-xs-12 hr_separate' style='margin: 6px 0;width: 100%;'></div>";
+                    essays_str+="<div class='col-xs-12' style='margin: 6px 0;width: 100%;'></div>";
                     essays_str+="</div>";
                 }
                 $('.essays').append(essays_str);
