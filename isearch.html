@@ -212,6 +212,7 @@
         <div class="col-xs-12 bg_color" style="padding: 10px 15px;font-size: 1.4rem;">
             搜索到 <span class="text_red">0</span> 个医生
         </div>
+        <div class="col-xs-12 select_result_list" style="padding: 0;"></div>
     </div>
 </div>
 
@@ -268,7 +269,7 @@
                 doc_str+='</div>';
                 doc_str+='<div class="col-xs-12 hr"></div>';
             }
-            $('.content_doc').append(doc_str);
+            $('.select_result_list').append(doc_str);
         }
     });
     //筛选点击
