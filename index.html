@@ -53,19 +53,19 @@
         }
         /*模块样式--end*/
         /*轮播样式--start*/
-        .swiper-container{
-            padding: 12px 0 24px;
-        }
-        .swiper-container .swiper-wrapper .swiper-slide img{
-            width: 100%;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets{
-            bottom: 4px;
-        }
-        .swiper-container .swiper-pagination .swiper-pagination-bullet {
-            width: 6px;
-            height: 6px;
-        }
+        /*.swiper-container{*/
+            /*padding: 12px 0 24px;*/
+        /*}*/
+        /*.swiper-container .swiper-wrapper .swiper-slide img{*/
+            /*width: 100%;*/
+        /*}*/
+        /*.swiper-container-horizontal>.swiper-pagination-bullets{*/
+            /*bottom: 4px;*/
+        /*}*/
+        /*.swiper-container .swiper-pagination .swiper-pagination-bullet {*/
+            /*width: 6px;*/
+            /*height: 6px;*/
+        /*}*/
         /*轮播样式--end*/
     </style>
 </head>
@@ -122,31 +122,32 @@
         </a>
     </div>
     <div class="row hr"></div>
-    <div class="row border_b" style="padding: 0;">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="static/img/company_vip.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="static/img/yuqing.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="static/img/taidu.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="static/img/guanxi.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="static/img/zhineng.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="static/img/data_report.png" alt="">
-                </div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-        </div>
+    <div class="row border_b" style="padding: 10px 0;">
+        <img src="static/img/doctor_view.png" style="width: 100%;" alt="">
+        <!--<div class="swiper-container">-->
+            <!--<div class="swiper-wrapper">-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="static/img/company_vip.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="static/img/yuqing.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="static/img/taidu.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="static/img/guanxi.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="static/img/zhineng.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="static/img/data_report.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+            <!--<div class="swiper-pagination"></div>-->
+        <!--</div>-->
     </div>
     <div class="row content_doc">
         <!--<div class="col-xs-12 border_b" style="padding: 12px 0;">-->
@@ -208,20 +209,21 @@
 <script src="static/js/index.js"></script>
 <script>
     //轮播
-    var mySwiper = new Swiper ('.swiper-container', {
-//        direction: 'vertical',
-        loop: true,
-//        autoplay: true,//可选选项，自动滑动，等同于以下设置
-        autoplay: {
-            delay: 5000,
-            stopOnLastSlide: false,
-            disableOnInteraction: true
-        },
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination'
-        }
-    });
+//    var mySwiper = new Swiper ('.swiper-container', {
+////        direction: 'vertical',
+//        loop: true,
+////        autoplay: true,//可选选项，自动滑动，等同于以下设置
+//        autoplay: {
+//            delay: 5000,
+//            stopOnLastSlide: false,
+//            disableOnInteraction: true
+//        },
+//        // 如果需要分页器
+//        pagination: {
+//            el: '.swiper-pagination'
+//        }
+//    });
+    
     //获取医生关注数据
     $.ajax({
         url: 'lib/doctor_all.json',

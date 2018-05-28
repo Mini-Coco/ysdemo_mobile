@@ -48,12 +48,15 @@
         }
         ul.info_tab li.tab_bar{
             float: left;
-            width: 23%;
+            width: 22%;
             font-size: 1.4rem;
             color: #555;
         }
         ul.info_tab li.tab_bar:nth-of-type(3){
-            width: 31%;
+            width: 30%;
+        }
+        ul.info_tab li.tab_bar:nth-of-type(4){
+            width: 26%;
         }
         ul.info_tab li.tab_bar div{
             padding-top: 15px;
@@ -272,7 +275,7 @@
                 <div>职位学术信息</div><span></span>
             </li>
             <li class="tab_bar tab_value" onclick="changeTab(this,'value')">
-                <div>价值信息</div><span></span>
+                <div>影响力分析</div><span></span>
             </li>
         </ul>
         <div class="info_content">
@@ -307,7 +310,7 @@
                     <div class="col-xs-12 border_b">
                         <div class="col-xs-6">
                             <img class="part_img" src="../static/img/comprehensive_value.png" alt="">
-                            <span class="part_text">综合价值</span>
+                            <span class="part_text">综合影响力</span>
                         </div>
                         <div class="col-xs-12" style="padding: 0 25px;">
                             <div class="col-xs-5" style="padding: 8px 0 16px;">
@@ -323,7 +326,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>网络价值：</td>
+                                        <td>网络影响：</td>
                                         <td class="star">
                                             <img src="../static/img/star10.png" alt="">
                                             <img src="../static/img/star10.png" alt="">
@@ -343,7 +346,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>综合价值：</td>
+                                        <td>综合影响：</td>
                                         <td class="star">
                                             <img src="../static/img/star10.png" alt="">
                                             <img src="../static/img/star10.png" alt="">
@@ -373,21 +376,21 @@
                         </div>
                         <div class="col-xs-12 learning"></div>
                     </div>
-                    <div class="col-xs-12 hr_separate"></div>
-                    <div class="col-xs-12 border_b">
-                        <div class="col-xs-6">
-                            <img class="part_img" src="../static/img/society.png" alt="">
-                            <span class="part_text">社会类标签</span>
-                        </div>
-                        <div class="col-xs-12 socitey"></div>
-                    </div>
+                    <!--<div class="col-xs-12 hr_separate"></div>-->
+                    <!--<div class="col-xs-12 border_b">-->
+                        <!--<div class="col-xs-6">-->
+                            <!--<img class="part_img" src="../static/img/society.png" alt="">-->
+                            <!--<span class="part_text">社会类标签</span>-->
+                        <!--</div>-->
+                        <!--<div class="col-xs-12 socitey"></div>-->
+                    <!--</div>-->
                 </div>
-                <div class="col-xs-12" style="padding:0;">
-                    <div class="hr_title">关系网络</div>
-                    <div class="col-xs-12 border_b">
-                        <div id="relation_chart" style="width:100vw;height: 200px;"></div>
-                    </div>
-                </div>
+                <!--<div class="col-xs-12" style="padding:0;">-->
+                    <!--<div class="hr_title">关系网络</div>-->
+                    <!--<div class="col-xs-12 border_b">-->
+                        <!--<div id="relation_chart" style="width:100vw;height: 200px;"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
             <!--基础信息-->
             <div class="info_sum basic_info" style="display: none;">
@@ -567,10 +570,10 @@
                     </div>
                 </div>
             </div>
-            <!--价值信息-->
+            <!--影响力分析-->
             <div class="info_sum value_info" style="display: none;">
                 <div class="col-xs-12" style="padding:0;">
-                    <div class="hr_title">医生价值</div>
+                    <div class="hr_title">医生信息</div>
                     <div class="col-xs-12" style="padding: 10px 20px;">
                         <table class="basic_info_table">
                             <tr>
@@ -629,7 +632,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12" style="padding:0;">
-                    <div class="hr_title">价值评估</div>
+                    <div class="hr_title">影响力评估</div>
                     <div class="col-xs-12" style="padding: 10px 15px;">
                         <table class="basic_info_table value_info_table">
                             <tr>
@@ -645,7 +648,7 @@
 
                                 </td>
                                 <td>
-                                    <div class="info_width">网络价值：</div>
+                                    <div class="info_width">网络影响：</div>
                                     <div class="star">
                                         <img src="../static/img/star10.png" alt="">
                                         <img src="../static/img/star10.png" alt="">
@@ -657,7 +660,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="info_width">关系影响力：</div>
+                                    <div class="info_width">关系影响：</div>
                                     <div class="star">
                                         <img src="../static/img/star10.png" alt="">
                                         <img src="../static/img/star10.png" alt="">
@@ -667,7 +670,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="info_width">综合价值：</div>
+                                    <div class="info_width">综合影响：</div>
                                     <div class="star">
                                         <img src="../static/img/star10.png" alt="">
                                         <img src="../static/img/star10.png" alt="">
@@ -681,11 +684,11 @@
                     </div>
                 </div>
                 <div class="col-xs-12" style="padding:0;">
-                    <div class="hr_title">网络综合价值</div>
+                    <div class="hr_title">网络综合影响</div>
                     <div class="col-xs-12" style="padding: 10px 20px 0;">
                         <table class="basic_info_table">
                             <tr class="text-center">
-                                <td colspan="4" style="color: #333;">好大夫网络综合价值</td>
+                                <td colspan="4" style="color: #333;">好大夫网络综合影响</td>
                             </tr>
                             <tr>
                                 <td>
@@ -719,7 +722,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="info_width">网络综合价值：</div>
+                                    <div class="info_width">网络综合影响：</div>
                                     <div class="star">
                                         <img src="../static/img/star10.png" alt="">
                                         <img src="../static/img/star10.png" alt="">
@@ -738,7 +741,7 @@
                     <div class="col-xs-12" style="padding: 10px 20px 0;">
                         <table class="basic_info_table">
                             <tr class="text-center">
-                                <td colspan="4" style="color: #333;">春雨医生网络综合价值</td>
+                                <td colspan="4" style="color: #333;">春雨医生网络综合影响</td>
                             </tr>
                             <tr>
                                 <td>
@@ -762,7 +765,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="info_width">网络综合价值：</div>
+                                    <div class="info_width">网络综合影响：</div>
                                     <div class="star">
                                         <img src="../static/img/star10.png" alt="">
                                         <img src="../static/img/star10.png" alt="">
@@ -858,13 +861,13 @@
                 html : true,
                 trigger : "hover",
                 title : '学术行政类二级标签',
-                placement : "bottom"
+                placement : "top"
             });
             $('.btn.btn-society').popover({
                 html : true,
                 trigger : "hover",
                 title : '社会类二级标签',
-                placement : "bottom"
+                placement : "top"
             });
 
             //基础信息
@@ -1722,7 +1725,7 @@
             ]
         ];
         radar_chart(data,data1[doc_id]);
-        relation_chart(data_legend[doc_id],data_categories[doc_id],data_node[doc_id],data_link[doc_id]);
+//        relation_chart(data_legend[doc_id],data_categories[doc_id],data_node[doc_id],data_link[doc_id]);
         var data_x=[],data_year=[],data_author=[],data_time=[],data_mag=[];
         data_x=[
             ['2016年度','2015年度','2014年度','2013年度','2012年度','2011年度','2010年度','2009年度'],
