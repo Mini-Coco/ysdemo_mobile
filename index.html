@@ -268,34 +268,6 @@
                             me.resetload();
                         },1000);
                     }
-//                    for(var i=0;i<data.length;i++){
-//                        //专业方向--判断文字，超出32则显示省略号
-//                        var crt_words=data[i].professional_direction;
-//                        var l=32;
-//                        function checkString(s,l,tag){
-//                            if(s.length>l){
-//                                return s.substring(0,l)+tag;
-//                            }else{
-//                                return s;
-//                            }
-//                        }
-//                        doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
-//                        doc_str+='<div class="add_attention">+ 关注</div>';
-//                        doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
-//                        doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
-//                        doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
-//                        doc_str+='</a>';
-//                        doc_str+='<a onclick="toFullView('+i+')" class="col-xs-9" style="padding-left: 5px;">';
-//                        doc_str+='<div style="width: 80%;">';
-//                        doc_str+='<span class="doc_name">'+data[i].name+'</span>';
-//                        doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
-//                        doc_str+='</div>';
-//                        doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
-//                        doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
-//                        doc_str+='</a>';
-//                        doc_str+='</div>';
-//                    }
-//                    $('.content_doc').append(doc_str);
                 },
                 error: function(xhr, type){
                     alert('Ajax error!');
