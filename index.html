@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/swiper.min.css">
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/dropload.css">
     <link rel="stylesheet" href="static/css/index.css">
     <style>
         /*头部样式--start*/
@@ -150,29 +151,7 @@
         <!--</div>-->
     </div>
     <div class="row content_doc">
-        <!--<div class="col-xs-12 border_b" style="padding: 12px 0;">-->
-            <!--<div class="add_attention">+ 关注</div>-->
-            <!--<a onclick="toFullView(1)" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">-->
-                <!--<img style="height: 60px;" src="static/img/doc_pic.png" alt="">-->
-                <!--<div class="star">-->
-                    <!--<img src="static/img/star10.png" alt="">-->
-                    <!--<img src="static/img/star10.png" alt="">-->
-                    <!--<img src="static/img/star10.png" alt="">-->
-                    <!--<img src="static/img/star10.png" alt="">-->
-                    <!--<img src="static/img/star10.png" alt="">-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a onclick="toFullView(1)" class="col-xs-9" style="padding-left: 5px;">-->
-                <!--<div>-->
-                    <!--<span class="doc_name">叶****</span>-->
-                    <!--<span class="briefly_2">主任医师 教授 博士</span>-->
-                <!--</div>-->
-                <!--<div class="briefly_1">上海市肿瘤医院 泌尿外科</div>-->
-                <!--<div class="professional_direction">-->
-                    <!--前列腺、膀胱、肾脏、睾丸、肾上腺、阴茎、腹膜后等部位良恶性肿瘤的诊治；尤其擅长以手术为主；综合化疗、放疗、生物、介入、内分泌治疗等各种治疗手段-->
-                <!--</div>-->
-            <!--</a>-->
-        <!--</div>-->
+        <div class="col-xs-12 content_doc_list" style="padding: 0;"></div>
     </div>
     <div class="row hr" style="margin-bottom: 48px;"></div>
     <div class="row footer text-center">
@@ -206,6 +185,7 @@
 <script src="static/js/jquery-2.1.1.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/swiper.min.js"></script>
+<script src="static/js/dropload.min.js"></script>
 <script src="static/js/index.js"></script>
 <script>
     //轮播
@@ -223,41 +203,106 @@
 //            el: '.swiper-pagination'
 //        }
 //    });
-    
-    //获取医生关注数据
-    $.ajax({
-        url: 'lib/doctor_all.json',
-        dataType: 'json',
-        success: function (data) {
-            var doc_str='';
-            for(var i=0;i<data.length;i++){
-                //专业方向--判断文字，超出32则显示省略号
-                var crt_words=data[i].professional_direction;
-                var l=32;
-                function checkString(s,l,tag){
-                    if(s.length>l){
-                        return s.substring(0,l)+tag;
-                    }else{
-                        return s;
+
+    var counter = 0;
+    // 每页展示4个
+    var num = 4;
+    var pageStart = 0,pageEnd = 0;
+
+    // dropload
+    var dropload = $('.content_doc').dropload({
+        scrollArea : window,
+        loadDownFn : function(me){
+            //获取医生关注数据
+            $.ajax({
+                url: 'lib/doctor_all.json',
+                dataType: 'json',
+                success: function (data) {
+                    var doc_str='';
+                    counter++;
+                    pageEnd = num * counter;
+                    pageStart = pageEnd - num;
+
+                    if(pageStart <= data.length) {
+                        for (var i = pageStart; i < pageEnd; i++) {
+                            //专业方向--判断文字，超出32则显示省略号
+                            var crt_words=data[i].professional_direction;
+                            var l=32;
+                            function checkString(s,l,tag){
+                                if(s.length>l){
+                                    return s.substring(0,l)+tag;
+                                }else{
+                                    return s;
+                                }
+                            }
+                            doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
+                            doc_str+='<div class="add_attention">+ 关注</div>';
+                            doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+                            doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
+                            doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
+                            doc_str+='</a>';
+                            doc_str+='<a onclick="toFullView('+i+')" class="col-xs-9" style="padding-left: 5px;">';
+                            doc_str+='<div style="width: 80%;">';
+                            doc_str+='<span class="doc_name">'+data[i].name+'</span>';
+                            doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
+                            doc_str+='</div>';
+                            doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
+                            doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
+                            doc_str+='</a>';
+                            doc_str+='</div>';
+
+                            if((i + 1) >= data.length){
+                                // 数据加载完
+                                tab1LoadEnd = true;
+                                // 锁定
+                                me.lock();
+                                // 无数据
+                                me.noData();
+                                break;
+                            }
+                        }
+                        // 为了测试，延迟1秒加载
+                        setTimeout(function(){
+                            $('.content_doc_list').append(doc_str);
+                            // 每次数据加载完，必须重置
+                            me.resetload();
+                        },1000);
                     }
+//                    for(var i=0;i<data.length;i++){
+//                        //专业方向--判断文字，超出32则显示省略号
+//                        var crt_words=data[i].professional_direction;
+//                        var l=32;
+//                        function checkString(s,l,tag){
+//                            if(s.length>l){
+//                                return s.substring(0,l)+tag;
+//                            }else{
+//                                return s;
+//                            }
+//                        }
+//                        doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
+//                        doc_str+='<div class="add_attention">+ 关注</div>';
+//                        doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+//                        doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
+//                        doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
+//                        doc_str+='</a>';
+//                        doc_str+='<a onclick="toFullView('+i+')" class="col-xs-9" style="padding-left: 5px;">';
+//                        doc_str+='<div style="width: 80%;">';
+//                        doc_str+='<span class="doc_name">'+data[i].name+'</span>';
+//                        doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
+//                        doc_str+='</div>';
+//                        doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
+//                        doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
+//                        doc_str+='</a>';
+//                        doc_str+='</div>';
+//                    }
+//                    $('.content_doc').append(doc_str);
+                },
+                error: function(xhr, type){
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
                 }
-                doc_str+='<div class="col-xs-12 border_b" style="padding: 12px 0;">';
-                doc_str+='<div class="add_attention">+ 关注</div>';
-                doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
-                doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
-                doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
-                doc_str+='</a>';
-                doc_str+='<a onclick="toFullView('+i+')" class="col-xs-9" style="padding-left: 5px;">';
-                doc_str+='<div style="width: 80%;">';
-                doc_str+='<span class="doc_name">'+data[i].name+'</span>';
-                doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
-                doc_str+='</div>';
-                doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
-                doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
-                doc_str+='</a>';
-                doc_str+='</div>';
-            }
-            $('.content_doc').append(doc_str);
+            });
         }
     });
 
