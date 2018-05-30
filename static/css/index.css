@@ -40,7 +40,17 @@ a, a:focus, a:hover{
     z-index: 50;
     position: absolute;
     right: 15px;
+    padding: 12px;
+    margin: -12px;
     font-size: 1.6rem;
+    color: #46a0f0;
+}
+.cancel_attention{
+    z-index: 50;
+    padding-top: 5px;
+    font-size: 1.4rem;
+    position: relative;
+    right: 0;
     color: #46a0f0;
 }
 /*搜索框样式--start*/
