@@ -35,9 +35,9 @@
         ul.share li a{
             padding: 13px;
         }
-        .share_p:hover ul.share{
-            display: block;
-        }
+        /*.share_p:hover ul.share{*/
+            /*display: block;*/
+        /*}*/
         /*各种信息页面--start*/
         ul.info_tab{
             list-style: none;
@@ -962,6 +962,24 @@
             $('.sick_time').text(data[doc_id].sick_time);
         }
     });
+
+    //处理ios的hover事件不生效
+    $('.share_p').click(function (event) {
+        //取消事件冒泡
+        event.stopPropagation();
+        //按钮的toggle,如果div是可见的,点击按钮切换为隐藏的;如果是隐藏的,切换为可见的。
+        $('.share_p ul.share').toggle();
+        return false;
+    });
+    //点击空白处隐藏弹出层
+    //注意这里
+    $("body>*").click(function(event){
+        var _con = $('.share_p ul.share');   // 设置目标区域
+        if(!_con.is(event.target) && _con.has(event.target).length === 0){ // Mark 1
+            $('.share_p ul.share').hide();   //消失
+        }
+    });
+
     //切换显示信息页面
     function changeTab(_this,crt_info) {
         //文字、导航条变色
