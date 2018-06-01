@@ -39,7 +39,8 @@
             color: #888;
             background-color: #fff;">
             <div style="margin-bottom: 10px;">可以在此添加图片进行说明</div>
-            <img src="static/img/up_img.png" alt=""
+            <input type="file" id="chooseImage" accept="image/*" style="position:absolute;opacity:0;">
+            <img id="cropedBigImg" src="static/img/up_img.png" alt=""
                 style="height: 80px;">
         </div>
         <div class="col-xs-12 border_b_e8 enter_info">
@@ -60,6 +61,18 @@
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/swiper.min.js"></script>
 <script src="static/js/index.js"></script>
-<script></script>
+<script>
+    $('#chooseImage').on('change',function(){
+        var filePath = $(this).val(),         //获取到input的value，里面是文件的路径
+            fileFormat = filePath.substring(filePath.lastIndexOf(".")).toLowerCase(),
+            src = window.URL.createObjectURL(this.files[0]); //转成可以在本地预览的格式
+        // 检查是否是图片
+        if( !fileFormat.match(/.png|.jpg|.jpeg/) ) {
+            error_prompt_alert('上传错误,文件格式必须为：png/jpg/jpeg');
+            return;
+        }
+        $('#cropedBigImg').attr('src',src);
+    });
+</script>
 </body>
 </html>
