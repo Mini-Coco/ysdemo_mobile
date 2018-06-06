@@ -265,22 +265,22 @@
     <div class="row hr"></div>
     <div class="row content_doc" style="margin-top: 0;">
         <ul class="info_tab text-center">
-            <li class="tab_bar tab_all active" onclick="changeTab(this,'all')">
+            <li class="tab_bar tab_all" onclick="changeTab('all')">
                 <div>综合信息</div><span></span>
             </li>
-            <li class="tab_bar tab_basic" onclick="changeTab(this,'basic')">
+            <li class="tab_bar tab_basic" onclick="changeTab('basic')">
                 <div>基础信息</div><span></span>
             </li>
-            <li class="tab_bar tab_position" onclick="changeTab(this,'position')">
+            <li class="tab_bar tab_position" onclick="changeTab('position')">
                 <div>职位学术信息</div><span></span>
             </li>
-            <li class="tab_bar tab_value" onclick="changeTab(this,'value')">
+            <li class="tab_bar tab_value" onclick="changeTab('value')">
                 <div>影响力分析</div><span></span>
             </li>
         </ul>
         <div class="info_content">
             <!--综合信息-->
-            <div class="info_sum all_info">
+            <div class="info_sum all_info" style="display: none;">
                 <div class="col-xs-12" style="padding:0;">
                     <div class="hr_title">医生简介</div>
                     <div class="col-xs-12 border_b">
@@ -981,7 +981,7 @@
     });
 
     //切换显示信息页面
-    function changeTab(_this,crt_info) {
+    function changeTab(crt_info) {
         //文字、导航条变色
         $('.tab_bar').removeClass('active');
         $('.tab_'+crt_info).addClass('active');
@@ -993,7 +993,7 @@
     if(crt_info=='undefined'){
         crt_info='all';
     }
-    changeTab(this,crt_info);
+    changeTab(crt_info);
     //雷达图
     function radar_chart(data,data1){
         var radar_chart=echarts.init(document.getElementById('radar_chart'));
