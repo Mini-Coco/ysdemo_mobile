@@ -2,40 +2,24 @@
     {
     	"id":0,
         "img":"<img height='140' src='../img/doc_pic.jpg'>",
-        "name":"张****",
-        "briefly_1":"中山一院 胃肠外科中心",
+        "name":"董****",
+        "briefly_1":"北京协和医院 泌尿外科",
         "briefly_2":"副主任医师",
-        "briefly_3_":"博士 讲师",
-        "briefly_3":"博士 讲师",
-        "introduction1":"张****，博士，中山大学附属第一医院胃肠外科中心副主任医师，硕士研究生导师，胃肠间质瘤诊治中心秘书。先后取得中山大学临床医学七年制硕士和外科学博士学位；2011年赴美国哈佛大学麻省总医院（Massachusetts General hospital）参加消化肿瘤诊治高级培训课程；2013年作为访问学者，再赴哈佛大学附属Dana-Farber癌中心专门学习胃肠间质瘤的诊治前沿。现任中国临床肿瘤协会（CSCO）胃肠间质瘤专家委员会委员，国际胃癌协会（International Gastric Cancer Association ）会员，广东省医疗行业协会消化外科分会委员。一直从事胃肠外科尤其胃肠肿瘤外科基础和临床研究，擅长胃癌、结直肠癌、胰腺肿瘤、腹膜后肿瘤、疝气、痔等疾病的外科治疗和综合治疗，并专注于胃肠间质瘤（GIST）的外科治疗、分子靶向治疗、综合治疗和个体化治疗。",
-        "introduction":"张****，博士，中山大学附属第一医院胃肠外科中心副主任医师，硕士研究生导师，胃肠间质瘤诊治中心秘书。先后取得中山大学临床医学七年制硕士和外科学博士学位；2011年赴美国哈佛大学麻省总医院（Massachusetts General hospital）参加消化肿瘤诊治高级培训课程；2013年作为访问学者，再赴哈佛大学附属Dana-Farber癌中心专门学习胃肠间质瘤的诊治前沿。现任中国临床肿瘤协会（CSCO）胃肠间质瘤专家委员会委员，国际胃癌协会（International Gastric Cancer Association ）会员，广东省医疗行业协会消化外科分会委员。一直从事胃肠外科尤其胃肠肿瘤外科基础和临床研究，擅长胃癌、结直肠癌、胰腺肿瘤、腹膜后肿瘤、疝气、痔等疾病的外科治疗和综合治疗，并专注于胃肠间质瘤（GIST）的外科治疗、分子靶向治疗、综合治疗和个体化治疗。",
+        "briefly_3_":"医学博士 副教授",
+        "briefly_3":"博士 副教授",
+        "introduction1":"医学博士，毕业于北京协和医学院，2015年获得副主任医师资格。研究方向为肾脏外科、泌尿系统肿瘤和腔镜微创手术。(1)肾脏外科:肾肿瘤、肾积水、肾结核、肾结石、肾囊肿等，专长为肾肿瘤的综合诊治，诊断方面，对蛋白组学在肾癌的诊断价值进行深入研究；治疗方面，提倡保留肾单位的腹腔镜肾部分切除术；基础研究，首次在国际提出肾素瘤的分型和诊治流程。(2)肾上腺肿瘤的综合诊治，对肾上腺常见肿瘤、肾上腺皮质癌、肾上腺自体移植、妊娠期肾上腺肿瘤等有深入研究。(3)泌尿系统肿瘤的微创手术，擅长肾癌、前列腺癌和膀胱癌的腹腔镜手术。",
+        "introduction":"医学博士，副主任医师，副教授，毕业于北京协和医学院。研究方向为肾脏外科、泌尿系统肿瘤和腔镜微创手术。(1)肾脏外科：肾肿瘤、肾积水、肾盂输尿管交界处狭窄、肾囊肿等，擅长肾肿瘤的综合诊治：诊断方面，对蛋白组学在肾癌的诊断价值进行深入研究；治疗方面，提倡保留肾单位的腹腔镜肾部分切除术；基础研究，首次在国际提出肾素瘤的分型和诊治流程。(2)泌尿系统肿瘤和腔镜微创手术，擅长腹腔镜微创手术治疗肾上腺肿瘤、肾肿瘤、前列腺癌、膀胱癌、肾盂癌、输尿管癌、肾积水等；经尿道微创手术治疗膀胱癌、前列腺增生和泌尿系结石等。",
         "page_addr":"doctor_all/doctor_basic.html",
         "learning1":"<button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>医学博士</div>'>博士</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>副教授</div>'>副教授</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>山东大学2005年度将军集团奖学金</div>'>奖学金</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>北京医学奖励基金会泌尿外科<br>专家委员会委员</div>'>学术专家</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>泌尿外科杂志（电子版）编委</div>'>杂志编委</button> <button type='button' class='btn btn-learning' data-toggle='popover' data-content='<div>好大夫网络处方权</div>'>网络处方权</button> ",
         "learning":[
-            
-			{   "learning_1":"论文达人",
-                "learning_2":"学术论文发表47篇"
-            },{
-                "learning_1":"获奖经历",
-                "learning_2":"2013年第七届全国胃癌学术会议(北京)青年医师手术比赛，“胃癌根治术”开放组一等奖;2014-2017连续4年评为院级或校级优秀教师;中山一院2011年青年教师授课大赛决赛 全英组三等奖;中山一院2017年度十佳优秀教师"
-            },{
-                "learning_1":"硕士研究生导师",
-                "learning_2":"硕士研究生导师"
-            },{
-                "learning_1":"海外留学",
-                "learning_2":"2011年赴美国哈佛大学麻省总医院（Massachusetts General hospital）参加消化肿瘤诊治高级培训课程;2013年作为访问学者，再赴哈佛大学附属Dana-Farber癌中心专门学习胃肠间质瘤的诊治前沿"
-            },{
-                "learning_1":"学术编委",
-                "learning_2":"参编人民卫生出版社第八版《外科学》本科教辅教材"
-            },{
-                "learning_1":"学术先锋",
-                "learning_2":"中国临床肿瘤协会（CSCO）胃肠间质瘤专家委员会委员;国际胃癌协会（International Gastric Cancer Association）会员;广东省医疗行业协会消化外科分会委员;中国医师协会外科分会胃肠间质瘤专委会青委副主任委员;广东省健康管理学会胃肠病学专业委员会委员"
-            },{
+            {
                 "learning_1":"博士",
-                "learning_2":"外科学博士学位"
+                "learning_2":"博士"
+            },{
+                "learning_1":"论文活跃者",
+                "learning_2":"论文数量29篇"
             }
         ],
-		
         "socitey1":"<button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>山东青岛人</div>'>山东青岛人</button> <button type='button' class='btn btn-society' data-toggle='popover' data-content='<div>邢静</div>'>已婚</button> ",
         "society":[
             {
@@ -52,20 +36,20 @@
         "learn_affect":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star0.png'>",
         "net_heat":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star5.png'>",
         "professional_direction1":"<span class='label'>肾脏外科</span><span class='label'>泌尿系统肿瘤</span><span class='label'>腔镜微创手术</span>",
-        "professional_direction":"擅长胃癌、结直肠癌、胃肠间质瘤和腹腔、腹膜后肉瘤（脂肪肉瘤、平滑肌肉瘤、纤维瘤病等）的外科手术治疗，包括胃癌根治手术、广泛腹膜后淋巴结廓清（D4）、超低位保留肛门的直肠癌根治术、复发或耐药性胃肠间质瘤减灭术，擅长胃肠间质瘤的靶向药物治疗和综合治疗；擅长其他胃肠道、胰腺和腹膜后肿瘤的规范化手术治疗；熟练掌握深度子宫内膜异位症侵犯肠道的相关手术。熟悉其他胃肠道良、恶性疾病的外科治疗，包括疝和痔的外科治疗，外科营养支持治疗",
+        "professional_direction":"肾脏外科（肾肿瘤、肾积水、肾结核、肾囊肿等）；泌尿系肿瘤和腔镜微创手术（肾上腺肿瘤、肾肿瘤、肾盂癌、输尿管癌、膀胱癌、前列腺癌和前列腺增生等）",
         "radar_data":"5,4.5,4,4,4",
-        "province":"广东省",
-        "hospital":"中山一院",
+        "province":"北京市",
+        "hospital":"北京协和医院",
         "doc_sex":"男",
-        "city":"广州市",
+        "city":"北京市",
         "level":"三级甲等",
-        "doc_age":"40-50岁",
+        "doc_age":"30-40",
         "education":"博士",
         "highest_education":"博士",
-        "keshi":"胃肠外科中心",
-        "hometown":"广东省",
+        "keshi":"泌尿外科",
+        "hometown":"山东青岛",
         "marry":"已婚",
-        "working_time":"10年以内",
+        "working_time":"10-20年",
         "zhich":"副主任医师",
         "phone_num":"139****0627",
         "tel_num":"-",
@@ -78,73 +62,73 @@
         "edu_1":"2004年7月 山东大学医学院 临床医学 学士",
         "edu_2":"2007年7月 山东大学医学院 泌尿外科 硕士",
         "edu_3":"2010年7月 中国医学科学院 北京协和医院 泌尿外科 博士",
-        "edu_experience":"中山大学 临床医学 硕士/中山大学 外科学 博士",
+        "edu_experience":"2004年7月 山东大学医学院 临床医学 学士/2007年7月 山东大学医学院 泌尿外科 硕士/2010年7月 中国医学科学院 北京协和医院 泌尿外科 博士",
         "post":"无",
-        "aca_zhich":"讲师",
-        "academic_writing":"47",
-        "citation":"322",
- "h_index":"13",
-        "magazine_per":"30/47",
+        "aca_zhich":"副教授",
+        "academic_writing":"19",
+        "citation":"129",
+        "h_index":"4",
+        "magazine_per":"17/19",
         "aca_dire":"肾脏外科，泌尿系肿瘤和腔镜微创手术",
-        "aca_focus":"单中心腹腔镜，开腹直肠癌根治术，巨大胃肠间质瘤，脂肪肉瘤，结肠系膜，超声仿真结肠成像，腹腔镜手术，胃肠间质瘤，外翻切除术，晚期胃肠间质瘤多线治疗失败，横结肠系膜浸润胃癌T分期，腹腔镜手术治疗，小胃肠间质瘤，胃肠间质瘤，剖腹术，胃癌临床病理学特征",
-"association1":"<span class='label'></span> ",
-"association":"中国临床肿瘤协会（CSCO）/国际胃癌协会（International Gastric Cancer Association ）/广东省医疗行业协会消化外科分会/中国医师协会外科分会/广东省健康管理学会",
-         "aca_achieve1":"<span class='label'>泌尿外科杂志（电子版）编委</span> <span class='label'>北京医学奖励基金会泌尿外科专家委员会委员</span>",
-"aca_achieve":"国际胃癌协会（International Gastric Cancer Association ）会员/哈佛大学附属Dana-Farber癌中心访问学者/Brigham & Women’s Hospital访问学者/中国抗癌协会临床肿瘤协作专业委员会（CSCO）胃肠间质瘤专家委员会委员/广东省医疗行业协会消化外科分会委员/中国医师协会外科分会胃肠间质瘤专委会青委副主任委员/广东省健康管理学会胃肠病学专业委员会委员",
+        "aca_focus":"蛋白质，组学肾肿瘤，Kidney neoplasms，血清，磁珠，诊断，肾上腺，肾切除术，Nephrectomy，肾球旁细胞器瘤，肾素，分类，保留肾单位，Juxtaglomerular cell tumor，Renin，Classification，Nephron-sparing，肾上腺皮质癌，外科手术，预后",
+        "association1":"<span class='label'></span> ",
+        "association":"",
+        "aca_achieve1":"<span class='label'>泌尿外科杂志（电子版）编委</span> <span class='label'>北京医学奖励基金会泌尿外科专家委员会委员</span>",
+        "aca_achieve":"泌尿外科杂志（电子版）编委/北京医学奖励基金会泌尿外科专家委员会委员",
         "meeting":"<div class='col-xs-4'><div class='text_underline'>第二十四届全国泌尿外科学术会议（CUA2017）</div></div><div class='col-xs-4'><div class='text_underline'>2016年11月4日 第二十三届全国泌尿外科学术会议</div><br></div><div class='col-xs-4'><div class='text_underline'>2015年9月3日 第二十二届全国泌尿外科学术会议</div><br></div><div class='col-xs-4'><div class='text_underline'>2014年10月18日 第二十一届全国泌尿外科学术会议</div><br></div><div class='col-xs-4'><div class='text_underline'>2013年12月19日 第二十届全国泌尿外科学术会议</div></div><div class='col-xs-4'><div class='text_underline'>2012年11月15日 第十九届全国泌尿外科学术会议</div></div>",
         "essay":"<tr><td>2016年</td><td>保留器官的综合治疗-膀胱癌治疗的新模式（附107例报告）</td><td>期刊论文</td><td></td><td>《中华泌尿外科杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>术前怀疑恶性的复杂肾囊肿临床诊治分析</td><td>期刊论文</td><td>2</td><td>《中华医学杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>前列腺癌热点研究与前景展望</td><td>期刊论文</td><td>14</td><td>《中华外科杂志》</td><td>参与发表</td></tr><tr><td>2015年</td><td>妊娠合并肾上腺腺瘤导致库欣综合征的临床诊治</td><td>期刊论文</td><td>3</td><td>《临床泌尿外科杂志》</td><td>第一作者</td></tr><tr><td>2015年</td><td>SHA．LIN 评分系统的建立及其在预测经皮肾镜取石术结石清除率中的价值</td><td>期刊论文</td><td>1</td><td>《中华泌尿外科杂志》</td><td>参与发表</td></tr>",
-"meetings":"2018中国肿瘤学大会 (2018-08-18)/2018年中山一院胃肠间质瘤医患交流会 (2018-06-20   中山一院5号楼  发言)/ASCO-2018年美国临床肿瘤学会年会 (2018-06-01   美国芝加哥  作为第一作者进行研究成果展示)/2017年中山一院胃肠间质瘤医患交流会 (2017-06-14   中山一院5号楼  发言)/2017年第12届国际胃癌大会（IGCC） (2017-04-20   北京  发言)/2015年CSCO大会-GIST论坛 (2015-09-17     )/中华医学会第十七届全国外科学学术会议 (2013-09-05   厦门国际会议中心  )/第八届全国胃癌学术会议暨阳光长城肿瘤学术会议 (2013-06-14   北京  )/第十五届全国临床肿瘤学大会暨2012年CSCO学术年会 (2012-09-19   北京市九华山庄  )/胃肠肿瘤学术研讨会 (2008-11-13   上海  )",
+        "meetings":"第二十四届全国泌尿外科学术会议（CUA2017）/2016年11月4日 第二十三届全国泌尿外科学术会议/2015年9月3日 第二十二届全国泌尿外科学术会议/2014年10月18日 第二十一届全国泌尿外科学术会议/2013年12月19日 第二十届全国泌尿外科学术会议/2012年11月15日 第十九届全国泌尿外科学术会议",
         "essays":[
             {
-                "essays_title":"乙状结肠系膜多形性脂肪肉瘤1例报道并文献复习",
-                "essays_time":"2017年",
-                "essays_journal":"《消化肿瘤杂志（电子版）》",
+                "essays_title":"保留器官的综合治疗-膀胱癌治疗的新模式（附107例报告）",
+                "essays_time":"2016年",
+                "essays_journal":"《中华泌尿外科杂志》",
                 "essays_type":"期刊论文",
                 "essays_author":"参与发表",
                 "essays_cite":"0"
             },{
-                "essays_title":"单中心腹腔镜与开腹直肠癌根治术近远期临床疗效对比研究",
-                "essays_time":"2017年",
-                "essays_journal":"《中华普通外科学文献（电子版）》",
+                "essays_title":"术前怀疑恶性的复杂肾囊肿临床诊治分析",
+                "essays_time":"2015年",
+                "essays_journal":"《中华医学杂志》",
                 "essays_type":"期刊论文",
                 "essays_author":"参与发表",
-                "essays_cite":"0"
+                "essays_cite":"2"
             },{
-                "essays_title":"巨大胃肠间质瘤的手术把控",
-                "essays_time":"2017年",
-                "essays_journal":"《中华胃肠外科杂志》",
+                "essays_title":"前列腺癌热点研究与前景展望",
+                "essays_time":"2015年",
+                "essays_journal":"《中华外科杂志》",
                 "essays_type":"期刊论文",
-                "essays_author":"第一作者",
-                "essays_cite":"0"
+                "essays_author":"参与发表",
+                "essays_cite":"14"
             },
             {
-                "essays_title": "病例1:肠系膜原发胃肠间质瘤合并直肠癌根治切除术后不同部位及类型肿瘤转移",
-                "essays_time": "2017年",
-                "essays_journal": "《中华胃肠外科杂志》",
+                "essays_title": "妊娠合并肾上腺腺瘤导致库欣综合征的临床诊治",
+                "essays_time": "2015年",
+                "essays_journal": "《临床泌尿外科杂志》",
                 "essays_type": "期刊论文",
                 "essays_author": "第一作者",
-                "essays_cite": "0"
+                "essays_cite": "3"
             },{
-                "essays_title":"超声仿真结肠成像临床应用的初步研究",
-                "essays_time":"2017年",
-                "essays_journal":"《肿瘤影像学》",
+                "essays_title":"SHA．LIN 评分系统的建立及其在预测经皮肾镜取石术结石清除率中的价值",
+                "essays_time":"2015年",
+                "essays_journal":"《中华泌尿外科杂志》",
                 "essays_type":"期刊论文",
                 "essays_author":"参与发表",
-                "essays_cite":"0"
+                "essays_cite":"1"
             }
         ],
         "prescription":"有",
-        "menzhen_num_hos":11500,
+        "menzhen_num_hos":4000,
         "menzhen_num_keshi":"-",
         "indication_num":"-",
         "yibao_num":"-",
         "yibao_money":"-",
         "intelligent_advice1":"已处于企业内部医生序列，级别为U，在好大夫和春雨医生网络平台中，均具有较高的影响力，<span class='advice_highlight'>建议提高关注度</span>。",
         "intelligent_advice":"企业内部级别为U，网络综合价值评估为4.5，<span class='advice_highlight'>建议提高关注</span>",
-        "recommend":"4.3",
-        "curative_effect":"100%",
-        "attitude":"100%",
-        "all_help":"1256",
+        "recommend":"4.1",
+        "curative_effect":"97%",
+        "attitude":"97%",
+        "all_help":"1254",
         "two_help":"89",
         "evaluate_haodf":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star5.png'>",
         "evaluate_cy":"<img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star10.png'> <img src='static/img/star5.png'> <img src='static/img/star0.png'>",

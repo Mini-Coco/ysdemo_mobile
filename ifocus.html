@@ -91,18 +91,18 @@
                     }
                 }
                 doc_str+='<div class="col-xs-12 border_b" style="padding-bottom: 0;border: none;">';
-                doc_str+='<div class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
+                doc_str+='<a onclick="toFullView('+i+')" class="col-xs-3 text-center" style="padding: 3px 5px 0 10px;">';
                 doc_str+='<img style="height: 60px;" src="static/img/doc_pic.png" alt="">';
                 doc_str+='<div class="star">'+data[i].learn_affect+'</div>';
-                doc_str+='</div>';
+                doc_str+='</a>';
                 doc_str+='<div class="col-xs-9 search_key" style="padding-left: 5px;">';
                 doc_str+='<div style="float: right;font-size: 2.4rem;color: #aaa;"><i class="fa fa-edit" onclick="addMemo()"></i></div>';
                 doc_str+='<div>';
                 doc_str+='<a onclick="toFullView('+i+')" class="doc_name">'+data[i].name+'</a>';
-                doc_str+='<span class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</span>';
+                doc_str+='<a onclick="toFullView('+i+')" class="briefly_2">'+data[i].briefly_2+' '+data[i].briefly_3+'</a>';
                 doc_str+='</div>';
-                doc_str+='<div class="briefly_1">'+data[i].briefly_1+'</div>';
-                doc_str+='<div class="professional_direction">'+checkString(crt_words,l,'...')+'</div>';
+                doc_str+='<a onclick="toFullView('+i+')" class="briefly_1">'+data[i].briefly_1+'</a>';
+                doc_str+='<a onclick="toFullView('+i+')" class="professional_direction">'+checkString(crt_words,l,'...')+'</a>';
                 doc_str+='</div>';
                 doc_str+='<div class="col-xs-12 text-right cancel_attention"><span>取消关注</span></div>';
                 doc_str+='<div class="col-xs-12 hr" style="margin-top: 8px;"></div>';
